@@ -1,11 +1,11 @@
 # Resumen_FrontEnd_Inicial_2020
-Plantilla con descripción básica para proyectos de FrontEnd 
+- Plantilla con descripción básica para proyectos de FrontEnd 
 
 
 
 # Carpeta "js" de JavaScript
 
-## Comandos de Atajos de Teclado y Git 
+## - Comandos de Atajos de Teclado y Git 
  1. Formateo de Errores
  2. Go live
     - 
@@ -13,11 +13,11 @@ Plantilla con descripción básica para proyectos de FrontEnd
 
 ## Desarrollo Inicial Resumido
  1. Visualización de datos 
-    -  **document.write** 
-    -  **console.log**
-        -
+    - **document.write**()
+    - **console.log**()
+
  2. Array
-    -  **push**(), **pop**(), **unshift**(), **shift**(), **indexOP**
+    - **push**(), **pop**(), **unshift**(), **shift**(), **indexOP**
  3. Métodos Array
     - **filter**(), **map**(), **find**(), **forEach**(), **some**()
  4. Objetos
