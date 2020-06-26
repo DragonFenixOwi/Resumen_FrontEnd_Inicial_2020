@@ -12,12 +12,12 @@ Plantilla con descripción básica para proyectos de FrontEnd
     - 
 
 ## Desarrollo Inicial Resumido
- 1. **Visualización de datos** (document.write y console.log)
+ 1. **Visualización de datos** (**document.write** y **console.log**)
  2. **Array**
-    -  push(), pop(), unshift(), shift(), indexOP
+    -  **push**(), **pop**(), **unshift**(), **shift**(), **indexOP**
  3. Métodos Array
     - **filter**(), **map**(), **find**(), **forEach**(), **some**()
- 4. Objetos
+ 4. **Objetos**
         * 
  5. **Buenas Prácticas**
     - Estructura Modular
