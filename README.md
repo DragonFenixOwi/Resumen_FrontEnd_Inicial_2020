@@ -16,7 +16,7 @@ Plantilla con descripción básica para proyectos de FrontEnd
     * **Array**
         * push(), pop(), unshift(), shift(), indexOP
     * Métodos Array
-    - **filter**(), **map**(), **find**(), **forEach**(), **some**()
+**filter**(), **map**(), **find**(), **forEach**(), **some**()
     * Objetos
         * 
     * Buenas Prácticas
