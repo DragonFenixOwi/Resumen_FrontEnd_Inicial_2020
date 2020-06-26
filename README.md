@@ -6,16 +6,17 @@ Plantilla con descripción básica para proyectos de FrontEnd
 # Carpeta "js" de JavaScript
 
 ## Comandos de Atajos de Teclado y Git 
-    1. Formateo de Errores
-    2. Go live
- *
+ 1. Formateo de Errores
+ 2. Go live
+ * 
+ - **Esto tendria que estar en negrita**
 
 ## Desarrollo Inicial Resumido
     * **Visualización de datos (document.write y console.log)
     * **Array**
         * push(), pop(), unshift(), shift(), indexOP
     * Métodos Array
-        * **filter**(), **map**(), **find**(), **forEach**(), **some**()
+    - **filter**(), **map**(), **find**(), **forEach**(), **some**()
     * Objetos
         * 
     * Buenas Prácticas
