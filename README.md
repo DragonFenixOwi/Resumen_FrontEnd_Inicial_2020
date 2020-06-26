@@ -6,9 +6,9 @@ Plantilla con descripción básica para proyectos de FrontEnd
 # Carpeta "js" de JavaScript
 
 ## Comandos de Atajos de Teclado y Git 
-    * Formateo de Errores
-    * Go live
-    *
+    1. Formateo de Errores
+    2. Go live
+ *
 
 ## Desarrollo Inicial Resumido
     * **Visualización de datos (document.write y console.log)
