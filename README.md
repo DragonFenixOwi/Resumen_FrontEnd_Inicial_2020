@@ -3,16 +3,14 @@
 
 
 
-# Carpeta "js" de JavaScript
+## Carpeta "js" de JavaScript
 
-## - Comandos de Atajos de Teclado y Git 
- 1. Formateo de Errores
- 2. Go live
-    - 
-    - 
+### - Comandos de Atajos de Teclado y Git 
+ 1. Formateo de Errores.
+ 2. Go Live.
 
-## Desarrollo Inicial Resumido
- 1. Visualización de datos 
+### Desarrollo Inicial Resumido
+ 1. Visualización de datos : 
     - **document.write**()
     - **console.log**()
 
