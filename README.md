@@ -8,18 +8,18 @@ Plantilla con descripción básica para proyectos de FrontEnd
 ## Comandos de Atajos de Teclado y Git 
  1. Formateo de Errores
  2. Go live
- * 
- - **Esto tendria que estar en negrita**
+    - 
+    - 
 
 ## Desarrollo Inicial Resumido
-    * **Visualización de datos (document.write y console.log)
-    * **Array**
-        * push(), pop(), unshift(), shift(), indexOP
-    * Métodos Array
-**filter**(), **map**(), **find**(), **forEach**(), **some**()
-    * Objetos
+ 1. **Visualización de datos** (document.write y console.log)
+ 2. **Array**
+    -  push(), pop(), unshift(), shift(), indexOP
+ 3. Métodos Array
+    - **filter**(), **map**(), **find**(), **forEach**(), **some**()
+ 4. Objetos
         * 
-    * Buenas Prácticas
-        * Estructura Modular
-        * Explicación de porque no hay que utilizar un Magic Number
+ 5. **Buenas Prácticas**
+    - Estructura Modular
+    -  Explicación de porque no hay que utilizar un Magic Number
     
