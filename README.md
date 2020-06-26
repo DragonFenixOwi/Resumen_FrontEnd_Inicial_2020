@@ -13,8 +13,8 @@ Plantilla con descripción básica para proyectos de FrontEnd
 
 ## Desarrollo Inicial Resumido
  1. Visualización de datos 
-    - **document.write** 
-    - **console.log**
+    -  **document.write** 
+    -  **console.log**
         -
  2. Array
     -  **push**(), **pop**(), **unshift**(), **shift**(), **indexOP**
