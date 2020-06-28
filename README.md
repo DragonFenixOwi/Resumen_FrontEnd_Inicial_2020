@@ -3,9 +3,9 @@
 
 
 
-## Carpeta "js" de JavaScript
+## I -Carpeta "js" de JavaScript
 
-### - Comandos de Atajos de Teclado y Git 
+### Comandos de Atajos de Teclado y Git 
  1. Formateo de Errores.
  2. Go Live.
 
@@ -24,8 +24,16 @@
     -  Explicación de porque no hay que utilizar un Magic Number
     
 
+## II - Carpeta "css" de CSS
+1. CSS_Descripción
+    - Navegadores.
+    - Reset
+    - Descripción de Nociones Básicas CSS (Position, FlexBox, Grid-Layout, Framework Bulma y Bootstrap)
+2. Estilos 
+    - 
 
-### Descripción Ruta de Aprendizaje del frontend
+
+## III - Descripción Ruta de Aprendizaje del frontend
 1.  **Git**
 2. **Terminal** –zsh
 3. **Programación Básica**

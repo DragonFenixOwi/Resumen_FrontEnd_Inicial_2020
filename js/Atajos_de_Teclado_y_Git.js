@@ -1,9 +1,9 @@
 /* 
-    -------------------------------------
-        PLANTILLA DE AGILIDAD BÁSICA 
-            Autor: Osvaldo Aquino
-            Nickname: owi
-    -------------------------------------
+    ----------------------------------------
+        Autor: Osvaldo Aquino
+        Nickname: owi
+        RESUMEN DE AGILIDAD BÁSICA 2020
+    ----------------------------------------
 */
 
 /* 
@@ -47,6 +47,9 @@
 /*
     - ctrl + L 
         - Limpiar pantalla 
+    - ctrl + Mayuscula + Ñ 
+        -Terminal para ejecutar git 
+        -
 
 */
 
