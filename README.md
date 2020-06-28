@@ -3,7 +3,7 @@
 
 
 
-## I -Carpeta "js" de JavaScript
+## I - Carpeta "js" de JavaScript
 
 ### Comandos de Atajos de Teclado y Git 
  1. Formateo de Errores.
@@ -29,8 +29,7 @@
     - Navegadores.
     - Reset
     - Descripción de Nociones Básicas CSS (Position, FlexBox, Grid-Layout, Framework Bulma y Bootstrap)
-2. Estilos 
-    - 
+2. Estilos
 
 
 ## III - Descripción Ruta de Aprendizaje del frontend

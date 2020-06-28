@@ -1,0 +1,232 @@
+/* 
+    -------------------------------------
+        Autor: Osvaldo Aquino
+        Nickname: owi
+        RESUMEN DESCRIPTIVO BÁSICO CSS
+    -------------------------------------
+*/
+
+
+
+/* 
+    -------------------------------------------
+        PÁGINAS  DE DESARROLLADORES
+    -------------------------------------------
+*/
+
+/*
+    - COLORABLE
+        - https://colorable.jxnblk.com/00aca3/2d2b31
+    
+    - Lo principal al elegir colores es el  CONTRASTE.
+        - Si la fastidias en contraste, nuestra página no va valer nada.
+        - Sobre todo porque se maneja en Smartphones. 
+        - Y a los smartphones se van a la calle y les pega el sol. 
+        - Y como no tengan buen contraste. Ni podrian ver.
+    
+    - Evitar tener un fondo #FFFFFF O Blanco - Blanco. 
+        - Por que golpea visualmente. Da un pantallaso. 
+        - Siempre hay que jugar  bajando el brillo (Lightness)
+        - Ir un poco a grises a lado del blanco.  
+*/
+
+
+
+
+
+/* 
+    -------------------------------------------
+        NAVEGADOR PARA DESARROLLADORES
+    -------------------------------------------
+*/
+
+
+/*
+    - Chrome. 
+        - Es el navegador mas utilizado en España. 
+        - Herramienta de navegación para probar código.
+    
+    - Firefox Developers.
+        - Este navegador tiene herramientas en el "Inspector del navegador" para cuando 
+        utilizamos FLEXBOX o GRID-LAYOUT. 
+    
+*/
+
+
+
+
+
+
+
+
+/* 
+    -----------------------
+        RESET - CSS
+    -----------------------
+*/
+
+/*
+    - Nunca trabajeis sin un RESET.CSS
+    - Reset son 
+        - " Ayudas de eliminación "
+        - " Descongestión de código "  
+
+    - Todos los navegadores vienen con sus propios "CSS". Con Reset haces un borrado total
+        -  Y ese borrado total, lo haces cada vez que entras en cualquier tipo de navevador. 
+    
+    - Estrctura
+    - PRIMERA LÍNEA DE LLAMADA : RESET.CSS
+    - SEGUNDA LÍNEA DE LLAMADA : ESTILO.CSS
+
+    - Esto es como limpiar la pizarra. Limpias la pizarra y nuestro código se vera bien. 
+        - No limpies la pizarra y estaras manejando tu código, mas el código que habia metido 
+        el navegador en cuestión.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    --------------------------------------------------
+        COMENTARIOS DE LA TAREA - 4 NOCIONES BÁSICAS
+    --------------------------------------------------
+*/
+
+/*
+    1ra Noción
+    - Utilizar "Tablas" para construir una página web. Es ir a la programación de hace 29 años atras.
+        - Si no mal recuerdo en el 1991 salieron las tablas. 
+
+    - En el 96 salieron el CSS. No como lo conocemos, sino la "versión 1"
+        - Y lo primero que salieron son los "margin". Los conceptos de margenes. 
+        - Concepto que  "internet explore" fue a la inversa de toda la industria (por eso el navegador mas odiado)
+    
+    -El concepto de "CAJAS" lo tenia a la inversa. Mientras que lo lógico era tenerlo de otra manera. 
+        - Por eso salio el concepto de la "WC3" World Wide Web. 
+        - Es un conjuto de cosas que delibera lo que si se adapta a "httml".
+        - Hacer margenes todo el rato tampoco es hacer cosas muy actualizadas.
+
+    -Luego en 1998 o por ahi salieron los "POSITION" en CSS.
+        - Los "POSITION" es una de las  PEORES cosas que podemos hacer actualmente en CSS.
+        - Porque no les importan las "reglas  y por eso desestructuran las condiciones en el que se basan 
+        esa estructura en HTML.
+
+    - ¿Se puede utilizar POSITION?
+        - Si. Pero lo utilizaras en un 1% en proyecto. Si fuera el caso.
+        - No es una herramienta por la cual. Te vas a basar toda la estrucutra de tu proyecto. 
+    
+    - Hasta que en el 2016. Salio por primera vez el primer concepto "válido" sobre: 
+        - Alinear
+        - Estructurar 
+        - Y manejar los elementos de HTML, a traves de CSS 
+    - Y ese concepto básico se llama "FLEXBOX".
+*/
+
+
+/*
+    - FLEXBOX 
+        - Es uno de los pilares ahora mismo para la maquetación de las páginas web
+        - Luego estan los "GRID-LAYOUT" 
+
+    - ¿FLEXBOX no tiene nada que ver con el Framework BOOTSTRAP verdad?
+        - NO 
+
+    - BOOTSTRAP 
+        - Se metio muy bien en la industria. Fue creado por twitter.
+        - Pero hasta el 2019, no metio FLEXBOX, en su estructura. 
+        - BOOTSTRAP no tiene ni idea a dia de hoy (en su estructura) que es un  GRID-LAYOUTS
+        - tiene muchas carencias. 
+    
+    - ¿Para que se monta Framework?
+        - Un framework se monta para que tu vayas "mas rápido" pero estando a la ultima. No 
+        para que tu vayas "mas rápido" estando hace 4 años atras.
+
+    - Un framework como BOOTSTRAP y otros framework estan para facitilitarte la vida. 
+
+    - Pero realmente lo que uno tiene que aprender es (hablando de CSS)
+        - Tiene que aprender el CSS Básico. Teniendo en cuenta que tienes que elegir 
+            - FLEXBOX
+            - o GRID-LAYOUT.
+        - Personalmente aprenderia primero "FLEXBOX" Y luego "GRD-LAYOUTS"
+    - Y teniendo estos dos conceptos. Mas todo los de CSS estandar
+        - SABES HACER DE TODO. No neceistas ni BOOTSTRAP, o otros Frameworks.
+        - Te podrias montar un BOOTSTRAP para que nos entendamos. 
+*/
+
+
+
+
+/*
+    - Hay gente que le encanta FLEXBOX. lo Hace todo con FLEXBOX. No hay ningun problema
+    - Hay gente que le encanta GRID-LAYOUT. Y lo hace todo con este. Tampoco hay ningun problema.
+    - Y hay gente como yo que intenta elegir el camino mas correcto a la hora de tratar 
+    un elemento, o tratar otro. 
+        - Hay elementos que se trata mejor con FLEXBOX Y
+        - Elementos que se trata mejor con GRID-LAYOUT
+    - Y tambien hay Gustos. 
+*/
+
+
+/*
+    - ¿En CSS FLEXBOX y GRID-LAYOUT son independientes esas dos ?
+        - A ver, dentro de CSS es como si te preguntaran
+            - ¿utilizas margin?
+            - ¿utilizas los FLEXBOX?
+            - ¿utilizas los GRID-LAYOUT?
+        - Es lo mismo. 
+    - Lo que pasa es que los  FLEXBOX y GRID-LAYOUT son conceptos que por si solos, son grandes.
+    - No podemos comparar las opciones que tienen un margin, con las opciones que tienen un FLEXBOX
+*/
+
+
+/*
+    - Entonces 
+        ¿un Framework que son ? 
+        ¿un conjunto de comandos, de reglas que esta integrado dentro del propio lenguaje CSS ?
+            - "Exacto". 
+    
+    - Una cosa es. En el trabajo somos 10 y 8 manejan BOOTSTRAP. ¿que hacen  los otros 2?
+        - Pues se ponen con BOOTSTRAP
+    
+    - Pero las empresas que afrontand proyectos con una perspectiva a largo plazo. 
+        - Se inventan su propio Framework. 
+    
+    - Si quieren un ejemplo. Miren la de APPLE.
+        - APPLE.COM o APPLE.ES
+        - ¿Creen que Apple utiliza BOOTSTRAP  u otro Framework ?
+            - No. Estas empresas se crean su propio Framework. Su propio CSS.
+            - Para evitar errores. Y para hablar al mismo nivel.
+    
+    - Para proyectos indivuales. BOOTSTRAP no sirve para nada. 
+        - El Framework que elegiria seria "BULMA".
+    
+*/
+
+/*
+    - ¿ Por qué BULMA? 
+        - Es un Framework tambien para CSS's. Pero es totalmente CSS.
+        - No tiene nada de JavaScript. No tiene nada de otro lenguaje por ahi en medio. 
+        - Es muy sencillo de aprender.
+        - Te ayuda a quitar trabajo. 
+    
+    -Trabajas con BULMA. Cuando eres un amo del CSS
+        - "Tengo que aprender CSS. Me voy a Bulma" --------- "NO" 
+        - Te vas a BULMA cuando quieres hacer un proyecto y no tienes ganas de montar tú CSS.
+        - Cosas de este estilo.
+    - O si te reunes con un grupo de 4 o 5 . 
+        - Vamos a hacer un proyecto. Vamos a elegir como proyecto BULMA
+        - ¿Por qué? 
+            - Porque no tengo una documentación, que os diga a todos que poner en las "clases"
+            y BULMA  ya los hace.
+        
+*/
+
