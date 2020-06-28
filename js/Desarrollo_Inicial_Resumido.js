@@ -1,3 +1,16 @@
+/* 
+    --------------------------------------------
+        Author : Osvaldo Aquino
+        NickName: Owi
+        RESUMEN CONTENIDO JAVASCRIPT 2020
+    --------------------------------------------
+*/
+
+
+
+
+
+
 
 
 /* 
@@ -22,6 +35,10 @@ console.log(` la letra que corresponde al DNI de número
 
 
 
+
+
+
+/***************************************************************************************************/
 
 /* 
     -----------------
@@ -59,10 +76,12 @@ console.log(mascotas.indexOf('gato'));
 
 
 
+/***************************************************************************************************/
+
 /* 
-    -------------------------
-        METODOS DE ARRAY []
-    -------------------------
+    ---------------------------
+        METODOS DE ARRAY [ ]
+    ---------------------------
 */
 
 var articulos = 
@@ -110,10 +129,11 @@ articulo.some();
 
 
 
+/***************************************************************************************************/
 
 /* 
     -------------------
-        OBJETOS
+        OBJETOS { }
     -------------------
 */
 
@@ -151,6 +171,7 @@ prueba01==prueba02   //false
 
 
 
+/***************************************************************************************************/
 
 /* 
     -------------------------
@@ -273,5 +294,175 @@ function personaEsmayoEdad(persona)
 
 
 
+
+
+
+/***************************************************************************************************/
+
+/* 
+    ------------------------
+        CONDICIONALES
+    ------------------------
+*/
+
+/* 
+    -lo que esta adentro del parentesis condiciona una acción
+*/
+
+
+
+/* 
+    ----------------------------
+        OPERADOR TERNARIO IF
+    ----------------------------
+*/
+
+//1er CASO- IF BÁSICO
+
+var numero = 10; 
+
+if(numero === 10)
+    {
+        var resultado = "Soy un diez";
+    }
+else 
+    { 
+        var resultado = "Nos soy un diez";
+    }
+
+console.log(resultado);
+
+
+
+
+
+//2do  CASO -  OPERADOR TERNARIO IF
+
+var numero = 10;
+
+/*
+    - "condición"     ?   "lo que va a ser verdad "   :  "lo falso"
+    - "numero === 10" ?         "Soy un diez"         :  "No soy un diez"
+*/
+var resultado = numero === 10 ? "Soy un diez" : "No soy un diez";
+
+console.log(resultado);
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************************************/
+
+/* 
+    ---------------------------------------------------------------------------------
+        ARRAY - BUCLE "FOR - OF" ESPECIAL - lECTURA Y UTILIZACIÓN DEL CONTENIDO DE UN ARRAY
+    ---------------------------------------------------------------------------------
+*/
+//ARRAY 
+var coches = ['Opel', 'Peugeot', 'seat', 'toyota']; 
+
+//Función para vizualizar por consola
+function marcasCoches2(coches)
+    {
+        console.log (`este fue uno de mis coches,${coches}`);
+    }
+
+
+for (var coche of coches)
+    {
+        /* 
+            - Se asigna a "coche" el contenido del array "coches". 
+        */
+            marcasCoches2(coche);
+    }
+
+
+
+
+
+
+
+
+/***************************************************************************************************/
+
+/* 
+    --------------------------------------------
+        POO - PROGRAMACIÓN ORIENTADA A OBJETOS
+    --------------------------------------------
+*/
+
+/* 
+    ------------------------
+        POO - OBJETOS { }
+    ------------------------
+*/
+
+/* 
+    - Se trae un "Objeto de la vida real" y se describe en código
+    - Se representa un "Objeto de la vida real" de manera "abstracta" . 
+    - No podemos tocar el objeto de la vida real pero si podemos "Definirla" mediante sus propiedades
+    - Todo objeto tiene propiedades(alto, color, bajo, duro, etc.)
+*/
+
+var coche = 
+    {
+        marca : 'Toyota',        //En POO. Se define PALABRAS CLAVES (O KEY) Y VALORES
+        modelo: 'C-HR',          // KEY (marca, modelo, anyo) - VALORES (Toyota, C-HR, 2020)
+        anyo :  '2020'  
+    };
+
+
+// Llamada a una propiedad. 
+Coche.marca;                    // Forma de acceder a la información del objeto coche.
+
+
+
+
+
+
+
+/* 
+    -------------------------------------
+        POO - MÉTODO DE LOS OBJETOS
+    -------------------------------------
+*/
+
+
+var coche = 
+    {
+        marca : 'Toyota',
+        modelo: 'C-HR',      
+        anyo :  '2020',
+        
+        /* 
+            METODO DEL OBJETO 
+        */
+        detalles_owi : function()
+        {
+            /* 
+                - A cualquier "fución" que estan dentro de un objeto se le conose como "Método"
+                - "this" - es una variable hace referencia al padre. El padre es coche. 
+                - "this" - es la representacion de ese objeto.
+            */
+            console.log(`${this.marca}: ${this.modelo} \\${this.anyo} `);
+        }
+    };
+
+
+
+//llamar a un metodo 
+coche.detalles_owi();       //Sin esta llamada no se ejecuta el método "detalles_owi" dentro del objeto "coche". 
+
+
+//LLamar a una propiedad
+coche.anyo;
 
 

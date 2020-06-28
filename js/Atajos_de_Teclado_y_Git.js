@@ -18,7 +18,12 @@
 /*
     - FORMATEO DE ERRORES
         - Con "shift + alt + F" - prettier hace el trabajo sucio y asegura los ;
+        - No me gusta como queda la estructura
     
+    - EJECUTAR TERMINAL DE SALIDA. 
+        - "Ctrl + shit + N"
+        - Ejecutamos solo una pequeña porción del codigo seleccionado
+        
     - GO LIVE
         - "shift + º" 
         - (Configuración :  Archivo --> Preferencias --> Métodos abreviados de teclado )
@@ -39,7 +44,11 @@
     ---------------------------------
 */
 
+/*
+    - ctrl + L 
+        - Limpiar pantalla 
 
+*/
 
 
 /*
