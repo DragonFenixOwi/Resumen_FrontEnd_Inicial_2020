@@ -31,16 +31,16 @@
     - **var** - **let** - **const**
 2. **Funciones**
     - Estructura Básica (Parámetros y Argumentos).
-    - Sintaxis de Funciones Declarativas y Expresivas.
+    - Sintaxis de los Funciones (Declarativas y Expresivas).
     - Funciones con Parámetros. 
 3. **Scope**
     - Global y Local.
 4. **Hoisting**
     - undefined.  
 5. **Buenas Prácticas**
-        - Estructura Modular. 
-        -  Explicación de porque no hay que utilizar un Magic Number.
-            - Codigo Junior vs Codigo Senior
+    - Estructura Modular. 
+    -  Explicación de porque no hay que utilizar un Magic Number.
+        - Codigo Junior vs Codigo Senior
 6. **Debil Tipado**
     -  Diferencia con el Fuerte tipado.
 7. **Coerción** 

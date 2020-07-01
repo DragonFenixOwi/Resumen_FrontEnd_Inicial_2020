@@ -26,7 +26,7 @@
 
     - ¿Cual es mejor usar?
         - Segun JavaScript, la idea es reducir el alcance.
-        - Pero que una variable tenga un largo alcance es una "Mala practica".
+        - Que una variable tenga largo alcance es una "Mala practica".
 */
 
 
@@ -45,7 +45,7 @@ var numero = 10;
 
 
 // STRINGS
-var numero = 'owilapesada';     // En HTML es "obligatorio" las comillas dobles "". En JS da igual.
+var numero = 'owilapesada';     // En HTML es "obligatorio" las comillas dobles "". En JavaScript da igual (simples o dobles).
 
 
 //VALOR BOOLEANOS  
@@ -97,7 +97,7 @@ let i2 = 1;
 
 
 
-// La constante no se puede asignar otra vez. No se puede reasignar en ningun momento
+// La constante no se puede asignar otra vez. 
 const LETRA =1;                     // Variable inicial declarada.
 LETRA = 2;                          // ERROR - No se puede reasignar
 
@@ -105,10 +105,6 @@ LETRA = 2;                          // ERROR - No se puede reasignar
 const NUMERO = [1,2,3];             // Variable inicial declarada.
 NUMERO = [12,12,33];                // ERROR - No se puede reasignar
 
-
-
-
-const NUMERO = [1,2,3]; 
 
 // PERO SI se puede insertar "AL FINAL-ultimaposición" un elemento nuevo dentro del array.
 NUMERO.push(4); 
@@ -125,8 +121,6 @@ NUMERO.push(4);
 
 /***************************************************************************************************************/
 
-
-
 /*
     ------------------
         FUNCIONES
@@ -141,10 +135,10 @@ NUMERO.push(4);
 */
 
 
-// FUNCIONES DECLARATIVAS (Son las utilizadas)
+// FUNCIONES DECLARATIVAS (Son las más utilizadas)
 function nuevaFuncion ()
         {
-            //Se crea de manaera simple la Función
+            // Se crea de manera simple la Función.
             return "Hola";
         }
 
@@ -154,13 +148,13 @@ function nuevaFuncion ()
 //FUNCIONES EXPRESIVAS 
 var nuevaFuncion = function  ()
         {
-            // Metemos una "Función" dentro de una "variable" 
+            // Se asigna una "Función" dentro de una "variable" 
             return "Hola";
         }
 
 
 // LLAMDA A LA FUNCIÓN. 
-nuevaFuncion();            //Si no se ejecuta la llamada. La función no se ejecuta.
+nuevaFuncion();           //Si no se declara y ejecuta la llamada. La funciones "Declarativas o Expresivas" no se ejecuta.
 
 
 
@@ -211,8 +205,6 @@ var suma3 = suma(789,89);
 
 /*****************************************************************************************************************/
 
-
-
 /*
     -----------------------------
         SCOPE GLOBAL Y LOCAL
@@ -223,7 +215,7 @@ var suma3 = suma(789,89);
 //SCOPE --> puede definirse como el alcance que una variable tendrá en tu código.
 
 
-//SCOPE GLOBAL (Tiene acceso en cada parte del código). Por lo general, se tienen las VARIABLES GLOBALES.
+//SCOPE GLOBAL (Tiene acceso en cada parte del código). Se declaran como  VARIABLES GLOBALES.
 var ciudad = 'Palma';
 var cp =07010;
 
@@ -234,7 +226,7 @@ function entorno(valor1,valor2)
     {
         // Tanto los parámetros "valor1" y "valor2", como la variable "cp". Son "VARIABLES LOCALES"
         var cp = 07010;       
-        console.log(cp + " " + ciudad);  // Del LOCAL puedes trabajar con variables del GLOBAL-. Pero no viceversa.
+        console.log(cp + " " + ciudad);  // Del LOCAL se puede trabajar con variables del GLOBAL-. Pero no viceversa.
     }
 
 
@@ -250,16 +242,16 @@ function entorno(valor1,valor2)
 
 /*****************************************************************************************************************/
 
-
-
 /*
     --------------------
         HOISTING
     -------------------
 */
+
+
 /*
-    - Los casos de HOISTING. Ocurre por una "mala practica". Y es un problema. 
-    - La Buena Practica se realiza cuando las "variables globales y las funciones" se declaren en la parte
+    - Los casos de HOISTING. Ocurren por una "mala practica". Y es un problema. 
+    - Las Buenas Practicas se realizan cuando las "variables globales y las funciones" se declaran en la parte
     superior de la linea de código.
 
 */
@@ -275,7 +267,7 @@ console.log(pueblo);          // Pero despues, al asignarle "Algaida". Ya se ve 
 
 /*
     - ¿Pero que hace realmente nuestro navegador cuando se encuentra con esto?
-        - "console.log()" Cuando encuentra una variable que no la han declarado.
+        - "console.log()"  --> Cuando encuentra una variable que no la han declarado.
             - A esa variable, le asigna el "undefined"
  */
 
@@ -430,3 +422,66 @@ function personaEsmayoEdad(persona)
         DEBIL TIPADO
     -------------------------
 */
+
+/* 
+    - Son Cosas raras que hace JavaScript. Que si no sabes te puedes quedar un poco loco.
+    - Son casos en el que hemos escrito mal pero igual busca un camino para ejecutar una operación. 
+*/
+
+
+10 + "10";
+//"1010"         - Resultado
+
+/*
+    - ¿Que ocurre aqui?
+        - Pues, es imposible sumar un "número" y un "string". Por lo que 
+        - Utiliza el simbolo "+" para concatener.
+        - Por eso, el resultado no es un numero. 
+        - No se suma, se concatena 
+*/
+
+
+10 * "10";
+//100          - Resultado
+
+/* 
+    - Mientras que cuando ve un multiplicador. 
+    - Es lo que hace es. Mira. Esta claro que no me quiere multiplicar. Pues entonces, lo voy a multiplicar
+    de verdad.
+    - 
+*/
+
+
+
+/* true = 1    JavaScript lo suma*/
+10 + true;
+//11            - Resultado
+
+
+
+/*
+    - Hay otros lenguajes que si ocurre estos casos. No lo va hacer.
+        - No va a buscar otro camino para hacer algo. 
+        - Sino que va a implantar un enorme  error en la pantalla o en consola o en donde sea.
+        - Y van a quedar ahi quietos, hasta que se resuelva eso. 
+        - Eso se llama FUERTE TIPADO.
+*/
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************/
+
+
+/* 
+    ---------------------------------
+        COERCIÓN EN JAVASCRIPT
+    --------------------------------
+*/
+
+
+
