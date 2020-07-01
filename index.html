@@ -35,6 +35,10 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
+    <!-- Debe ir antes de tus estilos.ss -->
+    <!-- TECLADO ABREVIADO   link:css  -->
+    <link rel="stylesheet" href="css/reset.css">
+
 
     <!-- Nuestro Framework de CSS preferido, mi preferido es BULMA -->
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />    
@@ -65,6 +69,59 @@
              * Bloque Links de Navegación Principal
              *
             -->
+            <!--   TECLADO ABREVIADO     a[href="#"]{links}*5   -->
+
+            <!--
+                - No se utiliza ni "list" que son bloques, ni "ul"
+                - Porque la "a-href", son in-line y no es necesario
+                - Si lo quiero en horizontal no utilizo "list" que son bloques
+              -->
+
+              <a href="#">links</a>
+              <a href="#">links</a>
+              <a href="#">links</a>
+              <a href="#">links</a>
+              <a href="#">links</a>
+  
+  
+  
+              <!-- 
+                  - FLEXBOX funciona solo con hijos directos
+                    - "nav" es el padre de las a-href
+                    - "body"  es el padre 
+                      - del "header", 
+                      - del "main" 
+                      y del "footer"
+                    - Pero "body" no es el padre del "nav". Es decir, no es su hijo directo.
+                  
+                  - FLEXBOX no llega a los hijos de 
+                    - header (que es el "nav") 
+                    - a los hijos de main (que son "section" y "article"),
+                    - y a los hijos del footer 
+                  
+                  
+                - ¿quien es el padre directo de "nav"?
+                  - "header"
+                  - Si yo quiero que le pase algo a "nav". 
+                    - Tengo que hablar con "header".
+                    - No tengo que hablar con "nav"
+
+                  - De forma mas general. 
+                    - Si yo tengo que darle ordenes. Al hijo
+                    - El padre se las da. 
+
+                - Ahora mismo tanto el "header" como el "nav" son iguales porque no hay 
+                ninguna información. 
+                  - No se percibira diferencia.
+                  -  Pero cuando exista mas información se tiene que tener muy encuenta la jerarquia de PADRE-HIJO.
+                
+                - Al "body", como al "html" o al "header"  no se les ocurra poner un "class" o 
+                un "id"
+                - "body", "header", "footer" y "html" (o al resto) solo hay "Uno". A nadie que se le ocurra poner 
+                  - "id"
+                  - o "class" para buscarlos.
+                  -  En el caso de "main" haber "dos". Pero con el resto siempre hay "uno" 
+              -->
           </nav>
       
     </header>

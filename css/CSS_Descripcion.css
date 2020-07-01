@@ -230,3 +230,48 @@
         
 */
 
+
+
+
+body
+    {
+        /*Lo primero que hay que decirle a body. Es que es un FLEXBOX*/
+        display : flex;
+
+        /* 
+            - Todas las etiquetas de HTML tienen un "display"
+                - display : block
+                - display : line
+                - entre otros. 
+            - Ahora, acabo de cambiar la disposición del "body" a un "display : flex" 
+                - Y esto, lo convierte en un FLEXBOX.
+            - Ahora, cuando conviertes a "body" en un FLEXBOX.
+                - Es que recien ahora, puedes dar ordenes a sus hijs.
+        */
+
+
+        /* ORDEN EN HORIZONTAL - RESPONSIVE*/
+        justify-content: center;
+
+        /* ORDEN EN VERTICAL - RESPONSIVE*/ 
+		align-items: center;
+		
+        /*
+			- Las personas que trabajamos en 2020. 
+				- Trabajamos con FlexBox que ya son responsive. 
+				- Trabajamos con Grid que ya son responsive.
+				- Y cuando necesitamos una ayuda extra, nos vamos a "arrobamedia" - "Media Query"
+				- Pero no es el "Flujo" de nuestro trabajo.
+			- El presente es esto "Flexbox" y "Grid". Estos dos ya establecen las bases de Responsive.  
+				- Los media query y tal, vinieron para ayudar cuando no habia Flexbox. 
+		*/
+        
+        /* Viewport  height  - Vh */
+        height : 100vh ;
+
+        /* Color de fondo */
+        background-color: #ccc9c9;
+
+
+    }
+
