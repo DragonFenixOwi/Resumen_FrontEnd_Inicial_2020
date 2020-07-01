@@ -20,10 +20,32 @@
 ## II - Carpeta "js" de JavaScript
 
 ### Comandos de Atajos de Teclado y Git 
- 1. Formateo de Errores.
- 2. Go Live.
+ 1. **Generales**
+    - Formateo de Errores.
+    - Terminal de salida
+    - Go Live.
+2. **Git**
 
-### Desarrollo Inicial Resumido
+### Desarrollo Inicial Básico
+1. Variables y Constante. 
+    - **var** - **let** - **const**
+2. **Funciones**
+    - Estructura Básica (Parámetros y Argumentos).
+    - Sintaxis de Funciones Declarativas y Expresivas.
+    - Funciones con Parámetros. 
+3. **Scope**
+    - Global y Local.
+4. **Hoisting**
+    - undefined.  
+5. **Buenas Prácticas**
+        - Estructura Modular. 
+        -  Explicación de porque no hay que utilizar un Magic Number.
+            - Codigo Junior vs Codigo Senior
+6. **Debil Tipado**
+    -  Diferencia con el Fuerte tipado.
+7. **Coerción** 
+    - Implicita vs Explicita
+### Desarrollo Inicial Intermedio
  1. Visualización de datos : 
     - **document.write**()
     - **console.log**()
@@ -33,10 +55,14 @@
  3. Métodos Array
     - **filter**(), **map**(), **find**(), **forEach**(), **some**()
  4. Objetos.
- 5. **Buenas Prácticas**
-    - Estructura Modular
-    -  Explicación de porque no hay que utilizar un Magic Number
-    
+ 5. Condicionales. 
+    - Operador Ternario if
+ 6. Array - Bucle
+    - **for - of** 
+ 7. Programación Orientada a Objetos (POO)
+    - Objetos { }
+    - Metódo de los Objetos 
+
 
 ## III - Carpeta "css" de CSS
 1. CSS_Descripción

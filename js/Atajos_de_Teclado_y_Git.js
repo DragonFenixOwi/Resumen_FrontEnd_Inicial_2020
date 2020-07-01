@@ -21,7 +21,7 @@
         - No me gusta como queda la estructura
     
     - EJECUTAR TERMINAL DE SALIDA. 
-        - "Ctrl + shit + N"
+        - "Ctrl + Alt + N"
         - Ejecutamos solo una pequeña porción del codigo seleccionado
         
     - GO LIVE
@@ -69,4 +69,8 @@
 		Git status              
         git commit –m
         git push -u origin master
+*/
+
+/*
+
 */

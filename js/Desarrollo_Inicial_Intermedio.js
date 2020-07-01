@@ -32,7 +32,12 @@ console.log(` la letra que corresponde al DNI de número
         Entonces el DNI es: "${valor_dni}}"`);
 
 
+/* CARACTER ESPECIALES - \n \t   */
+'primera linea \n segunda linea \n'
 
+/* CARACTER DE ESCAPE - Escapar de doble comillas*/
+var parrafo = "Libro de \"Autor\" de 1988";
+console.log(parrafo);
 
 
 
@@ -167,130 +172,6 @@ var prueba02 =
 prueba01==prueba02   //false
 
 
-
-
-
-
-/***************************************************************************************************/
-
-/* 
-    -------------------------
-        BUENAS PRACTICAS
-    -------------------------
-*/
-
-
-
-/* 
-    -------------------------
-        MAGIC NUMBER 
-    -------------------------
-*/
-
-
-/*----------------------------CODIGO JUNIOR----------------------------*/
-//objetos
-
-var carlos = 
-    {
-        nombre : 'Carlos',
-        apellido : 'Torres',
-        profesion : 'Arquitecto',
-        dni : '6536784321',
-        edad : '43',
-        hijos : false,
-        español: true,
-        trabajo_activo : false,
-        carnet_coche : true, 
-        linkedin: true
-    }
-
-// vamos a averiguar "si una persona es mayor de edad"
-function mayor_edad(persona)
-    {
-        if(persona.edad >= 18)   //MAGIC NUMBER - Haz sacado de la manga el numero "18"
-            {
-                document.write(`${persona.nombre} es mayor de edad`);
-            }
-        else
-            {
-                document.write(`${persona.nombre} no es mayor de edad`);
-            }
-    }
-
-
-/* ------EN EL CODIGO DE ARRIBA HAY BASTANTES FALLOS---------*/ 
-
-
-
-/*----------------------------CODIGO SENIOR----------------------------*/
-
-/* 
-    BUENAS PRACTICAS 
-        - Evitar "MAGIC NUMBER"  
-        - Intentar Trabajar siempre  con una "ESTRUCTURA MODULAR"
-
-*/
-
-/*
-    ---------------------------
-        VARIABLES GLOBABLES
-    ---------------------------
-*/
-const MAYORIA_EDAD_ESPANYA = 18;
-
-var carlos = 
-    {
-        nombre : 'Carlos',
-        apellido : 'Torres',
-        profesion : 'Arquitecto',
-        dni : '6536784321',
-        edad : '43',
-        hijos : false,
-        español: true,
-        trabajo_activo : false,
-        carnet_coche : true, 
-        linkedin: true
-    }
-
-
-/*
-    ------------------
-        FUNCIONES
-    ------------------
-*/
-// Funcion logica de la mayoria de edad
-function mayorEdad(persona)
-    {
-        return persona.edad >= MAYORIA_EDAD_ESPANYA;
-    }
-
-//Funcion imprimir 
-function imprimir(persona)
-    {
-        if (mayorEdad(persona)) //si la funcion "mayorEdad" hace un return "true" entra al if
-            {
-                document.write(`${persona.nombre} es mayor de edad`);
-            }
-        else
-            {
-                document.write(`${persona.nombre} no es mayor de edad`);
-            } 
-        }
-
-
-/* 
-    ------------------------
-        FUNCIÓN PRINCIPAL
-    ------------------------
-*/
-
-
-// funcion principal
-function personaEsmayoEdad(persona)
-        {
-            imprimir(persona);
-        }
 
 
 
