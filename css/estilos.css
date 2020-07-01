@@ -9,3 +9,20 @@
 
 
 
+body
+    {
+        /*Lo primero que hay que decirle a body. Es que es un FLEXBOX*/
+        display : flex;
+
+        /* ORDEN EN HORIZONTAL - RESPONSIVE*/
+        justify-content: center;
+
+        /* ORDEN EN VERTICAL - RESPONSIVE*/ 
+		align-items: center;
+
+        /* Viewport  height  - Vh */
+        height : 100vh ;
+
+        /* Color de fondo */
+        background-color: #ccc9c9;
+    }

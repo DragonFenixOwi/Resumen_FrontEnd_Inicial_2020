@@ -1,9 +1,23 @@
 # Resumen_FrontEnd_Inicial_2020
 - Plantilla con descripción básica para proyectos de FrontEnd 
 
+## I - Carpeta " Registro Complementario"
+1. Recopilación de Imagenes
+    - **CallBack** (Suma, Date)
+    - **FlexBox** - Responsive - FirexFox Developer
+        - Body 
+        - Caso Header (ViewPort height)
+        - Nav
+        - Padre - Hijos.
+    - **JSON**
+    - **Solución** - No ejecuta console.log en Chrome
+    - **UI-UX**.
+2. PDF - Ayuda
+    - Código CSS3.
+    - Código HTML5.
+    - Fonts.
 
-
-## I - Carpeta "js" de JavaScript
+## II - Carpeta "js" de JavaScript
 
 ### Comandos de Atajos de Teclado y Git 
  1. Formateo de Errores.
@@ -24,12 +38,13 @@
     -  Explicación de porque no hay que utilizar un Magic Number
     
 
-## II - Carpeta "css" de CSS
+## III - Carpeta "css" de CSS
 1. CSS_Descripción
     - Navegadores.
     - Reset
     - Descripción de Nociones Básicas CSS (Position, FlexBox, Grid-Layout, Framework Bulma y Bootstrap)
-2. Estilos
+2. Estilos.
+    - FlexBox - Padre "body"
 
 
 ## III - Descripción Ruta de Aprendizaje del frontend
