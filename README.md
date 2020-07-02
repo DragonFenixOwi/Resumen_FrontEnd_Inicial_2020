@@ -27,29 +27,29 @@
 2. **Git**
 
 ### Desarrollo Inicial Básico
-1.**Valores**
+ 1. **Valores**
     - Valores considerados Falsos.
     - Valores considerados Verdaderos.
-2. **Operadores**
+ 2. **Operadores**
     - Básicos - Igualdad - Desigualdad - Asignación - Comparación
-3. Variables y Constante. 
+ 3. Variables y Constante. 
     - **var** - **let** - **const**
-4. **Funciones**
+ 4. **Funciones**
     - Estructura Básica (Parámetros y Argumentos).
     - Sintaxis de los Funciones (Declarativas y Expresivas).
     - Función con Parámetros. 
     - Funciones de JavaScript - Palabras reservadas.
-5. **Scope**
+ 5. **Scope**
     - Global y Local.
-6. **Hoisting**
+ 6. **Hoisting**
     - undefined.  
-7. **Buenas Prácticas**
+ 7. **Buenas Prácticas**
     - Estructura Modular. 
     -  Explicación de porque no hay que utilizar un Magic Number.
         - Codigo Junior vs Codigo Senior.
-8. **Debil Tipado**
+ 8. **Debil Tipado**
     -  Diferencia con el Fuerte tipado.
-9. **Coerción** 
+ 9. **Coerción** 
     - Implicita 
     - Explicita
 ### Desarrollo Inicial Intermedio
