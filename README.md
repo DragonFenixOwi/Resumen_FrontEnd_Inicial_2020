@@ -1,5 +1,5 @@
 # Resumen_FrontEnd_Inicial_2020
-- Plantilla con descripción básica para proyectos de FrontEnd 
+- Plantilla con Descripción básica para proyectos de FrontEnd 
 
 ## I - Carpeta " Registro Complementario"
 1. Recopilación de Imagenes
@@ -27,24 +27,31 @@
 2. **Git**
 
 ### Desarrollo Inicial Básico
-1. Variables y Constante. 
+1.**Valores**
+    - Valores considerados Falsos.
+    - Valores considerados Verdaderos.
+2. **Operadores**
+    - Básicos - Igualdad - Desigualdad - Asignación - Comparación
+3. Variables y Constante. 
     - **var** - **let** - **const**
-2. **Funciones**
+4. **Funciones**
     - Estructura Básica (Parámetros y Argumentos).
     - Sintaxis de los Funciones (Declarativas y Expresivas).
-    - Funciones con Parámetros. 
-3. **Scope**
+    - Función con Parámetros. 
+    - Funciones de JavaScript - Palabras reservadas.
+5. **Scope**
     - Global y Local.
-4. **Hoisting**
+6. **Hoisting**
     - undefined.  
-5. **Buenas Prácticas**
+7. **Buenas Prácticas**
     - Estructura Modular. 
     -  Explicación de porque no hay que utilizar un Magic Number.
-        - Codigo Junior vs Codigo Senior
-6. **Debil Tipado**
+        - Codigo Junior vs Codigo Senior.
+8. **Debil Tipado**
     -  Diferencia con el Fuerte tipado.
-7. **Coerción** 
-    - Implicita vs Explicita
+9. **Coerción** 
+    - Implicita 
+    - Explicita
 ### Desarrollo Inicial Intermedio
  1. Visualización de datos : 
     - **document.write**()

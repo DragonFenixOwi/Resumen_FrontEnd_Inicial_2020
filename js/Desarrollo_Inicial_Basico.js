@@ -8,8 +8,131 @@
 
 
 
+/*
+    -----------------
+        VALRORES 
+    -----------------
+*/
 
 
+
+/*
+    - ¿Qué se considera un valor FALSO y que se consifera un valor  VERDADERO dentro de los BOOLEANOS?    
+            # FALSO
+                - Datos que directamente son Falsos 
+                    - false
+                    - 0 
+                    - Undefined
+                    - " "                       un dato vacío es Falso. 
+                    - Null                  
+                    - NaN                       No es un número. Tambien es falso. 
+                - Datos númericos
+                    - 3>10                      3 No es mayor a 10. Esto tambien es falso.
+
+            # TRUE 
+                - []                    Cualquier inicio de un array es verdadero
+                - {}                    Cualquier objeto es verdadero
+                - 1 
+                - 2,3,4                 todos los numero que no son cero 
+                - Function () {}        una funcion es verdadero
+* /
+
+
+//- Si en algun momento tenes alguna duda. La Función con palabra reservada "Boolean()" las puede aclarar
+
+
+
+
+
+
+/*
+    -----------------
+        OPERADORES 
+    -----------------
+*/
+
+
+/*
+    TIPOS DE OPERADORES 
+
+        # OPERADORES BÁSICAS
+            +                       Tiene dos funciones. Con números "suma" y con String "une-concatena"
+            -                       Resta
+            *                       Multiplica
+            /                       Divide
+            %                       Operadore de Resto. 
+
+        # OPERADORES DE IGUALDAD 
+            =                       Operador de Asignación.
+            ==                      Operador de Comparación. No mira el tipo de valor
+            ===                     Operador de Comparación. Estrictamente iguales. Mira el "valor" o contenido, como el "tipo" de valor
+        
+        # OPERADOR DE DESIGUALDAD
+            =!                      Operador de "No es igual"
+            ==!                     Estrictamente desiguales. Devuelve "true" si no son iguales ni en tipo, ni en contenido o valor
+        
+        # OPERADORES DE ASIGNACIÓN 
+            =                       Asigna un valor a una varieble
+            +=                      Ejemplo mas abajo. Del tipo incremental. Asigna una operación de suma. 
+            *=                      Asigna una operación de multiplicación de un valor a una misma variable.
+            -=                      Asigna una operación de resta de un valor una misma variable.
+            /=                      Asigna una operación de división de un valor a una misma variable.
+        
+        # OPERADORES DE COMPARACIÓN 
+            >                       Mayor que
+            <                       Menor que 
+            >=                      Mayor o igual que. (el signo igual siempre se pone despues)
+            <=                      Menor o igual que.
+*/
+
+
+
+
+
+//OPERADORES DE IGUALDAD Y DESIGUALDAD
+var nombre = 'asignamos a nombre'
+
+// == 
+5 == '5'            //  No compara el tipo 
+//true                  Nos sale tre. ¿por qué? Porque el "doble igual" no mira el tipo de valor. Solo mira el valor
+
+// ===
+5 === "5";          //  Compara el tipo (String o número) y el contenido (5 o 6 o 7)
+// False                Mira el "valor" como el "tipo de valor".  
+
+// !=
+5 != 5;             //  Todo lo que asignemos una exclamación hacia abajo "!". Le asignamos un "no"
+//false
+
+
+
+
+// OPERADORES DE ASIGNACIÓN. CASO "+="
+var numero = 10;
+numero = numero + 1;    //11
+numero +=1;             //12        Aqui podemos modificar el valor sumado. Por ejemplo en vez de 1 puede ser 5.
+numero++;               //13        Aqui siempre le sumamos 1 
+numero--;               //12        Aqui siemper le restamos 1  
+
+
+
+
+//OPERADORES DE COMPARACIÓN 
+5 > 10;         // false. 5 no es mayor a 10
+
+5 < 10;         // true.  5 si es menor a 10 
+
+5 >= 5;         //true    5 es igual a 5
+
+5 <= 5;         //true    5 es igual a 5
+
+
+
+
+
+
+
+/*******************************************************************************************************************/
 
 /*
     -----------------------------------------
@@ -45,7 +168,8 @@ var numero = 10;
 
 
 // STRINGS
-var numero = 'owilapesada';     // En HTML es "obligatorio" las comillas dobles "". En JavaScript da igual (simples o dobles).
+var numero = 'owilapesada';     /*  - En HTML es "obligatorio" las comillas dobles "". En JavaScript da igual 
+                                        - (simples o dobles). Pero es bueno utilizar simples para diferenciar */
 
 
 //VALOR BOOLEANOS  
@@ -119,7 +243,7 @@ NUMERO.push(4);
 
 
 
-/***************************************************************************************************************/
+/*******************************************************************************************************************/
 
 /*
     ------------------
@@ -154,7 +278,8 @@ var nuevaFuncion = function  ()
 
 
 // LLAMDA A LA FUNCIÓN. 
-nuevaFuncion();           //Si no se declara y ejecuta la llamada. La funciones "Declarativas o Expresivas" no se ejecuta.
+nuevaFuncion();           /* Si no se declara y ejecuta la llamada. La funciones "Declarativas o Expresivas" 
+                            no se ejecuta.*/
 
 
 
@@ -196,6 +321,21 @@ var suma1 = suma(45,456);
 var suma2 = suma(345,12);
 var suma3 = suma(789,89);
 
+
+
+/*
+    -----------------------------------------
+        FUNCIONES - PALABRAS RESERVADAS
+    -----------------------------------------
+*/
+
+//Las letras mayusculas "S" de String y "N" de Number son obligatorias.
+
+Number("10");       // Convierte el string "10" en un número 10.
+
+String(10);         // Convierte el número 10 en un string "10".
+
+Boolean();          // Función que me devuelve  Verdadero o Falso. 
 
 
 
@@ -446,8 +586,7 @@ function personaEsmayoEdad(persona)
 
 /* 
     - Mientras que cuando ve un multiplicador. 
-    - Es lo que hace es. Mira. Esta claro que no me quiere multiplicar. Pues entonces, lo voy a multiplicar
-    de verdad.
+    - Re-convierte el string "10" en un número para poder multiplicar. 
     - 
 */
 
@@ -477,11 +616,60 @@ function personaEsmayoEdad(persona)
 /*******************************************************************************************************************/
 
 
+
 /* 
-    ---------------------------------
-        COERCIÓN EN JAVASCRIPT
-    --------------------------------
+    ----------------------------------------
+        COERCIÓN (IMPLICITA Y EXPLICITA)
+    ----------------------------------------
 */
+
+// COERCIÓN --> Se define como la acción de forzar un "valor" a que se comporte como otro tipo "valor"
+
+/*
+    - Un ejemplo de la Importancia de  la Coerción Explicita. Podriamos encontrar en :
+        - El FORMULARIO de una web. 
+    - Cada vez que le piden el teléfono, edad  o cualquier dato númerico. 
+        -El "imput" que recoge esa información a través de HTML. Y las convierte todas a String.
+    - Por ejemplo. Si yo quiero utilizar esa edad . 
+        - Y la  quiero utilizar, para poder realizar una simple resta y saber en que año nació. 
+        - Para poder trabajar. Primero necesito una COERSIÓN EXPLICITA  de ese dato. Para poder elevorar una resta.  
+*/
+
+
+
+
+
+// COERCIÓN IMPLICITA  - las que JavaScript genera por si solo.
+var implicita = 10 + "10";
+
+/*
+    - El resultado de la concatenación de  10(número) + "10"(string). Se sabe que es "1010" 
+        - Porque se ha pasado de un "número" a un "string" por el DEBIL TIPADO. 
+        - Ha re-convertido un valor para conseguir algo. Y eso lo hace de manera automática
+    
+    -  Y a esto se le llamada "Coerción Implicita"
+        - JavaScript transforma valores. Para conseguir ese DEBIL TIPADO. 
+*/
+
+
+
+
+//COERCIÓN EXPLICITA - son las que nosotros las obligamos. Porque necesitamos que trabajen de esa manera
+var explicito = 10 + Number("10");
+// 20
+
+/*
+    - Nosotros, a través de Number, obligamos a ese string a convertirse en un número. 
+    - Ahora mismo ese string "10" no era un número, era una palabra. Por mucho que haya un 1 y un 0
+*/
+
+
+
+var explicito = String(10) + "10";     // Se convierte el número 10 a string. Para concatenarlas.
+// "10" + "10"
+// "1010"
+
+
 
 
 
