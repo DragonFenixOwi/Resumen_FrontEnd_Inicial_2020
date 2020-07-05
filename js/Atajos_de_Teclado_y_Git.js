@@ -71,6 +71,11 @@
         git push -u origin master
 */
 
-/*
-
+/* 
+    - CASO AISLADO - ERROR al intentar realizar un git pull (merge + ) 
+        - Con el fin de unir mi repositorio local de Visual Studio Code 
+        - Con el repositorio en la nube de github  
+    - Y tiene que ver en la manera como github crea los primeros archivos
+    - COMANDO GIT 
+        - git pull origin master --allow-unrelated-historiesg
 */

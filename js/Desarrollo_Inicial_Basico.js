@@ -9,9 +9,9 @@
 
 
 /*
-    -----------------
-        VALRORES 
-    -----------------
+    ------------------------
+        VALRORES BOOLEANOS
+    ------------------------
 */
 
 
@@ -39,6 +39,113 @@
 
 
 //- Si en algun momento tenes alguna duda. La Función con palabra reservada "Boolean()" las puede aclarar
+
+
+
+
+
+/********************************************************************************************************************************/
+/*
+    -------------------------------------------------
+        TIPOS DE DATOS (VAR - LET - CONST) Y VALORES
+    -------------------------------------------------
+*/
+
+
+/*
+    IDEAL
+        - Utilizar "var" en el SCOPE GLOBAL.
+        - Utilizar "let" en Bloques locales (Bucles, funciones, etc.) o SCOPE LOCAL. 
+        - Utilizar "const" para evitar malas prácticas como "MAGIC NUMBER"
+
+    - ¿Cual es mejor usar?
+        - Segun JavaScript, la idea es reducir el alcance.
+        - Que una variable tenga largo alcance es una "Mala practica".
+*/
+
+
+
+
+
+/* 
+    --------------------------------------
+        VARIABLES LARGO ALCANCE - "VAR"
+    --------------------------------------
+*/
+
+
+//VALOR  NÚMERO
+var numero = 10;
+
+
+// STRINGS
+var numero = 'owilapesada';     /*  - En HTML es "obligatorio" las comillas dobles "". En JavaScript da igual 
+                                        - (simples o dobles). Pero es bueno utilizar simples para diferenciar */
+
+
+//VALOR BOOLEANOS  
+var verdadero = true; 
+var falso  = false;
+
+
+
+/* 
+    - VALORES TIPO OBJETO
+        1ro. Lista o Array o Arreglo 
+        2do. Objeto 
+*/ 
+
+// ARRAY
+var lista_array_arreglo = [23,45,12,89,90];
+
+// OBJETO
+var objeto = 
+    {
+        nombre: 'Toni',
+        ciudad: 'Llumajor',
+        cp: 07620
+    }
+
+
+
+
+
+/* 
+    -----------------------------------------
+        VARIABLES DE CORTO ALCANCE - "LET"
+    -----------------------------------------
+*/
+
+
+// En el Scope Global "var" y "let" son iguales 
+var i1 = 1;
+let i2 = 1;
+
+
+
+
+/* 
+    -------------------------------------------
+        CONSTANTE DE CORTO ALCANCE - "CONST"
+    -------------------------------------------
+*/
+
+
+
+// La constante no se puede asignar otra vez. 
+const LETRA =1;                     // Variable inicial declarada.
+LETRA = 2;                          // ERROR - No se puede reasignar
+
+//ESTO NO SE PUEDE HACER ES UN ERROR
+const NUMERO = [1,2,3];             // Variable inicial declarada.
+NUMERO = [12,12,33];                // ERROR - No se puede reasignar
+
+
+// PERO SI se puede insertar "AL FINAL-ultimaposición" un elemento nuevo dentro del array.
+NUMERO.push(4); 
+
+
+
 
 
 
@@ -136,107 +243,6 @@ numero--;               //12        Aqui siemper le restamos 1
 
 
 
-
-
-/********************************************************************************************************************************/
-/*
-    -----------------------------------------
-        TIPOS DE DATOS (VAR - LET - CONST)
-    -----------------------------------------
-*/
-
-
-/*
-    IDEAL
-        - Utilizar "var" en el SCOPE GLOBAL.
-        - Utilizar "let" en Bloques locales (Bucles, funciones, etc.) o SCOPE LOCAL. 
-        - Utilizar "const" para evitar malas prácticas como "MAGIC NUMBER"
-
-    - ¿Cual es mejor usar?
-        - Segun JavaScript, la idea es reducir el alcance.
-        - Que una variable tenga largo alcance es una "Mala practica".
-*/
-
-
-
-
-
-/* 
-    --------------------------------------
-        VARIABLES LARGO ALCANCE - "VAR"
-    --------------------------------------
-*/
-
-
-//VALOR  NÚMERO
-var numero = 10;
-
-
-// STRINGS
-var numero = 'owilapesada';     /*  - En HTML es "obligatorio" las comillas dobles "". En JavaScript da igual 
-                                        - (simples o dobles). Pero es bueno utilizar simples para diferenciar */
-
-
-//VALOR BOOLEANOS  
-var verdadero = true; 
-var falso  = false;
-
-
-
-/* 
-    - VALORES TIPO OBJETO
-        1ro. Lista o Array o Arreglo 
-        2do. Objeto 
-*/ 
-
-// ARRAY
-var lista_array_arreglo = [23,45,12,89,90];
-
-// OBJETO
-var objeto = 
-    {
-        nombre: 'Toni',
-        ciudad: 'Llumajor',
-        cp: 07620
-    }
-
-
-
-
-
-/* 
-    -----------------------------------------
-        VARIABLES DE CORTO ALCANCE - "LET"
-    -----------------------------------------
-*/
-
-
-// En el Scope Global "var" y "let" son iguales 
-var i1 = 1;
-let i2 = 1;
-
-
-
-
-/* 
-    -------------------------------------------
-        CONSTANTE DE CORTO ALCANCE - "CONST"
-    -------------------------------------------
-*/
-
-
-
-// La constante no se puede asignar otra vez. 
-const LETRA =1;                     // Variable inicial declarada.
-LETRA = 2;                          // ERROR - No se puede reasignar
-
-//ESTO NO SE PUEDE HACER ES UN ERROR
-const NUMERO = [1,2,3];             // Variable inicial declarada.
-NUMERO = [12,12,33];                // ERROR - No se puede reasignar
-
-
-// PERO SI se puede insertar "AL FINAL-ultimaposición" un elemento nuevo dentro del array.
-NUMERO.push(4); 
 
 
 

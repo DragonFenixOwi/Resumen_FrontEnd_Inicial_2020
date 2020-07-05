@@ -178,7 +178,7 @@ prueba01==prueba02   //false
 
 
 
-/***************************************************************************************************/
+/******************************************************************************************************************/
 
 /* 
     ------------------------
@@ -186,9 +186,54 @@ prueba01==prueba02   //false
     ------------------------
 */
 
-/* 
-    -lo que esta adentro del parentesis condiciona una acción
+// CONDICIONALES ---- > lo que esta adentro del parentesis condiciona una acción
+
+/*
+    ----------------------------
+        CONDICIONAL IF BÁSICO 
+    ----------------------------
 */
+
+var num =1;
+
+if (true)
+    {
+        console.log('Dime Buenos dás');
+    }
+
+if (false)
+    {
+        console.log('No me imprime Buenos dás');
+    }
+
+
+
+
+
+/*
+    ----------------------------------------
+        CONDICIONALES IF-ELSE  Y   ELSE-IF
+    ----------------------------------------
+*/
+
+
+var tiempo = 'sol';       // la variable num se convertira depende del valor que le pongamos
+
+
+// si la condición que esta entre parentesis es verdad ejecuto lo que esta adentro del "if".
+if (tiempo == 'sol')  
+    {
+        console.log('Buenos días');
+    }
+else if (tiempo == 'nublado')   // pero despues, sigue ejecutando las condionales que siguen,
+    {
+        console.log(' Esta nublado, no salgas a la calle');
+    }
+else
+    {
+        console.log(' Buenos Noches');
+    }
+
 
 
 
@@ -235,11 +280,51 @@ console.log(resultado);
 
 
 
+/*
+    ------------------------
+        CONDICIONAL SWITCH
+    ------------------------
+*/
+
+
+/*
+    - Tiene  diferentes casos, a partir de  una variable. Ejemplo, la variable "tiempo"
+    - Los "case (condición)" establecen, cuando se ejecuta cada linea de codigo.   
+    - Si una condición se cumple, se ejecuta lineas de codigo. En el que pueden existir "iF", "funciones", "for", etc.
+    -  Poner un "break" en cada "case" es oblitatorio.
+        - Si un "case" se cumple. El "break" al final rompe o corta todos los "cases" o el default del switch.
+        - El break da por finalizada la ejecución del condicional "switch".     
+*/
+
+var tiempo = 'sol'; 
+
+switch(tiempo)
+    {
+        case 'sol':                       //Sintaxis: se utiliza ":" dos puntos
+            console.log('');
+            idiomas();                    // Se puede añadir Funciones. Por ejemplo uno que devuelva "buenos dias" en 20 idiomas. 
+            break;                        // Aquí si se cumple "sol". Rompemos "switch" y nos vamos.   
+        case 'nublado' && 'tarde':        // Al romper en el case "sol" no pasa por los otros casos (nublado, luna)
+            console.log('No salgas a la calle');
+            break;                  
+        case 'madrugada'>'luna':
+            console.log('Buenas noches');
+            break;
+        default:                          //(opcional) : Si ningun case se cumple. Se ejecuta "default".  
+            console.log('Estamos en Jupiter');
+    }
 
 
 
 
 
+
+
+
+
+
+
+    
 /***************************************************************************************************/
 
 /* 

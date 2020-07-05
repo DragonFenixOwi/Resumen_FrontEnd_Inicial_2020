@@ -2,7 +2,7 @@
 - Plantilla con Descripción básica para proyectos de FrontEnd 
 
 ## I - Carpeta " Registro Complementario"
-1. Recopilación de Imagenes
+1. **Recopilación de Imagenes**
     - **CallBack** (Suma, Date)
     - **FlexBox** - Responsive - FirexFox Developer
         - Body 
@@ -12,7 +12,7 @@
     - **JSON**
     - **Solución** - No ejecuta console.log en Chrome
     - **UI-UX**.
-2. PDF - Ayuda
+2. **PDF** - Ayuda
     - Código CSS3.
     - Código HTML5.
     - Fonts.
@@ -27,16 +27,19 @@
 2. **Git**
 
 ### Desarrollo Inicial Básico
- 1. **Valores**
-    - Valores considerados Falsos.
-    - Valores considerados Verdaderos.
+ 1. **Valores Booleanos**
+    - Valores considerados Falsos y Valores considerados Verdaderos para el tipo Booleano.
+ 3. **Variables**, **Constante** y  **Valores**. 
+    - **var**   - largo alcance
+    - **let**   - corto alcance
+    - **const** - corto alcance
+    - **Valores con variables**. 
+        - Strings, Números, Tipo Objeto (Array y Objeto ), Booleanos
  2. **Operadores**
     - Básicos - Igualdad - Desigualdad - Asignación - Comparación
- 3. Variables y Constante. 
-    - **var** - **let** - **const**
  4. **Funciones**
     - Estructura Básica (Parámetros y Argumentos).
-    - Sintaxis de los Funciones (Declarativas y Expresivas).
+    - Sintaxis de las Funciones (Declarativas y Expresivas).
     - Función con Parámetros. 
     - Funciones de JavaScript - Palabras reservadas.
  5. **Scope**
@@ -56,19 +59,20 @@
  1. Visualización de datos : 
     - **document.write**()
     - **console.log**()
-
  2. Array
     - **push**(), **pop**(), **unshift**(), **shift**(), **indexOP**
  3. Métodos Array
     - **filter**(), **map**(), **find**(), **forEach**(), **some**()
  4. Objetos.
  5. Condicionales. 
+    - if else - else if
     - Operador Ternario if
+    - Switch
  6. Array - Bucle
     - **for - of** 
  7. Programación Orientada a Objetos (POO)
     - Objetos { }
-    - Metódo de los Objetos 
+    - Metódo de los Objetos. 
 
 
 ## III - Carpeta "css" de CSS
