@@ -324,14 +324,56 @@ switch(tiempo)
 
 
 
-    
+
+
+
+
+
 /***************************************************************************************************/
 
+
 /* 
-    ---------------------------------------------------------------------------------
-        ARRAY - BUCLE "FOR - OF" ESPECIAL - lECTURA Y UTILIZACIÓN DEL CONTENIDO DE UN ARRAY
-    ---------------------------------------------------------------------------------
+    --------------
+        BUCLES
+    --------------
 */
+
+
+
+/* 
+    ------------------
+        FOR BÁSICO
+    ------------------
+*/
+
+/*
+    for (variable, Condición, iterador)
+        - iterador o contador ("i++"" = "i=i+1")
+*/
+
+for (var i=0 ; i<20; i++)
+    {
+        // Mientras "i sea menor a 20" no salimos de la ejecución de las lineas del "for". 
+    }
+
+
+
+
+
+
+/* 
+    ----------------------------
+        "FOR - OF" ESPECIAL
+    ----------------------------
+*/
+
+/* 
+    -------------------------------------------------------------------------------------------------
+        BUCLE "FOR - OF" ESPECIAL PARA UN ARRAY -  lECTURA Y UTILIZACIÓN DEL CONTENIDO DE UN ARRAY
+    -------------------------------------------------------------------------------------------------
+*/
+
+
 //ARRAY 
 var coches = ['Opel', 'Peugeot', 'seat', 'toyota']; 
 
@@ -357,37 +399,39 @@ for (var coche of coches)
 
 
 
-/***************************************************************************************************/
 
 /* 
+    --------------------
+        BUCLE - WHILE
+    --------------------
+*/
+
+
+
+/*
     --------------------------------------------
-        POO - PROGRAMACIÓN ORIENTADA A OBJETOS
+        WHILE ESTRUCTURA ESTANDAR  - BANDERA
     --------------------------------------------
 */
 
-/* 
-    ------------------------
-        POO - OBJETOS { }
-    ------------------------
-*/
 
-/* 
-    - Se trae un "Objeto de la vida real" y se describe en código
-    - Se representa un "Objeto de la vida real" de manera "abstracta" . 
-    - No podemos tocar el objeto de la vida real pero si podemos "Definirla" mediante sus propiedades
-    - Todo objeto tiene propiedades(alto, color, bajo, duro, etc.)
-*/
+var coches2 = ['Opel','seat' , 'seat', 'toyota'];
 
-var coche = 
+function marcasCoche(coches2)
     {
-        marca : 'Toyota',        //En POO. Se define PALABRAS CLAVES (O KEY) Y VALORES
-        modelo: 'C-HR',          // KEY (marca, modelo, anyo) - VALORES (Toyota, C-HR, 2020)
-        anyo :  '2020'  
-    };
+        console.log(`este fue uno de mis coches, ${coches2} `)
+    }
 
 
-// Llamada a una propiedad. 
-Coche.marca;                    // Forma de acceder a la información del objeto coche.
+var i = 0;                      // Bandera 
+
+while (coches2.length > i)
+    {
+        var garaje = coches2[i];
+        marcasCoche(garaje);
+        i++;
+    }
+    
 
 
 
@@ -396,39 +440,70 @@ Coche.marca;                    // Forma de acceder a la información del objeto
 
 
 /* 
-    -------------------------------------
-        POO - MÉTODO DE LOS OBJETOS
-    -------------------------------------
+    ----------------------------------------
+        EJEMPLO DE BUCLE INFINITO -WHILE
+    ----------------------------------------
+*/
+
+var edad = 15;                          //Este pequeño codigo consume toda tu memoria RAM. Y congela tu computadora. 
+
+while (edad < 18)               
+    {
+        console.log('Eres menor de edad');        
+    }
+
+
+
+
+
+
+
+/* 
+    -------------------------------------------
+        EJEMPLO DE BUCLE NO INFINITO -WHILE
+    -------------------------------------------
 */
 
 
-var coche = 
+var coches2 = ['Opel','seat' , 'seat', 'toyota'];
+
+
+//FUNCIÓN IMPRIMIR EN CONSOLA
+function marcasCoche(coches2)
     {
-        marca : 'Toyota',
-        modelo: 'C-HR',      
-        anyo :  '2020',
+        console.log(`este fue uno de mis coches, ${coches2} `)
+    }
         
-        /* 
-            METODO DEL OBJETO 
-        */
-        detalles_owi : function()
-        {
-            /* 
-                - A cualquier "fución" que estan dentro de un objeto se le conose como "Método"
-                - "this" - es una variable hace referencia al padre. El padre es coche. 
-                - "this" - es la representacion de ese objeto.
-            */
-            console.log(`${this.marca}: ${this.modelo} \\${this.anyo} `);
-        }
-    };
+
+//FUNCIÓN PRINCIPAL
+while (coches2.length >0)
+    {
+        var garaje = coches2.shift();           // La condición de while termina gracias al método "shift()"
+        marcasCoche(garaje);                    
+    }
 
 
 
-//llamar a un metodo 
-coche.detalles_owi();       //Sin esta llamada no se ejecuta el método "detalles_owi" dentro del objeto "coche". 
 
 
-//LLamar a una propiedad
-coche.anyo;
+
+
+
+
+
+/* 
+    ------------------------------------
+        EL OTRO WHILE - DO WHILE
+    ------------------------------------
+*/
+
+
+
+do                                  
+    {
+        i++;                        // Siempre va a generar una sentencia.
+        consle.log('hola');   
+    } while(i<5);                   // Luego de la sentencia. Ejecuta el while
+
 
 

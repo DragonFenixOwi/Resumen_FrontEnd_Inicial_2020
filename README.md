@@ -5,7 +5,11 @@
 1. **Recopilación de Imagenes**
     - **CallBack** (Suma, Date)
     - **FlexBox** - Responsive - FirexFox Developer
-        - Body 
+        - Caja FlexBox - Body (Padre) - Hijos (header,main,footer)
+            - Area Inicial de trabajo (reset, Flexbox,etc.)
+            - Configuración de Práctica.
+            - Main Axis - Column.
+            - Main Axis - Row.
         - Caso Header (ViewPort height)
         - Nav
         - Padre - Hijos.
@@ -56,7 +60,7 @@
     - Implicita 
     - Explicita
 ### Desarrollo Inicial Intermedio
- 1. Visualización de datos : 
+ 1. Visualización de datos  
     - **document.write**()
     - **console.log**()
  2. Array
@@ -68,20 +72,33 @@
     - if else - else if
     - Operador Ternario if
     - Switch
- 6. Array - Bucle
-    - **for - of** 
- 7. Programación Orientada a Objetos (POO)
+ 6. Bucles
+    - **for Básico**
+    - Array
+        - **for - of** 
+    - **While**
+        - Estructura Estandar - Bandera.
+        - Ejemplo de Bucle infinito.
+        - Ejemplo de Bucle no infinito.
+    - **do - while** 
+
+
+### Desarrollo Inicial Avanzado.
+ 1. Programación Orientada a Objetos (POO)
     - Objetos { }
     - Metódo de los Objetos. 
 
-
 ## III - Carpeta "css" de CSS
-1. CSS_Descripción
+ 1. CSS_Descripción
     - Navegadores.
     - Reset
     - Descripción de Nociones Básicas CSS (Position, FlexBox, Grid-Layout, Framework Bulma y Bootstrap)
-2. Estilos.
+ 2. Estilos.
     - FlexBox - Padre "body"
+ 3. Main_Axis-Column 
+    - **flex-direction: column**
+ 4. Main_Axis_Row 
+    - **flex-direction: row**
 
 
 ## III - Descripción Ruta de Aprendizaje del frontend

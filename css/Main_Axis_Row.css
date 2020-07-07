@@ -1,0 +1,67 @@
+/* 
+    -------------------------------------
+        Autor: Osvaldo Aquino
+        Nickname: owi
+        FLEXBOX - CAJAS CSS
+    -------------------------------------
+*/
+
+
+/*
+    - La configuración de CSS de header, maing  y footer son iguales.
+        - Tanto en "Main_Axis-Column" como en "Main_Axis_Row" 
+        - La configuración de "body" es la que se cambia. 
+*/
+
+
+body
+    {
+        /* Color de fondo */
+        background-color: #ccc9c9;
+        
+        /* Se convierte "body" en un FLEXBOX*/        
+        display : flex;
+
+        /*Main Axis que viene por defecto*/
+        flex-direction: row;
+
+        /*Por defecto Movimiento en HORIZONTAL */
+        justify-content: space-around;
+
+        /*Por defecto Movimiento en VERTICAL */
+        align-items: end;
+    }
+
+
+
+header, footer
+    {
+        /*Color a los hijos header y footer*/
+        background-color: #01698e; 
+
+        /*Agregando Bordes*/
+        border: 1px solid black;
+
+        /*Dismensionando tamaño de la caja*/
+        width:50px;
+
+        /*Dismensionando altura de la caja*/
+        height:50px;
+    }
+
+
+
+main
+    {
+        /*Color a main*/
+        background-color: rgb(0, 153, 13);
+
+        /*Agregando Bordes*/
+        border: 1px solid black;
+
+        /*Dismensionando tamaño de la caja*/
+        width:50px;
+
+        /*Dismensionando altura de la caja*/
+        height:50px;
+    }

@@ -13,7 +13,13 @@
 */
 
 
-
+/*
+    -Termiando
+        - Anotaciones del 1 al 4
+    - Falta
+        - Anotaciones 5 - CSS- Descnaso de eso. Lleva mucho tiempo
+        - Anotaciones 6 - Mejorar descripcion y ejemplos
+*/
 
 /*
     - FORMATEO DE ERRORES
