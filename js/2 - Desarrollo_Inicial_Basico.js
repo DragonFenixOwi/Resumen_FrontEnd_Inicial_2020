@@ -44,7 +44,16 @@
 
 
 
+
+
+
+
+
+
+
 /********************************************************************************************************************************/
+
+
 /*
     -------------------------------------------------
         TIPOS DE DATOS (VAR - LET - CONST) Y VALORES
@@ -263,6 +272,11 @@ numero--;               //12        Aqui siemper le restamos 1
 */
 
 
+
+
+
+
+
 /*
     ------------------------------------------------------------------
         TIPOS DE FUNCIÓN SEGÚN  SINTAXIS  (DECLARATIVAS Y EXPRESIVAS)
@@ -297,6 +311,7 @@ nuevaFuncion();           /* Si no se declara y ejecuta la llamada. La funciones
 
 
 
+
 /*
     ------------------------------------------
         ESTRUCTURA BÁSICA DE UNA FUNCIÓN 
@@ -310,6 +325,8 @@ function hola (/*PARAMETROS*/ persona )
     }
 
 hola (/*ARGUMENTOS*/'Pepe');       // llmada de la función "hola" 
+
+
 
 
 
@@ -334,6 +351,10 @@ var suma3 = suma(789,89);
 
 
 
+
+
+
+
 /*
     -----------------------------------------
         FUNCIONES - PALABRAS RESERVADAS
@@ -347,6 +368,12 @@ Number("10");       // Convierte el string "10" en un número 10.
 String(10);         // Convierte el número 10 en un string "10".
 
 Boolean();          // Función que me devuelve  Verdadero o Falso. 
+
+
+
+
+
+
 
 
 

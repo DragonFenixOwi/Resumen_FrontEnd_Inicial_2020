@@ -39,11 +39,22 @@ console.log(` la letra que corresponde al DNI de número
 var parrafo = "Libro de \"Autor\" de 1988";
 console.log(parrafo);
 
+    
 
 
 
 
-/***************************************************************************************************/
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
 
 /* 
     -----------------
@@ -76,16 +87,26 @@ mascotas.shift();
 mascotas.indexOf("gato");
 console.log(mascotas.indexOf('gato'));
 
+    
 
 
 
 
 
-/***************************************************************************************************/
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
 
 /* 
     ---------------------------
-        METODOS DE ARRAY [ ]
+        MÉTODOS DE ARRAY [ ]
     ---------------------------
 */
 
@@ -114,27 +135,37 @@ console.log(Imprimir_Precios_menores_400);
 
 
 
-// el filter valora si es verdero o falso. No estropea el array padre original y crea un nuevo array
+// FILTER --> valora si es verdero o falso. No estropea el array padre original y crea un nuevo array
 articulos.filter();
 
-// map saca el nombre de los articulos. No se estropea el original y crea uno nuevo.
+// MAP --> saca el nombre de los articulos. No se estropea el original y crea uno nuevo.
 articulo.map();
 
-// find - nos encuentra el objeto y nos devuelve el objeto
+// find --> nos encuentra el objeto y nos devuelve el objeto
 articulo.find();
 
-// FOREACH - No crea ningun nuevo array y tampoco modifica  el array original
+// FOREACH --> No crea ningun nuevo array y tampoco modifica  el array original
 articulo.forEach();
 
-// SOME genera un booleano y no toca el array el original. Nos devuelve un "true" o un "false"
+// SOME --> genera un booleano y no toca el array el original. Nos devuelve un "true" o un "false"
 articulo.some();
 
+    
 
 
 
 
 
-/***************************************************************************************************/
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
 
 /* 
     -------------------
@@ -171,6 +202,7 @@ var prueba02 =
 //false. los objetos no estan comparando el contenido sino es el espacio de Memoria
 prueba01==prueba02   //false
 
+    
 
 
 
@@ -178,7 +210,106 @@ prueba01==prueba02   //false
 
 
 
-/******************************************************************************************************************/
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+M
+
+/*
+    -----------------------
+        MÉTODOS STRINGS     
+    -----------------------
+*/
+
+var apellido = 'Ferrà';
+
+
+// CONVERTIR STRING A MINÚSCULAS 
+apellido = apellido.toLowerCase();
+
+// CONVERTIR STRING A MAYÚSCULAS 
+apellido = apellido.toUpperCase();
+
+// cantidad de carácteres que tiene un string
+apellido = apellido.length;
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+/*
+    --------------------------------
+        MODULO MATEMÁTICO - MATH     
+    --------------------------------
+*/
+
+
+// RANDOM -->  Devuelve un número aleatorio entre el 0 y 1
+Math.random();                                              
+
+
+
+
+// RENDONDEAR NÚMERO CON DECIMALES
+
+var resultado_Owi = (50.9 * 100 * 30.8) / 100;                    // Variable base. Sin utilizar Math
+
+var resultado_Math = Math.round((50.9 * 100 * 30.8) / 100);       // utilizar Math.round, para redondear
+
+var NuevoResultado = resultado_Owi.toFixed(5);                    // utilizar toFixed, control de decimales
+
+var numero = parseFloat(NuevoResultado);                          // parseFloat devuelve a número con decimales
+
+var numeroEntero = parseInt(NuevoResultado);                      // parseFloat devuelve a número sin decimales, número entero
+
+
+
+
+// RANDOM CONTROLADA POR UN MÁXIMOS Y UNOS MÍNIMOS 
+
+const numMax = 18;
+const numMin = 1;
+
+const numRandom = () => Math.round(Math.random() * (numMax - numMin) + numMin);   
+// CONSTANTE     Arrow F    ROUND ( RANDOM [0-1] * (  18   -   1   )  +  1   );  
+
+
+// LLAMADA DE LA FUNCIÓN.
+numRandom();
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
 
 /* 
     ------------------------
@@ -328,8 +459,7 @@ switch(tiempo)
 
 
 
-
-/***************************************************************************************************/
+/****************************************************************************************************************************************/
 
 
 /* 
@@ -395,6 +525,8 @@ for (var coche of coches)
 
 
 
+// FOR - OF  -->  se emplea para estar iterando un array 
+// FOR - IF  -->  esta mas indicado en generico.  
 
 
 
@@ -505,5 +637,68 @@ do
         consle.log('hola');   
     } while(i<5);                   // Luego de la sentencia. Ejecuta el while
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+/*
+    -------------------------------------
+        ARROW FUNCTION (=>) - 4 FASES
+    -------------------------------------
+*/
+
+
+
+//FUNCION EXPRESIVA BÁSICA (se asigna una función a una constante "const") - CON PARÁMETRO (persona)
+const MAYOR_EDAD = function (persona)
+        {
+            return persona.edad === MAYORIA_EDAD_ESPANYA;
+        }
+
+
+
+
+// Son 4 formas de recortar el código. Pero "NO" todas las funciones encajan con el Arrow Function
+
+
+
+// MODIFICARLO HACIA ARRRO FUNCTION  - 4 FASES
+
+
+
+// FASE 1  ( Se cambia "function"  por la flecha  "=>" )
+const MAYOR_EDAD = (persona) =>
+        {
+            return persona.edad === MAYORIA_EDAD_ESPANYA;
+        }
+
+
+// FASE 2   (se elimina el parentesis () )
+const MAYOR_EDAD = persona => 
+        {
+          return persona.edad === MAYORIA_EDAD_ESPANYA;
+        }
+
+
+// FASE 3  (se elimina las llaves {} y el return)
+const MAYOR_EDAD = persona => persona.edad === MAYORIA_EDAD_ESPANYA;
+
+
+
+// FASE 4 (Entre {} indicamos el atributo )
+const MAYOR_EDAD = ({ persona }) => edad === MAYORIA_EDAD_ESPANYA;
 
 
