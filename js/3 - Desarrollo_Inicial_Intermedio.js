@@ -261,7 +261,7 @@ apellido = apellido.length;
 */
 
 
-// RANDOM -->  Devuelve un número aleatorio entre el 0 y 1
+// RANDOM -->  Devuelve un núamero aleatorio entre el 0 y 1
 Math.random();                                              
 
 

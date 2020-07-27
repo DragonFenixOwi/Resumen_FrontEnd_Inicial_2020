@@ -135,7 +135,17 @@
 
 
 ### Desarrollo Inicial Avanzado.
- 1. **Programación Orientada a Objetos** (**POO**)
+ 1. (Iniciando documentación)
+    - DOM 
+        - Lineas de acción
+            - JavaScript apoyando al dinamismo de HTML y CSS
+            - JavaScript realizando Cálculo matemáticos  
+    - JSON.
+ 
+
+
+### Desarrollo Inicial Superior.
+1. **Programación Orientada a Objetos** (**POO**)
     - Objetos { }
     - Metódo de los Objetos. 
 
@@ -161,15 +171,6 @@
     - Comportamiento de JavaScript en la **línea de tiempo** de Ejecución
     - CallBack's
     - API
-
-
-### Desarrollo Inicial Superior.
- 1. (Iniciando documentación)
-    - DOM 
-        - Lineas de acción
-            - JavaScript apoyando al dinamismo de HTML y CSS
-            - JavaScript realizando Cálculo matemáticos  
-    - JSON.
 
 ## III - Carpeta "css" de CSS
  1. CSS_Descripción
