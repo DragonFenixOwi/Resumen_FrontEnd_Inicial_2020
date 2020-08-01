@@ -69,59 +69,63 @@
              * Bloque Links de Navegación Principal
              *
             -->
-            <!--   TECLADO ABREVIADO     a[href="#"]{links}*5   -->
 
-            <!--
-                - No se utiliza ni "list" que son bloques, ni "ul"
-                - Porque la "a-href", son in-line y no es necesario
-                - Si lo quiero en horizontal no utilizo "list" que son bloques
-              -->
+            <!--   fLEXBOX  -->
 
-              <a href="#">links</a>
-              <a href="#">links</a>
-              <a href="#">links</a>
-              <a href="#">links</a>
-              <a href="#">links</a>
-  
-  
-  
-              <!-- 
-                  - FLEXBOX funciona solo con hijos directos
-                    - "nav" es el padre de las a-href
-                    - "body"  es el padre 
-                      - del "header", 
-                      - del "main" 
-                      y del "footer"
-                    - Pero "body" no es el padre del "nav". Es decir, no es su hijo directo.
-                  
-                  - FLEXBOX no llega a los hijos de 
-                    - header (que es el "nav") 
-                    - a los hijos de main (que son "section" y "article"),
-                    - y a los hijos del footer 
-                  
-                  
-                - ¿quien es el padre directo de "nav"?
-                  - "header"
-                  - Si yo quiero que le pase algo a "nav". 
-                    - Tengo que hablar con "header".
-                    - No tengo que hablar con "nav"
 
-                  - De forma mas general. 
-                    - Si yo tengo que darle ordenes. Al hijo
-                    - El padre se las da. 
+                  <!--   TECLADO ABREVIADO     a[href="#"]{links}*5   -->
 
-                - Ahora mismo tanto el "header" como el "nav" son iguales porque no hay 
-                ninguna información. 
-                  - No se percibira diferencia.
-                  -  Pero cuando exista mas información se tiene que tener muy encuenta la jerarquia de PADRE-HIJO.
-                
-                - Al "body", como al "html" o al "header"  no se les ocurra poner un "class" o 
-                un "id"
-                - "body", "header", "footer" y "html" (o al resto) solo hay "Uno". A nadie que se le ocurra poner 
-                  - "id"
-                  - o "class" para buscarlos.
-                  -  En el caso de "main" haber "dos". Pero con el resto siempre hay "uno" 
-              -->
+                  <!--
+                      - No se utiliza ni "list" que son bloques, ni "ul"
+                      - Porque la "a-href", son in-line y no es necesario
+                      - Si lo quiero en horizontal no utilizo "list" que son bloques
+                    -->
+
+                    <a href="#">links</a>
+                    <a href="#">links</a>
+                    <a href="#">links</a>
+                    <a href="#">links</a>
+                    <a href="#">links</a>
+        
+        
+        
+                    <!-- 
+                        - FLEXBOX funciona solo con hijos directos
+                          - "nav" es el padre de las a-href
+                          - "body"  es el padre 
+                            - del "header", 
+                            - del "main" 
+                            y del "footer"
+                          - Pero "body" no es el padre del "nav". Es decir, no es su hijo directo.
+                        
+                        - FLEXBOX no llega a los hijos de 
+                          - header (que es el "nav") 
+                          - a los hijos de main (que son "section" y "article"),
+                          - y a los hijos del footer 
+                        
+                        
+                      - ¿quien es el padre directo de "nav"?
+                        - "header"
+                        - Si yo quiero que le pase algo a "nav". 
+                          - Tengo que hablar con "header".
+                          - No tengo que hablar con "nav"
+
+                        - De forma mas general. 
+                          - Si yo tengo que darle ordenes. Al hijo
+                          - El padre se las da. 
+
+                      - Ahora mismo tanto el "header" como el "nav" son iguales porque no hay 
+                      ninguna información. 
+                        - No se percibira diferencia.
+                        -  Pero cuando exista mas información se tiene que tener muy encuenta la jerarquia de PADRE-HIJO.
+                      
+                      - Al "body", como al "html" o al "header"  no se les ocurra poner un "class" o 
+                      un "id"
+                      - "body", "header", "footer" y "html" (o al resto) solo hay "Uno". A nadie que se le ocurra poner 
+                        - "id"
+                        - o "class" para buscarlos.
+                        -  En el caso de "main" haber "dos". Pero con el resto siempre hay "uno" 
+                    -->
           </nav>
       
     </header>
@@ -136,53 +140,80 @@
           <section>
             <!-- Bloque SECTION--> 
 
-            <div id = "cabecera_etiqueta"> texto 1 Cabecera </div>
-            <div class ="boton_etiqueta"> texto 2 Boton  </div>
-            <div auto ="auto_etiqueta"> texto 3 Etiqueta </div>
-            
+                  <div id = "cabecera_etiqueta"> texto 1 Cabecera </div>
+                    <div class ="boton_etiqueta"> texto 2 Boton  </div>
+                    <div auto ="auto_etiqueta"> texto 3 Etiqueta </div>
+                    
 
-            <div id = "cabecera_etiqueta_Numero_2"> 
-                <p class="parrafo_de_cabecera_numero_2">
-                      Este parrafo sera modificado atraves del DOM en Desarrollo_Inicial_Avanzado en la parte de PRACTICA - MODIFICAR PARRAFO
-                </p>  
-            
-            </div>
-          </section>
+                    <div id = "cabecera_etiqueta_Numero_2"> 
+                        <p class="parrafo_de_cabecera_numero_2">
+                              Este parrafo sera modificado atraves del DOM en Desarrollo_Inicial_Avanzado en la parte de PRACTICA - MODIFICAR PARRAFO
+                        </p>  
+                        
+                    </div>
+                  </section>
       
           <article>
             <!--Bloque ARTICLE -->
 
-            <!-- EVENTOS -->
-            <button class="boton"> Boton_presionar </button>
+                    <!-- EVENTOS -->                                     <!-- Desarrollo_Inicial_Superior.js--> 
+                    <button class="boton"> Boton_presionar </button>
 
 
 
 
-            <!-- FORMULARIO BÁSICO - INGRESO DE DATOS -->
+            <!-- FORMULARIO BÁSICO - INGRESO DE DATOS -->                <!-- Desarrollo_Inicial_Superior.js--> 
 
-            <!--   TECLADO ABREVIADO     input:number#suma_1*2   -->
+                    <!--   TECLADO ABREVIADO     input:number#suma_1*2   -->
 
-                  <input type="number" name="sum_1" id="sum_1">          <!-- Se encuentra en Desarrollo_Inicial_Avanzado.js  -->
-                  <input type="number" name="sum_2" id="sum_2">          <!-- Este "name" es distinto. Es una zona para almacenar la información -->
-                        
-            <!--   TECLADO ABREVIADO     button#submit{SUMA}   -->
-                  <button id="submit">SUMA</button>            
+                          <input type="number" name="sum_1" id="sum_1">          <!-- Se encuentra en Desarrollo_Inicial_Avanzado.js  -->
+                          <input type="number" name="sum_2" id="sum_2">          <!-- Este "name" es distinto. Es una zona para almacenar la información -->
+                                
+                    <!--   TECLADO ABREVIADO     button#submit{SUMA}   -->
+                          <button id="submit">SUMA</button>            
 
-            <!--   TECLADO ABREVIADO     h3#total_final   -->
-                  <h3> 
-                      TOTAL DE LA SUMA : <strong id="total_final">  </strong>
-                  </h3>
+                    <!--   TECLADO ABREVIADO     h3#total_final   -->
+                          <h3> 
+                              TOTAL DE LA SUMA : <strong id="total_final">  </strong>
+                          </h3>
 
           </article>
       
     </main>
 
     <footer>
-      <!--
-        *
-        * Bloque FOOTER
-        *
-        -->
+      <!--Bloque FOOTER --> 
+
+      <!-- ATRIBUTOS JAVASCRIPT-->                                      <!-- Desarrollo_Inicial_Superior.js--> 
+
+            <!-- ENLACES - LINKS URL  -->
+            <a href="http:/wwww.google.es" id="enlace_de_google"> Google_DOM </a>
+
+
+            <!-- IMAGENES -->
+            <div id = "imagen_para_atributo">
+
+              <!-- ELEMENTO "img"  CON EL ATRIBUTO "src" --►  el "src" contiene la ruta de la imagen que se añadira a la pagina-->
+              <img src="Registro Complementario/Git_Flujo.png" alt=""> 
+
+
+
+
+      <!-- COMBINACIÓN - PRACTICA DE TODO LO APRENDIDO-->               <!-- Desarrollo_Inicial_Superior.js--> 
+
+            <!--   TECLADO ABREVIADO     ul#lista>li{hola$}*3   -->    
+
+            <ul id="lista">
+              <li>hola1</li>
+              <li>hola2</li>
+              <li>hola3</li>
+            </ul>
+
+            <!--   TECLADO ABREVIADO     button#boton_del_id{boton_DOM_visual}  -->  
+
+            <button id="boton_del_id">boton_DOM_visual</button>
+      
+      </div>
     </footer>
 
     

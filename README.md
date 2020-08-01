@@ -28,7 +28,7 @@
 ## II - Carpeta "js" de JavaScript
 
 ### Comandos de Atajos de Teclado y Git 
- 1. **Atajo de teclado Básico**
+ 1. **Atajo de teclado Básico para Visual Studio Code**
     - Formateo de Errores.
     - Terminal de salida
     - Go Live.
@@ -136,10 +136,16 @@
 
 ### Desarrollo Inicial Avanzado.
  1. (Iniciando documentación)
-    - DOM 
-        - Lineas de acción
-            - JavaScript apoyando al dinamismo de HTML y CSS
-            - JavaScript realizando Cálculo matemáticos  
+    - DOM - Lineas de acción
+        - 1ra linea de accion - Dinamismo HTML Y CSS
+            - 4 formas de accerder a etiquetas HTML
+            - Modificar HTML
+            - Modificar CSS
+            - Practica - Modificar Parrafo
+            - Eventos
+            - Varios eventos
+            - Formulario Básico
+        - 2da Linea de acción - Aplicaciones
     - JSON.
  
 

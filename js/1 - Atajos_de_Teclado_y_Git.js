@@ -7,9 +7,9 @@
 */
 
 /* 
-    ---------------------------------
-        ATAJOS DE TECLADO BÁSICO
-    ---------------------------------
+    -----------------------------------------------------
+        ATAJOS DE TECLADO BÁSICO - VISUAL STUDIO CODE
+    -----------------------------------------------------
 */
 
 
@@ -26,8 +26,8 @@
 
 
     - RELOAD WINDOWS (RECARGAR WINDOWS)
-        "Ctrl + R"
-        - Por defecto
+        - "Ctrl + R"
+        - Si existe varias ventanas abiertas. Elegis una y das "Enter" 
     
     
     - FORMATEO DE ERRORES
@@ -77,9 +77,9 @@
 
 
 /* 
-    ---------------------------------
-        EXTENSIONES MAS COMUNES
-    ---------------------------------
+    -----------------------------------------------------
+        EXTENSIONES MAS COMUNES - VISUAL STUDIO CODE
+    -----------------------------------------------------
 */
 
 
@@ -135,42 +135,54 @@
 */
 
 /*
-    - INTEGRAR GIT BASH A LA TERMINAL DE VISUAL STUDIO
-        - 3 rutas de acceso
-            - "Ctrl + ,"
-            - Archivo --> Preferencias --> Configuración
-            - Configuración esquina izquierda inferior(indica rama master en la linea de Go live) 
-            y luego de nuevo configuración.
-        - Accerder 
-            - Caracteristicas  -->  Terminal   
-            - Buscar  "Shell" 
-        - En Buscar "Shell" buscar lo siguiente
-            - Terminal › Integrated › Shell: Windows
-                -  Ruta de acceso del shell que el terminal usa en Windows 
-                (valor predeterminado: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe) 
-        - Click en "Editar en setting.json"
-            - Copiar la ruta de acceso de "bash.exe"
-            - Pegar en 
-                - "terminal.integrated.shell.windows": "AQUI"    
-        - Buscar la ubicación exacta de "git_bash"
-            - Tecla "Windows" - Buscar git_bash
-            - click derecho en git_bash. Seleccionar " mas --> Abrir Ubicación"
-            - Click derecho  de nuevo en git_bash. 
-            - Buscar y acceder a la carpeta "bin"
-            - Copiar la ruta de acceso de esa carpeta. En este caso es  "C:\Program Files\Git\bin"
-        - Pegamos "setting.json" 
-            -  "terminal.integrated.shell.windows": "C:\Program Files\Git\bin" 
-        - Se debe Editar y configurar. Para ajustar a JSON 
-            -  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+    PRIMERA PARTE 
+
+        - INTEGRAR GIT BASH A LA TERMINAL DE VISUAL STUDIO
+            - 3 rutas de acceso
+                - "Ctrl + ,"
+                - Archivo --> Preferencias --> Configuración
+                - Configuración esquina izquierda inferior(indica rama master en la linea de Go live) 
+                y luego de nuevo configuración.
+
+            - Accerder 
+                - Buscar  "Shell" 
+                - Caracteristicas  -->  Terminal   
+                
+
+            - En la ventana actualizada de  Buscar "Shell" buscar lo siguiente
+                
+                - Terminal › Integrated › Shell: Windows
+                    -  Ruta de acceso del shell que el terminal usa en Windows 
+                    (valor predeterminado: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe) 
+
+                - Click en "Editar en setting.json"
+                    - Copiar la ruta de acceso de "bash.exe"
+                    -  Pegar en 
+                        - "terminal.integrated.shell.windows": "AQUI"    
+
+            - Para Buscar la ubicación exacta de "git_bash"
+                - Tecla "Windows" - Buscar git_bash
+                - click derecho en git_bash. Seleccionar " mas --> Abrir Ubicación"
+                - Click derecho  de nuevo en git_bash. 
+                - Buscar y acceder a la carpeta "bin"
+                - Copiar la ruta de acceso de esa carpeta. En este caso es  "C:\Program Files\Git\bin"
+
+            - Pegamos "setting.json" 
+                -  "terminal.integrated.shell.windows": "C:\Program Files\Git\bin" 
+
+            - Se debe Editar y configurar. Para ajustar a JSON 
+                -  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
         -FIN 
 
 
-    NOMBRE Y CORREO DEL USUARIO
-        - git config --list                               // Lista de Configuración por defecto 
-        - git config --list --show-origin                 // Alojamiento de configuraciones
+    SEGUNDA PARTE 
 
-        - git config --global user.name "Osvaldo"         // Cambiar la configuracion del usuario de git 
-        -git config --global user.email "_@gmail.com"     // Cambiar la configuracion del email de git 
+        NOMBRE Y CORREO DEL USUARIO
+            - git config --list                               // Lista de Configuración por defecto 
+            - git config --list --show-origin                 // Alojamiento de configuraciones
+
+            - git config --global user.name "Osvaldo"         // Cambiar la configuracion del usuario de git 
+            -git config --global user.email "_@gmail.com"     // Cambiar la configuracion del email de git 
 */
 
     
@@ -190,12 +202,12 @@
 /**************************************************************************************************/
 
 
-/* 
-    ---------------------------------
-        COMANDOS INICIALES GIT 
-    ---------------------------------
-*/
 
+/* 
+    ---------------------------------------------
+        ATAJOS DE TECLADO - TERMINAL GIT BASH 
+    ---------------------------------------------
+*/
 
 
 /*
@@ -212,6 +224,15 @@
 */
 
 
+
+
+
+
+/* 
+    ---------------------------------
+        COMANDOS INICIALES GIT 
+    ---------------------------------
+*/
 /*
         git clone https://github.com/DragonFenixOwi
         git remote remove origin
