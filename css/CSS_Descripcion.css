@@ -28,9 +28,57 @@
         - Por que golpea visualmente. Da un pantallaso. 
         - Siempre hay que jugar  bajando el brillo (Lightness)
         - Ir un poco a grises a lado del blanco.  
+
+
+    - CODEPEN FLEXBOX
+        - Brutal. Para entender y dominar FlexBox
+        - https://codepen.io/enxaneta/full/adLPwv 
+    
+    - PAGINAS CON PREMIOS SEMANALES
+        - Proyectos muy buenos que concursan.
+        - https://www.awwwards.com/ 
 */
 
 
+
+
+/* 
+    -----------------
+        REPONSIVE
+    -----------------
+*/
+
+
+/*
+    RESPONSIVE 
+
+        - FLEXBOX
+            - display : flex; 
+
+        - FONT-SIZE ( 1 rem = 16 px )
+
+            - No se suele trabajar con "pixeles". Se suele utilizar la unidad "rem"
+
+            - rem   ---►    Ofrece cierta escalabilidad para respetar las configuraciones de cada usuario.  
+
+            - Y todo esto porque la tipografía también tiene que tener ese punto RESPONSIVE.
+
+
+    ACLARACIÓN ENTRE "REM" Y "EM"        
+    
+        - "rem" es casi igual a el "em"
+                
+        - El "em" es la medida en ancho de una letra. Se invento en tipografia hace mucho tiempo
+
+        - La diferencia entre "em" y "rem" es que 
+
+            - "em"    ---►    Obdece al padre  directo de esa etiqueta.  
+            
+            - "rem"   ---►    Mientras que el rem Pasa hacerle caso al padre (no obedece al padre)
+                              Siempre obedece a lo que le pongas al HTML. 
+
+        
+*/
 
 
 
@@ -48,7 +96,7 @@
     
     - Firefox Developers.
         - Este navegador tiene herramientas en el "Inspector del navegador" para cuando 
-        utilizamos FLEXBOX o GRID-LAYOUT. 
+          utilizamos FLEXBOX o GRID-LAYOUT. 
     
 */
 

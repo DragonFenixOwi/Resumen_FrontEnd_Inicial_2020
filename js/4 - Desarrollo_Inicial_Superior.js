@@ -10,12 +10,6 @@
 
 
 
-
-
-
-/****************************************************************************************************************************************/
-
-
 /* 
     --------------------------------------------
         POO - PROGRAMACIÓN ORIENTADA A OBJETOS
@@ -442,6 +436,9 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
 
 
 
+
+/****************************************************************************************************************************************/
+
     
 /*
     ---------------------------------------------
@@ -452,18 +449,40 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
 
 /*
     CALLBACK'S
-        - Son esas tareas  que se delegan al navegador.
+        - Son esas tareas  que se delegan al navegador. Funciona de manera Asincronica. 
         - Es una función 
             - que se pasa a otra función como argumento. 
         - Y es un modo de asegurar que cierto codigo no se ejecuta antes de terminar el anterior
             - es una llamada atras.
+
+        - Cualquier función puede ser un callback
 */
 
     
 
 
+// RUTA DE IMAGEN DETALLADA  ---►  \Resumen_FrontEnd_Inicial_2020\Registro Complementario\Recipilación de imagenes\1 - CallBack
 
 
+
+// SUMAR - FUNCIÓN QUE ACTUA COMO CALLBACK 
+function sumar (numero1, numero2)                                                      
+    {
+        return numero1 + numero2;                                       //  RESULTADO FINAL   40 +20 = 60 
+    }                                                                   //        ▲
+                                                                        //        |
+                                                                        //        |
+// 2DO - FUNCIÓN QUE SOLICITA DOS PARAMETROS Y UNA FUNCIÓN CALLBACK     
+function calcular(numero1, numero2,callback)                            // Parametro 1   ---►  numero1 = 40                 (recibe) por petición 
+    {                                                                   // Parametro 2   ---►  numero2 = 20                 (recibe) por petición  
+        return callback(numero1, numero2);                              // Parametro 3   ---►  callback = Función "sumar"   (recibe) por petición
+    }                                                                   //        ▲
+                                                                        //        |
+                                                                        //        |
+// 1RO - LLAMADA DE LA FUNCIÓN                                          
+calcular(40,20,sumar)                                                   // Argumento 1   ---►  40                            (Envia)
+                                                                        // Argumento 2   ---►  20                            (Envia)
+                                                                        // Argumento 3   ---►  Función "sumar"               (Envia)
 
 
 
@@ -481,7 +500,11 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
                     API
     ----------------------------------------------
 */
-
+/*
+    ------------------------------
+                API
+    ------------------------------
+*/
 
 /*
     API    
@@ -501,3 +524,174 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
     
 */
 
+
+
+
+
+
+
+/*
+    ----------------------------------------------
+        NODE.JS  - ASINCRONISMO - CREAR UN JSON 
+    ----------------------------------------------
+*/
+
+
+
+/*
+    # NODE.JS
+
+        - Es un entorno JavaScript de lado de servidor. Podemos estar en BackEnd con Node.
+
+        - Es un framework. Esta orientado a eventos asincronicos. 
+
+        - Necesito  conectar con bases de datos, PHP (por ejemplo). Pero tengo que aprender PHP. 
+            
+            - Si ya se Javascript, simplemente trabajo con Node.js y ya podré conectar a base de datos.
+            
+*/
+
+
+
+
+/*
+    -------------------------------------------------------------------
+       TERMINAL EXTERNA  GIT_BASH :  NODE.JS  - ASINCRONISMO -  JSON 
+    -------------------------------------------------------------------
+*/
+
+
+/*
+    -------------------------------
+        PRIMEROS PASOS  NODE.JS  
+    -------------------------------
+*/
+
+
+
+/*
+    VERICAR SI LA INSTALACIÓN  FUE EXITOSA
+
+        - node -v                    ---►      Vizualizar la versión de node.js 
+
+        - node                    ---►     Se accede a node desde la terminal. Node tiene su propio lenguaje. 
+    
+        - console.log("Hola")     ---►     Se imprime en la terminal el string "Hola"
+
+        - 2 veces "control + C"   ---►     Para salir del modo "node"
+
+
+*/
+
+
+
+
+/*
+    ------------------------------
+        INICIAR NODE.JS - JSON 
+    ------------------------------
+*/
+
+
+/*
+
+    - pwd                        ---►      Directorio Actual 
+    
+    - mkdir                      ---►      Crear carpeta.  Por ejemplo  "mkdir 'nombre de la carpeta' "
+        
+    - git init                   ---►      Iniciar el ".git"  
+
+    - npm init               ---►      Iniciar el gestor de paquetes (buscamos el package.json)
+        
+        - Lista de preguntas :                                (estas pregutnas quedan guardadas dentro de un Archivo JSON como resumen que funciona)
+
+
+                -package name:                  (Asincronismo)    - Por defecto por "mkdir 'Asincronismo' "
+
+                - versión                       (1.0.0)           - Por defecto
+
+                - descripción :                 veremos el asincronismo y sus variantes
+
+                - entry point :                 (index.js)        -  por defecto. 
+                                                src/index.js      -  Modificamos el punto de entrada (Se debe crear. Aqui solo se indica la ruta) 
+                    
+                - test comand:                  "Enter"            - no vamos a utilziar testin
+
+                - git repository:               "Enter"
+                
+                - keywords:                     callback,promesa   - Palabras claves 
+
+                - author :                      Owi
+                
+                - license :                     (ISC)               - Por defecto   
+                                                 MIT                - Se cambia la licencia
+                - Enter                                    
+            
+        
+
+        - Si todo esta correcto. Se Plantea el JSON 
+
+                {
+                    "name": "asincronismo",
+                    "version" : "1.0.0",
+                    "description": "Veremos el asincronismo en sus variantes",
+                    "main": "src/index.js",
+                    "scripts": 
+                        {
+                            "test" : "echo \""Error: no test Specified\" && exit 1"  
+                        },
+                    "keywords": 
+                        [
+                            "callback",
+                            "promesa"
+                        ],
+                    "author": "Owi",
+                    "license": "MIT",    
+                }
+
+        
+        - Is this OK?                   (yes)               - Por defecto "yes". Si todo esta correcto. Se teclea "Enter" y listo
+
+*/
+    
+
+
+
+
+/* 
+    ------------------------
+        EJECUTAR NODE.JS
+    ------------------------
+*/
+
+/*
+
+    - npm run                ---►   Nombre del "scripts" de JSON 
+
+
+    -callback:API
+        - Estamos dentro de la carpeta callback pero queremos el codigo api 
+        - node src/callback
+
+    - Estructurar una API sin JQuery
+        -
+
+
+    -npm install xmlhttprequest -- save
+        - instalamos en una carpeta na libreria
+        - "install" pedimos instalar
+        - "-- save" significa en su producto desarrollador+
+        - 
+    
+
+    - no no sirver instalar miles de millones de librerias
+
+
+
+    - Sin "npm" no vas a poder ingresar una libreria desde el exterior
+
+    - Los callbacks se volvian un infierno.
+    - callback es lo mas antiguo para aplicar antiguamente
+    - luego de los "callback" vinieron "las promesas"
+    - "Las promesas" aparecieron para 
+*/

@@ -39,6 +39,10 @@ console.log(` la letra que corresponde al DNI de número
 var parrafo = "Libro de \"Autor\" de 1988";
 console.log(parrafo);
 
+//otro 
+document.write( parrafo + "</br>"); 
+
+
     
 
 
@@ -168,26 +172,115 @@ articulo.some();
 
 
 /* 
-    -------------------
-        OBJETOS { }
-    -------------------
+    -----------------------------------------------------------
+        SINTAXIS ENTRE FUNCIONES (PARÁMETROS) Y OBJETOS { }
+    -----------------------------------------------------------
 */
 
+
+/* ********** OBJETO ********** */
 var persona = 
     {
-        nombre: "Juan",
-        edad : 33,
-        altura : 1.77,
+        nombre: "Juan",                     // Propiedad 1  - Atributo 1
+        edad : 33,                          // Propiedad 2  - Atributo 2
+        altura : 1.77,                      // Propiedad 3  - Atributo 3
     };
 
-console.log(persona.nombre.toUpperCase());  // Pone todo el string en Mayuscula
-persona.edad +=1;               //34 
-console.log(persona.edad +=1);  //35
-
-// ...persona        //"spead operator"
 
 
-/*   ----- Espacio de Memoria - Comparar Objetos -------*/
+
+/* ********** FUNCIONES ********** */
+
+// 1ER CASO - PARÁMETRO NORMAL CON NOMBRE ALEATORIO
+function Pantalla (humano)
+    {
+        var humano = humano.nombre; 
+        console.log(humano);                  // Imprime en consola "Juan"
+    }
+
+
+
+// 2DO CASO - PARÁMETRO ENTRE LLAVES {} INDICANDO UN ATRIBUTO 
+function Pantalla_2 ({edad})        
+    {                                        // En el parámetro ya se indica con llaves {} El "nombre de la propiedad del objeto"
+        console.log(edad);                   // Imprime en consola el número "33"  
+    }
+
+
+
+// 3ER CASO - SENTENCIA ENTRE LLAVES {} INDICANDO UN ATRIBUTO
+function Pantalla_3 (individuo)
+    {
+        var {nombre} = individuo;             // Es la misma opción que  tener  " var individuo = individuo.nombre ; "" 
+        console.log(nombre);                  // Imprime en consola "Juan"
+    }
+
+
+
+
+/* ********** LLAMADA DE LA FUNCIÓN ********** */
+Pantalla(persona);
+Pantalla_2(persona);
+Pantalla(persona);
+
+ 
+
+
+
+
+/* 
+    -------------------------------------------------------------------------------------
+        COMPORTAMIENTO DE LOS ATRIBUTOS DE UN  OBJETOS { } EN EL SCOPE LOCAL Y GLOBAL
+    -------------------------------------------------------------------------------------
+*/  
+
+/* ********** OBJETO ********** */
+var persona = 
+    {
+        edad : 73,                          // Propiedad 1  - Atributo 1
+    };
+
+
+
+
+/* ********** FUNCIONES ********** */
+
+// 1ER CASO - COMPORTAMIENTO POR DEFECTO - MODIFICA EL SCOPE GLOBAL 
+function Pantalla (edad)
+    {
+        persona.edad +=1;                   // La sentencia del SCOPE LOCAL  modifica el Atributo (edad) del SCOPE GLOBAL 
+    }                                       // Ahora en el objeto "persona" la "edad = 74"  
+
+
+    
+// 2DO CASO - OPERADOR DE PROPAGACIÓN - NO MODIFICA EL SCOPE GLOBAL 
+function Pantalla_2 (persona)        
+    {                                     
+        return {                                // la llave no puede estar abajo. No es un Condicional. Debe estar pegado a return  
+                ...persona,                     // Spread Operator --> realiza una copia del objeto
+                edad: (persona.edad +=1)
+            };
+                              
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ---------------------------------------
+        COMPARACIÓN DE DOS  OBJETOS { }
+    ---------------------------------------
+*/
+
+
+/*   ----- COMPARAR OBJETOS - ESPACIO DE MEMORIA  -------*/
 var prueba01 = 
     {
         nombre :'Pepe',

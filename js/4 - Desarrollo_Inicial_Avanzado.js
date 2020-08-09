@@ -9,7 +9,6 @@
 
 
 
-
 /*
     --------------------------------------------------------------
         LINEAS DE ACCION DE JAVASCRIPT (DINAMISMO Y APLICACIÓN)
@@ -25,21 +24,20 @@
 
 
 /*
-                                            WINDOWS
-                                         _______|_______
-                                         |             | 
-                                         |             |
+                                            WINDOWS                                                                             - 
+                                         _______|_______                         
+                                         |             |                        
+                                         |             |                        
                                          ▼             ▼
                                     _____________________________________      
         NAVIGATOR   ◄ --------------|___________|___________|           |      
                                     |                                   |      
-                                    |                DOM                |  
-                                    |                                   |                
+                                    |                                   |  
+                                    |               DOM                 |--------► - El interfaz de programación DOM no modifica nada en ESTÁTICO.
+                                    |                                   |          - Sino que modifica la estructura, estilo o contenido en DINÁMICO. 
+                                    |                                   |          - Es decir, por una accion externa del usuario, se hace un cambio.
                                     |___________________________________|                            
 */
-
-
-
 
 
 
@@ -73,20 +71,17 @@
 
 
 
-
-
-
-
-
-                    *** ESQUEMA DEL CÓDIGO PARA UNA PAGINA SENCILLA ***
-        
+                    *** ESQUEMA  -  CÓDIGO PARA UNA PAGINA SENCILLA ***
                     
 
-                
+
+                                                         ¿ A que tipo de NODO  pertence "YO SOY IRON MAN" en el esquema de abajo?
+                                                
+                                                
                                                     ___________________                     
                                                     |                 |      
                 Raíz de todos los NODOS ◄ ----------|     document    | 
-                                                    |       XTML      |     
+                                                    |      XHTML      |     
                                                     |_________________|          
                                                               |                              *** TIPOS DE NODOS ***
                                                               |                                                            
@@ -130,7 +125,6 @@
                                                                                                               |___________________|                
                                   
 */
-
 
 
 
@@ -186,11 +180,19 @@ var segundoDiv = caja [1];                                              // Acced
     ----------------------
 */
 
+
+// ACCEDER A LA ETIQUETA 
 var cabecera = document.gerElementById('cabecera_etiqueta');            
 
-cabecera.innerHTML = "Nuevo Titulo ";                              // Se elimina "texto 1 Cabecera" y se sobre escribe "Nuevo Titulo"
 
 
+// 1ER CASO - CAMBIAR EL CONTENIDO DE UN ELEMENTO
+cabecera.innerHTML = "</b> Página Principal </b>";                          // Se elimina "texto 1 Cabecera" (se puede vizualizar en la etiqueta "section") y se sobre escribe "Página Principal"
+                                                                            //  <b>   </b>   --> pone en negrita "Página Principal" 
+            
+// 2DO CASO - CAMBIAR EL CONTENIDO DE UN ELEMENTO
+cabecera.textContent = "HOME";                                              // <b>   </b>   --> No se puede utilizar con  ".textContent" . Porque no pone en negrita y sale como texto. Esa es la diferencia que existe con "".innerHTML"
+                                                                                
 
 
 
@@ -204,14 +206,12 @@ cabecera.innerHTML = "Nuevo Titulo ";                              // Se elimina
 var cabecera = document.gerElementById('cabecera_etiqueta');            
 
 
-// 1ER FORMA DE MODIFICAR
+// 1RA ESTRCUTRA Y SINTAXIS PARA MODIFICAR
 cabecera.style.color ="red";                                // objeto.style.color 
 cabecera.style.fontFamily = "serif";                        // En estos casos  "font-family". Se quita el "guion" y se unen las palabras, con la primera letra en Mayúscula 
 
-//2DA FORMA DE MODIFICAR
+//2DA ESTRCUTRA Y SINTAXIS PARA MODIFICAR
 cabecera.style = "color:red ; font-family:serif ;"          // Esta forma se aproxima mas a CSS
-
-
 
 
 
@@ -225,9 +225,8 @@ cabecera.style = "color:red ; font-family:serif ;"          // Esta forma se apr
 
 var parrafo = document.gerElementById('parrafo_de_cabecera_numero_2');             // En index.html     --►  etiqueta "section"  <p class= > 
 
-parrafo.style.color = "green";                                                     
-parrafo.style.color = "200px";
-
+parrafo.style.color = "green";                                                                                            
+parrafo.style.width = "200px";
 
 
 
@@ -295,6 +294,7 @@ document.body.appendChild(parrafo);                                 // Añadir e
 
 
 
+
 /*
     ----------------------
         ELIMINAR NODOS
@@ -331,10 +331,104 @@ boton.parentNode.removeChild(boton);                                      //
 
 
 
+
+
+
+
+
+
+
 /*
-    -----------------
-        ATRIBUTOS 
-    -----------------
+    -------------------------------------------------
+        LOCALIZAR LOS ELEMENTOS -  PADRES E HIJOS
+    -------------------------------------------------
+*/
+
+
+
+
+// 1ER CASO ACCEDER AL PRIMER ELEMENTO-->  HIJO - ARRAY POSICIÓN 1
+var hijo   = document.getElementsByTagName('Section');                      // Devuelve una colección de Etiquetas. Un array de Section
+var hijo_1 = hijo[0];                                                       // Se accede  al  "section"  de la posición 1 
+
+
+
+// 2DO  CASO ACCEDER AL PRIMER ELEMENTO-->  HIJO - ARRAY POSICIÓN 1
+var hijo = document.getElementsByTagName("Section")[0];                     // Se accede  al  "section"  de la posición 1. Devuelve el primer "section" del array
+
+
+// LOCALIZAR PADRE 
+var padre = document.getElementsByTagName("Section")[0].parentNode;         // Con ".parentNode" --> se localiza al Padre de "section" posición 1. El padre es la etiqueta "main"
+
+
+
+// INSERTAR UN ELEMENTO ANTES DEL HIJO
+padre.insertBefore(parrafo,hijo);                                           // Se utiliza la variable "parrafo" (1RO - CREAR NODO DE TIPO ELEMENTO ). Y se inserta antes de "Section "
+                                                                            //  "Section" es el hijo de "Main" (que es el padre). Dentro de "main" y antes  de "section" se añade un parrafo
+
+
+
+
+
+
+
+
+
+/*
+    -----------------------------------------------
+        REEMPLAZAR ELEMENTO Y ELIMINAR UN HIJO 
+    -----------------------------------------------
+*/
+
+
+//CREAR NODO 
+
+// 1RO - CREAR NODO DE TIPO ELEMENTO 
+var nodoLista = document.createElement("li");                            // Se crea el nodo de tipo  elemento  "p" 
+
+// 2DO - CREAR NODO DE TIPO TEXTO
+var nodoTextoLista = document.createTextNode("Nueva linea");             // Crear nodo de tipo Text 
+
+// 3RO - SINCRONIZAR LOS DOS TIPOS DE NODOS.
+nodoLista.appendChild(nodoTextoLista);                                       // Añadir el nodo Text (contenido) como hijo del nodo Element "p" (parrafo)
+
+// 4TO -  AÑADIR AL DOM LOS NODOS CREADOS 
+document.body.appendChild(parrafo);                                          // Añadir el nodo Element "p" como hijo de "document.body"
+                                                                             // TIPOS DE NODOS : document --► body --► Element 
+
+
+// PADRE DE "li" ES  "lista" 
+var padreLista = document.getElementById("lista");                           // Se sabe al mirar el index.html en la etiqueta "footer" en el "ul" con id = "lista"                    
+
+
+
+
+// REEPLAZAR UN ELEMENTO O HIJO
+padreLista.replaceChild(nodoLista, padreLista.lastChild);                    // FALTA DESCRIPCION 
+
+
+// ELIMINAR UN HIJO 
+padreLista.removeChild(padreLista.getElementsByTagName("li")[0]);            // FALTA DESCRIPCION 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+/*
+    -----------------------
+        3RO - ATRIBUTOS 
+    -----------------------
 */
 
 
@@ -354,10 +448,83 @@ foto.src = 'images/ '
 
 
 
+
 /*
-    ---------------
-        EVENTOS
-    ---------------
+    ---------------------------------------------
+        CREAR UN ELEMENTO VACIO CON ATRIBUTOS
+    ---------------------------------------------
+*/
+
+
+/*
+    PAGINA DINAMICA     
+            - Dentro de main de hmtl se crea varios atributos que le describimos de aqui. 
+            o apartir del codigo de abajo
+            - 
+*/
+
+
+
+
+//CREAR NODO 
+
+// 1RO - CREAR NODO DE TIPO ELEMENTO 
+var nodoLista = document.createElement("li");                            // Se crea el nodo de tipo  elemento  "p" 
+
+// 2DO - CREAR NODO DE TIPO TEXTO
+var nodoTextoLista = document.createTextNode("Nueva linea");             // Crear nodo de tipo Text 
+
+// 3RO - SINCRONIZAR LOS DOS TIPOS DE NODOS.
+nodoLista.appendChild(nodoTextoLista);                                       // Añadir el nodo Text (contenido) como hijo del nodo Element "p" (parrafo)
+
+
+document.body.appendChild(parrafo);                                         // Añadir el nodo Element "p" como hijo de "document.body"
+                                                                            // TIPOS DE NODOS : document --► body --► Element 
+
+
+// 1RO - CREAR UN NODO DE TIPO ELEMENTO
+var elementoA = document.createElement("a");                                // Se crea un Nodo de tipo Elemento "a"
+
+// 2DO - INSERTAR ATRIBUTOS 
+
+        // CASO 1 -  FORMA DE INSERTAR ATRIBUTOS 
+        elementoA.href = "http://www.google.es";                             // ".href" --> atributo
+        elementoA.id = "link";                                               // Se inserta un Atributo Tipo "id" al Elemento "a"
+        elementoA.className = "link";                                        // Se inserta un Atributo Tipo "class" al Elemento "a"
+        elementoA.style = "color:red;";                                      // Se inserta un Estilo (.styke,ci). Un Atributo al Elemento "a"
+        elementoA.textContent = "Google";                                    // Se añade contenido
+
+        // CASO 2 -  FORMA DE INSERTAR ATRIBUTOS 
+        elementoA.setAttribute("name","Google");                             //                   
+
+
+// 4TO -  AÑADIR AL DOM LOS NODOS CREADOS 
+   document
+       .getElementsByTagName("main")[0]                                       // 
+       .insertBefore(elementoA, document.getElementsByTagName("ul")[0])       // 
+       ;
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+/*
+    -------------------
+       4TO - EVENTOS
+    -------------------
 */
 
 
@@ -419,6 +586,10 @@ boton.addEventListener("click", function ()                                   //
 
 
 
+
+
+
+
 /****************************************************************************************************************************************/
 
 
@@ -429,46 +600,50 @@ boton.addEventListener("click", function ()                                   //
 */
 
 
+
+
 /*
-    -------------------------------------------------
-        CREAR NODO - 
-    -------------------------------------------------
+    -----------------------------------
+        CREAR NODO - APLICAR EVENTO 
+    -----------------------------------
 */
 
 
 // ACCEDER A LA ETIQUETA
 var boton_id = document.getElementById('boton_del_id');                               // ".getElementById"  --►  devuelve el Elemento que tiene el atributo con el valor "id" único                               
-                            
+    
 
 
-// EVENTO - CLICK EN "boton_id" 
+
+//CREAR NODOS 
+
+// 1RO - CREAR NODO DE TIPO ELEMENTO 
+var nodoTitulo = document.createElement("h3");                             // Se crea el nodo de tipo elemento  "h3" 
+
+// 2DO - CREAR NODO DE TIPO TEXTO
+var nodoTexto = document.createTextNode("titulo");                         // Se crea el nodo de tipo Text 
+
+// 3RO - SINCRONIZAR LOS DOS TIPOS DE NODOS.
+nodoTitulo.appendChild(nodoTexto);                                         // ".appenChild"  --►  Añadir el nodo Text (nodoTexto) como hijo del nodo Element "h3" (nodoTitulo)                      
+                                              
+
+
+
+// EVENTO -  CON UN CLICK EN "boton_id" AGREGAR UNA SOLA VEZ UN "h3" 
 boton_id.addEventListener('click',function()
     {
-        
-        // 1RO - CREAR NODO DE TIPO ELEMENTO 
-        var nodoTitulo = document.createElement("h3");                      // Se crea el nodo de tipo elemento  "p" 
-
-        // 2DO - CREAR NODO DE TIPO TEXTO
-        var nodoTexto = document.createTextNode("titulo");                  // Se crea el nodo de tipo Text 
-        
-        // 3RO - SINCRONIZAR LOS DOS TIPOS DE NODOS.
-        nodoTitulo.appendChild(nodoTexto);                                 // ".appenChild"  --►  Añadir el nodo Text (nodoTexto) como hijo del nodo Element "h3" (nodoTitulo)                      
-                                                                                            
-
+                                                                           // Si por cada click se quiere añadir al DOM un "h3" se debe añadir 1ro, 2do y 3er paso de crear Nodo dentro del Evento
         // 4TO -  AÑADIR AL DOM LOS NODOS CREADOS
-        document.body.appendChild(nodoTitulo);                             // Añadir el nodo Element "h3" (nodoTitulo) como hijo del "document.boy"
-                                                                           // TIPOS DE NODOS : document --► body --► Element "p" (parrafo) 
+        document.body.appendChild(nodoTitulo);                             // Añadir el nodo Element "h3" (nodoTitulo) como hijo del "document.body"
+
+
+        // CASO ESPECIAL - "ID" A UNA PALABRA RESERVADA (article)
+        document.getElementById("articulo").appendChild(nodoTitulo);        // Se añade en la etiqueta "article " del index.html  el nodo de tipo elemento "h3" 
 
     });
 
 
 
-/*
-    Ejemplo SIN CLONACION 
-    cada vez que queremos añadir un documento o un texto 
-    siempre debemos hacer esto 
-*/
-
 
 
 
@@ -476,9 +651,9 @@ boton_id.addEventListener('click',function()
 
 
 /*
-    -------------------------------------------------
-        FORMULARIO BÁSICO - INTRODUCCIÓN DE DATOS
-    -------------------------------------------------
+    --------------------------------------------
+        FORMULARIO BÁSICO - INTRODUCIR DATOS
+    --------------------------------------------
 */
 
 //VARIABLE GLOBAL
@@ -505,14 +680,7 @@ boton_submit.addEventListener("click", function()
 
 
     
-                                            
-
-
-
-
-
-
-
+                                      
 
 
 

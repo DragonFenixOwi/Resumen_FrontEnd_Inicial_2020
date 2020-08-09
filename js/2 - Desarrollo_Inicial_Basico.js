@@ -23,7 +23,7 @@
                     - false
                     - 0 
                     - Undefined
-                    - " "                       un dato vacío es Falso. 
+                    - " "                       un dato o string vacío es Falso. 
                     - Null                  
                     - NaN                       No es un número. Tambien es falso. 
                 - Datos númericos

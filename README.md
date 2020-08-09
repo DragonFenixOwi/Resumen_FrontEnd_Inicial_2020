@@ -28,20 +28,39 @@
 ## II - Carpeta "js" de JavaScript
 
 ### Comandos de Atajos de Teclado y Git 
- 1. **Atajo de teclado Básico para Visual Studio Code**
+1. **Atajos mas Comunes del Indes.html en Visual Studio Code**
+
+2. **Extensiones (Plugins) mas Comunes en VS Code**
+
+3. **Atajo de teclado Básico para Visual Studio Code**
     - Formateo de Errores.
     - Terminal de salida
     - Go Live.
-2. **Extensiones Basicas**
-3. **Integrar Git_Bash a la Terminal de VSCode**
-4. **Comandos Iniciales Git**
-5. **Proceso de Ejecución en Segundo Plano**. 
-    - Ciclo Básico inicial
-        - git -->  init, add, commit, clone url y push
-    - Fusión entre repositorio local y remoto (falta documentar)
-        - fetch
-        - merge 
-        - pull
+4. **Integrar Git_Bash a la Terminal de VSCode**
+5. **Iniciando el mundo de Git**
+    - Proceso de Ejecución Básica en Segundo Plano
+        - Basado en 
+            - Directorio de trabajo local 
+            - Area de Prepación - Staging Area
+            - Repositorio local
+            - Repositorio remoto 
+        - Envío y Recepción de datos.
+            - git -->  init, add, commit, clone url y push 
+        - Actualización de datos
+            - git -->  fetch, merge  y pull 
+    - Archivos 
+    - Atajos de terminal git_bash 
+    - Comando iniciales git.
+    - Caso Especial - Comando aislado
+    - Comandos Generales
+6. **Comando Generales de Terminal**. 
+    - Generales
+    - Crear carpeta o archivo
+    - Escribir en un archivo
+    - Ver contenido de un archivo
+    - Comandos un poco destructivos 
+    - Llaves SSH 
+
 
 
 
@@ -99,6 +118,10 @@
     - **filter**(), **map**(), **find**(), **forEach**(), **some**()
 
  4. Objetos.
+    - Sintaxis entre Funciones (parámetros) y objetos 
+    - Comportamiento de los atributos de un Objeto en el Scope Local y Global.
+        - Spread Operator - Operador de Propagación 
+    - Comparación entre dos Objetos. 
 
  5. Métodos Strings
     - **toLowerCase**();
@@ -115,7 +138,7 @@
 
  7. Condicionales. 
     - if else - else if
-    - Operador Ternario if
+    - **Operador Ternario** if
     - Switch
 
  8. Bucles
@@ -135,17 +158,29 @@
 
 
 ### Desarrollo Inicial Avanzado.
- 1. (Iniciando documentación)
-    - DOM - Lineas de acción
-        - 1ra linea de accion - Dinamismo HTML Y CSS
-            - 4 formas de accerder a etiquetas HTML
+ 1. lineas de acción de JavaScript (Dinamismo y Aplicación)
+    - 1RA Líneas de Acción DOM - Dinamismo HTML Y CSS
+        - Código y Esquema para entener "Código para una Página Sencilla" 
+            - Explicación de la relación entre Nodos y Etiquetas
+        **1ro** Utilizar los Nodos  
+            - Acceder al DOM
+                - 4 formas de accerder a etiquetas HTML
             - Modificar HTML
             - Modificar CSS
             - Practica - Modificar Parrafo
-            - Eventos
+        **2do** Crear Elementos HTML a través del DOM
+            - Crear Nodos
+            - Eliminar Nodos
+            - Localizar los Elementos - Padres e hijos
+            - Reemplazar Elemento y Eliminar un hijo
+        **3ro** Atributos
+            - Crear un Elemento vacío con atributos.
+        **4to** Eventos
             - Varios eventos
             - Formulario Básico
-        - 2da Linea de acción - Aplicaciones
+        - Combinación - Práctica de todo lo aprendido
+            - Crear Nodo - Aplicar Evento
+            - Formulario Básico - Introducir datos. 
     - JSON.
  
 
@@ -177,6 +212,11 @@
     - Comportamiento de JavaScript en la **línea de tiempo** de Ejecución
     - CallBack's
     - API
+    - NODE.js - Asincronismo - Crear un Json
+        - Terminal Externa git_bash y NODE.js
+            - Primeros pasos - Verificar si la Instalación fue Exitosa.
+            - Iniciar NODE.js  guardando datos en un archivo JSON
+            -  Ejecutar NODE.js
 
 ## III - Carpeta "css" de CSS
  1. CSS_Descripción
