@@ -1,96 +1,98 @@
 # Resumen_FrontEnd_Inicial_2020
 - Plantilla con Descripción básica para proyectos de FrontEnd 
 
-# Indice corto de readme.md
-   ## Carpeta        ---►   [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
+# Indice corto 
+
+   ## [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
 
    ###  Recopilación de Imagenes
-        - **CallBack** (Suma, Date)
-        - **FlexBox** - Responsive - FirexFox Developer
-        - **JSON**
-        - **Solución** - No ejecuta console.log en Chrome
-        - **UI-UX**.
-        - **Debugger**
-        
+   - **CallBack** (Suma, Date)
+
+   - **FlexBox** - Responsive - FirexFox Developer
+
+   - **JSON**
+
+   - **Solución** - No ejecuta console.log en Chrome
+
+   - **UI-UX**.
+   
+   - **Debugger**
+
    ###   PDF
 
-   ## Carpeta        ---►   [JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+   ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
    ###  Comandos de Atajos de Teclado y Git 
 
-        1. **Atajos mas Comunes del "index.html" en Visual Studio Code**
+   1. **Atajos mas Comunes del "index.html" en Visual Studio Code**
 
-        2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
+   2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
 
-        3. **Atajo de teclado Básico para Visual Studio Code**
+   3. **Atajo de teclado Básico para Visual Studio Code**
                 
-        4. **Integrar Git_Bash a la Terminal de VSCode**
+   4. **Integrar Git_Bash a la Terminal de VSCode**
             
-        5. **Iniciando el mundo de Git**
+   5. **Iniciando el mundo de Git**
 
-        6. **Comando Generales de Terminal**. 
+   6. **Comando Generales de Terminal**. 
 
 
 
    ###  Desarrollo Inicial Básico
 
-        1. **Valores Booleanos**
+    1. **Valores Booleanos**
 
 
-        3. **Variables**, **Constante** y  **Valores**. 
+    3. **Variables**, **Constante** y  **Valores**. 
 
-        2. **Operadores**
+    2. **Operadores**   
 
 
- 4. **Funciones**
+    4. **Funciones**
     
- 5. **Scope**
+    5. **Scope**
  
- 6. **Hoisting**
+    6. **Hoisting**
 
 
- 7. **Buenas Prácticas**
+    7. **Buenas Prácticas**
 
- 8. **Debil Tipado**
+    8. **Debil Tipado**
   
- 9. **Coerción** 
+    9. **Coerción** 
 
 
 
 
    ###  Desarrollo Inicial Intermedio
 
- 1. Visualización de datos  
+    1. Visualización de datos  
 
- 2. Array
+    2. Array
 
+    3. Métodos Array
 
- 3. Métodos Array
+    4. Objetos.
 
+    5. Métodos Strings
 
- 4. Objetos.
+    6. Módulo Math
 
- 5. Métodos Strings
+    7. Condicionales. 
 
+    8. Bucles
 
- 6. Módulo Math
-
- 7. Condicionales. 
-
-
- 8. Bucles
-
-
- 9. Arrow Function
+    9. Arrow Function
 
 
    ###  Desarrollo Inicial Avanzado.
+
  1. lineas de acción de JavaScript (Dinamismo y Aplicación)
     
-    - 1RA Líneas de Acción DOM - Dinamismo HTML Y CSS
+    - **1RA** -  Líneas de Acción DOM - Dinamismo HTML Y CSS
     
-    - 2DA Aplicación    
+    - **2DA** - Aplicación    
 
  
 
@@ -108,13 +110,13 @@
    ## Carpeta        ---►   [CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
 
    ###  Carpeta "css" de CSS
-            1. CSS_Descripción
+   1. CSS_Descripción
 
-            2. Estilos.
+   2. Estilos.
 
-            3. Main_Axis-Column 
+   3. Main_Axis-Column 
 
-            4. Main_Axis_Row 
+   4. Main_Axis_Row 
     
 
 
