@@ -3,46 +3,122 @@
 
 # Indice corto de readme.md
    ## Carpeta        ---►   [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
-   ## Carpeta        ---►   [JS] (https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
-   ## Carpeta        ---►   [CSS] (https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+
+   ###  Recopilación de Imagenes
+        - **CallBack** (Suma, Date)
+        - **FlexBox** - Responsive - FirexFox Developer
+        - **JSON**
+        - **Solución** - No ejecuta console.log en Chrome
+        - **UI-UX**.
+        - **Debugger**
+        
+   ###   PDF
+
+   ## Carpeta        ---►   [JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+
+
+   ###  Comandos de Atajos de Teclado y Git 
+
+        1. **Atajos mas Comunes del "index.html" en Visual Studio Code**
+
+        2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
+
+        3. **Atajo de teclado Básico para Visual Studio Code**
+                
+        4. **Integrar Git_Bash a la Terminal de VSCode**
+            
+        5. **Iniciando el mundo de Git**
+
+        6. **Comando Generales de Terminal**. 
+
+
+
+   ###  Desarrollo Inicial Básico
+
+        1. **Valores Booleanos**
+
+
+        3. **Variables**, **Constante** y  **Valores**. 
+
+        2. **Operadores**
+
+
+ 4. **Funciones**
+    
+ 5. **Scope**
+ 
+ 6. **Hoisting**
+
+
+ 7. **Buenas Prácticas**
+
+ 8. **Debil Tipado**
+  
+ 9. **Coerción** 
+
+
+
+
+   ###  Desarrollo Inicial Intermedio
+
+ 1. Visualización de datos  
+
+ 2. Array
+
+
+ 3. Métodos Array
+
+
+ 4. Objetos.
+
+ 5. Métodos Strings
+
+
+ 6. Módulo Math
+
+ 7. Condicionales. 
+
+
+ 8. Bucles
+
+
+ 9. Arrow Function
+
+
+   ###  Desarrollo Inicial Avanzado.
+ 1. lineas de acción de JavaScript (Dinamismo y Aplicación)
+    
+    - 1RA Líneas de Acción DOM - Dinamismo HTML Y CSS
+    
+    - 2DA Aplicación    
+
+ 
+
+
+   ###  Desarrollo Inicial Superior.
+
+   1. **Programación Orientada a Objetos** (**POO**)
+
+
+   2. **Estructura de una Clase**
+    
+   3. **Asincronismo**
+    
+
+   ## Carpeta        ---►   [CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+
+   ###  Carpeta "css" de CSS
+            1. CSS_Descripción
+
+            2. Estilos.
+
+            3. Main_Axis-Column 
+
+            4. Main_Axis_Row 
+    
+
+
    ## Descripción    ---►   Ruta de Aprendizaje del frontend 
-
-
-
-## I - Carpeta " Registro Complementario"
-1. **Recopilación de Imagenes**
-    - **CallBack** (Suma, Date)
-    - **FlexBox** - Responsive - FirexFox Developer
-        - Caja FlexBox - Body (Padre) - Hijos (header,main,footer)
-            - Area Inicial de trabajo (reset, Flexbox,etc.)
-            - Configuración de Práctica.
-            - Main Axis - Column.
-            - Main Axis - Row.
-        - Caso Header (ViewPort height)
-        - Nav
-        - Padre - Hijos.
-    - **JSON**
-    - **Solución** - No ejecuta console.log en Chrome
-    - **UI-UX**.
-    - **Debugger**
-2. **PDF** - Ayuda
-    - Código CSS3.
-    - Código HTML5.
-    - Fonts.
-
-
-
-## III - Carpeta "css" de CSS
- 1. CSS_Descripción
-    - Navegadores.
-    - Reset
-    - Descripción de Nociones Básicas CSS (Position, FlexBox, Grid-Layout, Framework Bulma y Bootstrap)
- 2. Estilos.
-    - FlexBox - Padre "body"
- 3. Main_Axis-Column 
-    - **flex-direction: column**
- 4. Main_Axis_Row 
-    - **flex-direction: row**
 
 
 ## III - Descripción Ruta de Aprendizaje del frontend

@@ -383,12 +383,17 @@ ana.saludarDev();               // Si Borramos "Dev" y dejamor "saludar" - Ocurr
 
 /*
     JavaScript sólo puede hacer una cosa a la vez.
+        
         - Pero es capaz de delegar la ejecución de ciertas funciones a otros procesos. 
+        
         - Este modelo de concurrencia se llama "EventLoop".
 
     - ¿que ocurre si le envia varias tareas a la vez? 
+        
         - Delega esas tareas al navegador y las asocia a "funciones".
+        
         - Al terminar la tarea actual. Esta tarea asociada a una función debera ser ejecutada. 
+        
         - Estas funciones son conocidos como "CALLBACK"
 
     */
@@ -409,27 +414,72 @@ ana.saludarDev();               // Si Borramos "Dev" y dejamor "saludar" - Ocurr
     - Para entender el ASINCRONISMO hay que saber como trabaja esa cola de tareas.
     
     - setTimeout (función, tiempo) 
+        
         - Despues de cierto "tiempo" se ejecuta la "función"
+        
         - Parámetros     
-            - ARROW FUNCTION  () => console.log(2)
-            - tiempo = 2000 milisegundos
+            
+                - ARROW FUNCTION  () => console.log(2)
+                
+                - tiempo = 2000 milisegundos
 */
 
 
 // CON RETRASO DE TIEMPO
-console.log(1);                              // Se ejecuta. Se imprime en consola "1"
-setTimeout(() => console.log(2), 2000);      // No se ejecuta. Se delega al navegedar. La función se añade a la cola de tareas
-console.log(3);                              // Se ejecuta. Se imprime en consola "3"
+console.log(1);                                     // Se ejecuta. Se imprime en consola "1"
+setTimeout(() => console.log(2), 2000);             // No se ejecuta. Se delega al navegedar. La función se añade a la cola de tareas
+console.log(3);                                     // Se ejecuta. Se imprime en consola "3"
 // Final del código. Empieza a sacar las tareas de la cola de tareas. Se imprime en consola "2"       
 
                     
 
 // SIN RETRASO DE TIEMPO
-console.log(1);                               // Se ejecuta. Se imprime en consola "1"
-setTimeout(() => console.log(2), 0);          // Se ejecuta el ARROW FUNCTION. Tiempo que tarda para ejecutar la function "0"
-console.log(3);                               // Se ejecuta. Se imprime en consola "3"
+console.log(1);                                     // Se ejecuta. Se imprime en consola "1"
+setTimeout(() => console.log(2), 0);                // Se ejecuta el ARROW FUNCTION. Tiempo que tarda para ejecutar la function "0"
+console.log(3);                                     // Se ejecuta. Se imprime en consola "3"
 
 
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+
+
+/*
+    ------------------------------
+                API
+    ------------------------------
+*/
+
+
+
+
+/*
+    - API                   ---►      Application Programming Interface
+                                      Se podria considerar un mecanismo para que se conecten dos aplicaciones o dos codigos, dos softwares. 
+                                      Y que esas aplicaciones intercambien datos. 
+
+    - TIPOS DE  API          ---►     Free, registro, pago
+    
+    - API de Star- Wars      ---►     https://swapi.dev/    - Se necesita JQuery que es el que hara de "request" (rescatar los datos) para traer 
+                                                              a nuestro código 
+                                
+                                                            - Diferentes Datos  
+                                        
+                                                                - people/1 - pertenece a "luke skywalker"
+                                                                
+                                                                - people/10 - pertence a "obin-wan kenobi"
+                                                                
+                                                                - people/5  - pertenece a "leia organa"
+                                        
+                                                            - Estos datos (people/ id)  nos deja acceder atraves de una API. 
+                                    
+    
+*/
 
 
 
@@ -440,28 +490,38 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
 
     
 /*
-    ----------------------------------------------
-                PROMESAS VS CALLBACK'S 
-    ----------------------------------------------
+    ---------------------------------------------------
+                PROMESAS   VS    CALLBACK'S 
+    ---------------------------------------------------
 */
 
 
 /*
-        - ¿Para que me sirven las promesas?
-    - La punto correcto seria ¿Como conectarnos con algo externo?
-    - Si quiero trabajar con una conexion pero no se si funcioan esa conexion
-        - Para eso necesito las promesas y los callback´s 
-        - Para saber si la conexion funciona
-    -  Te prometemos pero no lo cumplismo 
+    - ¿Para que me sirven las promesas y callback's?
+
+            - pues la prugunta correcta seria    ---►     ¿Como conectarnos con algo externo?
     
-    - todos estos sirven para conectarnos para datos externos. Para JSON externos
+    - Los dos sirven para conectarnos para datos externos. 
+
+    - En aplicativos web es muy común realizar consultas a las API's. 
+    
+            - Dicha petición se realiza utilizando FUNCIONES  de JavaScript y estas presentan ASINCRONÍA. 
+
+    - Esta consulta al final del día se puede traducir como "una petición al servidor". 
 
 */
+
+
+
+
+
+
+
 
 
 /*
     ----------------------------------------------------
-                CALLBACK'S - VIEJO
+                CALLBACK'S (ANTIGUO)
     ----------------------------------------------------
 */
 
@@ -484,10 +544,7 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
         -  Se debe olvidar  un rato la expectativa de que todo lo que sucedera en la línea 1 finalizará antes de ejecutar la línea 2
         
             -  Se debe olvidar un poquito la programación lineal de que la ejecución se realizara de forma inmediata de arriba hacia abajo.
-        
-        - 
 
-        - 
 */
 
     
@@ -522,14 +579,10 @@ calcular(40,20,sumar)                                                   // Argum
 
 
 
-
-
-/****************************************************************************************************************************************/
-
-
+                            
 /*
     ---------------------------------------------
-                PROMESA - ACTUAL
+                PROMESA (ACTUAL)
     ----------------------------------------------
 */
 
@@ -577,124 +630,95 @@ calcular(40,20,sumar)                                                   // Argum
 
 
 
-    // 1ER CASO - SIN ARROW FUNCTION
+// 1ER CASO - SIN ARROW FUNCTION
 
-        // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
+    // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
 
-            const PROMESA_OWI  = function ()                                            // funcion sin parametros.  
-                {
-                    return new Promise ( function (resolve,reject)                      // "function"      ---►     Es una función ejecutor 
-                                            {                                           // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
-                                                if (true)                               // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                       
-                                                    {                                                         
-                                                        resolve("Éxito");               // Si resuelve exitosamente (true). Llama a la función "resolve" 
-                                                    }                                                          
-                                                else
-                                                    {
-                                                        reject("Fracaso");              // Si algun error sucede (false). LLama a la función "reject"
-                                                    }    
-                                            }
-                                        );
-                }  
-
-        // EJECUTAR UNA PROMESA - LLAMADA
-                        
-            PROMESA_OWI.then (  function (valor)                                        // Cuando todo funciona bien 
-                                    {
-                                        console.log(response);                          // Se imprime lo que devuelve "return"
+    const PROMESA_OWI  = function ()                                          // funcion sin parametros. La constante "PROMESA_OWI" guarda una "function"  
+        {
+            return new Promise ( function (resolve,reject)                    // "function"      ---►     Es una función ejecutor 
+                                    {                                         // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
+                                        if (true)                             // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                       
+                                            {                                                         
+                                                resolve("Éxito");             // Si resuelve exitosamente (true). Llama a la función "resolve" 
+                                            }                                                          
+                                        else
+                                            {
+                                                reject("Fracaso");            // Si algun error sucede (false). LLama a la función "reject"
+                                            }    
                                     }
-                             );                                 
+                                    );
+        }  
+
+    // EJECUTAR UNA PROMESA - LLAMADA
+                        
+    PROMESA_OWI.then (  function (valor)                                     // Cuando todo funciona bien 
+                            {
+                                console.log(response);                       // Se imprime lo que devuelve "return"
+                            }
+                     );                                 
                             
-            PROMESA_OWI.catch ( function (err)                                          // cuando hay errores
-                                    {
-                                        cconsole.error(err);                           // Se imprime lo que devuelve "return"     
-                                    }
-                              ); 
+    PROMESA_OWI.catch ( function (err)                                       // cuando hay errores
+                            {
+                                cconsole.error(err);                         // Se imprime lo que devuelve "return"     
+                            }
+                      ); 
 
 
                         
 
 
-    // 2DO CASO - CON ARROW FUNCTION (mas común)
+// 2DO CASO - CON ARROW FUNCTION (mas común)
     
-        // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
+    // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
 
-            const PROMESA_OWI  = () =>                                                  // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
-                {
-                    return new Promise ( function (resolve,reject)                      // "function"      ---►     Es una función ejecutor 
-                                            {                                           // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
-                                                if (true)                               // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                  
-                                                    {                                                          
-                                                        resolve("Éxito");               // Si resuelve exitosamente (true). Llama a la función "resolve" 
-                                                    }                                                          
-                                                else
-                                                    {
-                                                        reject("Fracaso");               // Si algun error sucede (false). LLama a la función "reject"
-                                                    }    
-                                    }
-                                );
-                }  
+    const PROMESA_OWI  = () =>                                                // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
+        {
+            return new Promise ( function (resolve,reject)                    // "function"      ---►     Es una función ejecutor 
+                                    {                                         // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
+                                        if (true)                             // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                  
+                                            {                                                          
+                                                resolve("Éxito");             // Si resuelve exitosamente (true). Llama a la función "resolve" 
+                                            }                                                          
+                                        else
+                                            {
+                                                reject("Fracaso");            // Si algun error sucede (false). LLama a la función "reject"
+                                            }    
+                            }
+                        );
+        }  
 
-        // EJECUTAR UNA PROMESA - LLAMADA
+    // EJECUTAR UNA PROMESA - LLAMADA
 
-            PROMESA_OWI.then ( (valor) => console.log(response) );                       // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
-                                                                                         // FASE 3 DE ARROW FUNCTION - Se elimina las llaves 
+    PROMESA_OWI.then ( (valor) => console.log(response) );                    // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
+                                                                              // FASE 3 DE ARROW FUNCTION - Se elimina las llaves 
                                                             
                             
-            PROMESA_OWI.catch ( (err) => console.error(err) );                           // FASE 1 DE ARROW FUNCTION 
-                                                                                         // FASE 3 DE ARROW FUNCTION
+    PROMESA_OWI.catch ( (err) => console.error(err) );                        // FASE 1 DE ARROW FUNCTION 
+                                                                              // FASE 3 DE ARROW FUNCTION
                                                                                  
                                     
-                            
+            
 
-const QUE_PASARA = () => 
-    {
-        return new PROMISE((resolve, reject)=>
-            {
-                if (true)
-                    {
-                        resolve('Bien echo!!!!');
-                    }
-                else
-                    {
-                        reject("Mal hecho!!!!");
-                    }
-            });
-    };
-
-
-
-QUE_PASARA()
-    .then((response) => console.log(response));
-    //.catch((err) => console.error(err));
+/*
+    ---------------------------------------
+            MULTIPLES PROMESAS 
+    ---------------------------------------
+*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// LLAMADA DE VARIAS PROMESAS
+Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                // Aqui esta la solución a los CALLBACK'S. Se realiza multiples llamadas de PROMESAS        
+    .then((response) =>                                                        
+        {                                                                      // PROMESA_OWI ()  ===  PROMESA_1()     ---►     PROMESA_OWI () de arriba es una función  
+            console.log("Resultados", response);    
+        })                                                                     // No debe ponerse ";" 
+    .catch ( (err) => 
+        {
+            console.error(err);                                                // ".then" y ".cat" deben estar ajustadas a promise (cerca)
+        });
 
 /****************************************************************************************************************************************/
 
@@ -730,6 +754,9 @@ QUE_PASARA()
 */
 
 
+
+
+
 /*
     -------------------------------
         PRIMEROS PASOS  NODE.JS  
@@ -754,6 +781,9 @@ QUE_PASARA()
 
 
 */
+
+
+
 
 
 
@@ -839,11 +869,17 @@ QUE_PASARA()
 
 
 
+
+
+
+
 /* 
     ------------------------
         EJECUTAR NODE.JS
     ------------------------
 */
+
+
 
 /*
     PARA LA EJECUCIÓN
@@ -937,41 +973,3 @@ QUE_PASARA()
 
 
 
-
-
-
-
-
-
-
-/****************************************************************************************************************************************/
-
-
-/*
-    ---------------------------------------------
-                    API
-    ----------------------------------------------
-*/
-/*
-    ------------------------------
-                API
-    ------------------------------
-*/
-
-/*
-    API    
-        - Se podria considerar un mecanismo para que se conecten dos aplicaciones o dos codigos, dos softwares.
-            - y que esas aplicaciones intercambien datos. 
-    - API (Free, registro, pago)
-    - API de Star- Wars 
-        - https://swapi.dev/ 
-        - Diferentes Datos 
-            - people/1 - pertenece a "luke skywalker"
-            - people/10 - pertence a "obin-wan kenobi"
-            - people/5  - pertenece a "leia organa"
-        - Estos datos (people/ id)  nos deja acceder atraves de una API. 
-        - Por eso necesitamos ahora mismo JQuery que es el que hara "request"(el que va a rescatar estos datos)
-            -  Con JQuery rescatamos esa información y nos los trae a nuestro codigo que redactamos ahora.
-
-    
-*/

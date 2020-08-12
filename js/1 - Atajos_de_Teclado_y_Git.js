@@ -528,17 +528,15 @@
         - git branch                   ---►      Ver rama actual    
 
         - git diff                     ---►      Comprueba los cambios realizados antes del commit. 
-                                               Luego de un "git fetch" es recomendable hacer un "diff"
+                                                Luego de un "git fetch" es recomendable hacer un "diff"
 
             git diff HASH 1 HASH 2     ---►     Comparar el contenido de las distintas versiones del "commit".  HASH 1 (commit actual) y HASH 2 (commit inicial)
-                                              HASH" ---►   Es ese numero super largo que apunta a un "commit" en específico.      
+                                                 HASH" ---►   Es ese numero super largo que apunta a un "commit" en específico.      
                                         
         - git show                     ---►      Muestra los cambios que han existido sobre un archivo.
         
         - git restore --stage          ---►      Sacar un del "staging" un archivo para luego volver a modificarlo. Por ejemplo  " git restore --stage index.html "           
 
-        - 
-        
 
 
     COMANDOS UN POCO DESTRUCTIVAS - MUY PELIGROSOS
