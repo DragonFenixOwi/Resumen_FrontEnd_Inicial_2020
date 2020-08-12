@@ -1,8 +1,9 @@
 
 
-## II - Carpeta "js" de JavaScript
+# Carpeta "js" de JavaScript
 
-### Comandos de Atajos de Teclado y Git 
+##  Comandos de Atajos de Teclado y Git 
+
 1. **Atajos mas Comunes del "index.html" en Visual Studio Code**
 
 2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
@@ -11,6 +12,7 @@
     - Formateo de Errores.   -         
     - Terminal de salida            
     - Go Live.
+    
 4. **Integrar Git_Bash a la Terminal de VSCode**
     - Configurar ruta de acceso de git_bash en el archivo  setting.json
     - Configurar Usuario y email con "git config"
@@ -31,6 +33,7 @@
     - Comando iniciales git.
     - Caso Especial - Comando aislado
     - Comandos Generales
+    
 6. **Comando Generales de Terminal**. 
     - Generales
     - Crear carpeta o archivo
@@ -140,26 +143,31 @@
     - 1RA Líneas de Acción DOM - Dinamismo HTML Y CSS
         - Código y Esquema para entener "Código para una Página Sencilla" 
             - Explicación de la relación entre Nodos y Etiquetas
+
         **1ro** Utilizar los Nodos  
             - Acceder al DOM
                 - 4 formas de accerder a etiquetas HTML
             - Modificar HTML
             - Modificar CSS
             - Practica - Modificar Parrafo
+
         **2do** Crear Elementos HTML a través del DOM
             - Crear Nodos
             - Eliminar Nodos
             - Localizar los Elementos - Padres e hijos
             - Reemplazar Elemento y Eliminar un hijo
+
         **3ro** Atributos
             - Crear un Elemento vacío con atributos.
+
         **4to** Eventos
             - Varios eventos
             - Formulario Básico
+
         - Combinación - Práctica de todo lo aprendido
             - Crear Nodo - Aplicar Evento
             - Formulario Básico - Introducir datos. 
-            
+
     - 2DA Aplicación
  
 
@@ -187,6 +195,7 @@
         - Instancia del Constructor - Padre
         - Instancia del Constructor - Herencia
         - Llamada del Método
+
  3. **Asincronismo**
     - Comportamiento de JavaScript en la **línea de tiempo** de Ejecución
     - CallBack's

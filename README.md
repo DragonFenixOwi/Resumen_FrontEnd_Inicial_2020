@@ -3,7 +3,7 @@
 
 # Indice corto 
 
-   ## [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
+   ## [I - Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
 
    ###  Recopilación de Imagenes
    - **CallBack** (Suma, Date)
@@ -20,7 +20,7 @@
 
    ###   PDF
 
-   ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+   ## [II - Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
    ###  Comandos de Atajos de Teclado y Git 
@@ -41,49 +41,46 @@
 
    ###  Desarrollo Inicial Básico
 
-    1. **Valores Booleanos**
+   1. **Valores Booleanos**
 
+   2. **Operadores**   
 
-    3. **Variables**, **Constante** y  **Valores**. 
+   3. **Variables**, **Constante** y  **Valores**. 
 
-    2. **Operadores**   
-
-
-    4. **Funciones**
+   4. **Funciones**
     
-    5. **Scope**
+   5. **Scope**
  
-    6. **Hoisting**
+   6. **Hoisting**
 
+   7. **Buenas Prácticas**
 
-    7. **Buenas Prácticas**
-
-    8. **Debil Tipado**
+   8. **Debil Tipado**
   
-    9. **Coerción** 
+   9. **Coerción** 
 
 
 
 
    ###  Desarrollo Inicial Intermedio
 
-    1. Visualización de datos  
+   1. Visualización de datos  
 
-    2. Array
+   2. Array
 
-    3. Métodos Array
+   3. Métodos Array
 
-    4. Objetos.
+   4. Objetos.
 
-    5. Métodos Strings
+   5. Métodos Strings
 
-    6. Módulo Math
+   6. Módulo Math
 
-    7. Condicionales. 
+   7. Condicionales. 
 
-    8. Bucles
+   8. Bucles
 
-    9. Arrow Function
+   9. Arrow Function
 
 
    ###  Desarrollo Inicial Avanzado.
@@ -107,25 +104,24 @@
    3. **Asincronismo**
     
 
-   ## Carpeta        ---►   [CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+   ## Carpeta        ---►   [III - CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
 
-   ###  Carpeta "css" de CSS
-   1. CSS_Descripción
+   1. **CSS_Descripción**
 
    2. Estilos.
 
-   3. Main_Axis-Column 
+   3. **Main_Axis-Column**
 
    4. Main_Axis_Row 
     
 
 
-   ## Descripción    ---►   Ruta de Aprendizaje del frontend 
+   ## Descripción Ruta de Aprendizaje del frontend
 
-
-## III - Descripción Ruta de Aprendizaje del frontend
 1.  **Git**
+
 2. **Terminal** –zsh
+
 3. **Programación Básica**
     - Conceptos básicos de que es
     - Un poquito de que es la memoria. “Hardware"
@@ -134,10 +130,13 @@
     - Es importante, asi no nos damos tanta vuetla
     - Lo interesante es que nos puedan hacer un wireframe
     - Y luego pueda desarrollar el mockup dentro del wireframe
+
 5. **Desarrollo web**
     - Hml5 css3
+
 6. **Responsive Desing**
     - Flexbox grids
+
 7. **Frameworks**
     - Muchas de ellas requieren de "bootstrap"
     - Serian
@@ -149,6 +148,7 @@
         - Con varios desarrrolladores es importante
     - ¿que pasa?
         - Al unir en git es un caos
+
 8. PRE- PROCESADORES
     - Se pensaba que iban a desaparecer
     - Los navegadores se toman muy tranquilo esta
@@ -170,14 +170,19 @@
     - Pre-procesador
     - Si pones en Internet pre-procesador Aplicación
     - Cuando se controla todo esto pasas
+
 9. **Vanilla JavaScript**
+
 10. **Node.js**
     - Fuera del navegador
     - Utiliza el motor V8, pasa de código al código maquina muy rápido
     - Convierte al JS a modular
     - Estoy fuera del navegador y puedo tener un servidor
+
 11. **Base de datos**
+
 12. TS – **TypeScript**
+
 13. **Base de datos**
     - MySQL es de Oracle. Lo compro y por eso dejo de ser open source
     - Una empresa que hay que pagar
@@ -193,6 +198,7 @@
             - No
             -  Necesitas saber los anteriores
     - FRAMEWORKS de JavaScript
+
 14.  **REACT**
         - React Native
             - ANDROID
