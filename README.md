@@ -1,6 +1,8 @@
 # Resumen_FrontEnd_Inicial_2020
 - Plantilla con Descripción básica para proyectos de FrontEnd 
 
+
+
 # Indice corto 
 
    ## [I - Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
@@ -25,17 +27,17 @@
 
    ###  Comandos de Atajos de Teclado y Git 
 
-   1. **Atajos mas Comunes del "index.html" en Visual Studio Code**
+   1. **Atajos mas Comunes** del "index.html" en Visual Studio Code
 
-   2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
+   2. **Extensiones (Plugins)** mas Comunes en Visual Studio Code
 
-   3. **Atajo de teclado Básico para Visual Studio Code**
+   3. **Atajo de teclado** Básico para Visual Studio Code
                 
-   4. **Integrar Git_Bash a la Terminal de VSCode**
+   4. **Integrar Git_Bash** a la Terminal de VSCode
             
-   5. **Iniciando el mundo de Git**
+   5. Iniciando el mundo de Git
 
-   6. **Comando Generales de Terminal**. 
+   6. Comando Generales de Terminal. 
 
 
 
@@ -64,19 +66,19 @@
 
    ###  Desarrollo Inicial Intermedio
 
-   1. Visualización de datos  
+   1. **Visualización de datos**  
 
-   2. Array
+   2. **Array**
 
-   3. Métodos Array
+   3. **Métodos Array**
 
-   4. Objetos.
+   4. **Objetos.**
 
-   5. Métodos Strings
+   5. **Métodos Strings**
 
    6. Módulo Math
 
-   7. Condicionales. 
+   7. ***Condicionales.***
 
    8. Bucles
 
@@ -85,7 +87,7 @@
 
    ###  Desarrollo Inicial Avanzado.
 
- 1. lineas de acción de JavaScript (Dinamismo y Aplicación)
+ 1. **lineas de acción de JavaScript (Dinamismo y Aplicación)**
     
     - **1RA** -  Líneas de Acción DOM - Dinamismo HTML Y CSS
     
@@ -104,15 +106,15 @@
    3. **Asincronismo**
     
 
-   ## Carpeta        ---►   [III - CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+   ##  [III - Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
 
    1. **CSS_Descripción**
 
-   2. Estilos.
+   2. **Estilos.**
 
    3. **Main_Axis-Column**
 
-   4. Main_Axis_Row 
+   4. **Main_Axis_Row** 
     
 
 

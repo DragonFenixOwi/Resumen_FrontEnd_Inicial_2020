@@ -1,5 +1,3 @@
-
-
 # Carpeta "js" de JavaScript
 
 ##  Comandos de Atajos de Teclado y Git 
