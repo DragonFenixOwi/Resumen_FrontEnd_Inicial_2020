@@ -406,14 +406,16 @@
 
 
 /* 
-    ----------------
-        ARCHIVOS  
-    ----------------
+    ------------------------
+        TERMINOS COMUNES  
+    ------------------------
 */
 
 /* 
-    - ".gitkeep"          ---►      Permite guardar carpetas vacias   
+    - ".gitkeep"          ---►      Permite guardar carpetas vacias en el repositorio. Porque Git no entiende de carpetas.    
     
+    - ".gitgnore"         ---►      Archivo Binario. Se utiliza para Configurar Git. Para que ignore archivos que no quieras subir a Github
+                                    
     - HEAD                ---►      Puntore de commit. Indica en que rama estoy. Por lo general y por defecto estamos en "master"
 
     - Master              ---►      Es un puntero de rama. 
@@ -466,7 +468,7 @@
             index.html  
             css/estilos.css
 		Git status              
-        git commit –m
+        git commit –m ""
         git push -u origin master
 */
 
@@ -481,11 +483,16 @@
 */
 
 /* 
-    - CASO AISLADO - ERROR al intentar realizar un git pull (merge +  ) 
+    - CASO AISLADO - ERROR al intentar realizar un git pull (merge + fetch ) 
+    
         - Con el fin de unir mi repositorio local de Visual Studio Code 
+    
         - Con el repositorio en la nube de github  
-    - Y tiene que ver en la manera como github crea los primeros archivos
+    
+        - Y tiene que ver en la manera como github crea los primeros archivos
+    
     - COMANDO GIT 
+    
         - git pull origin master --allow-unrelated-histories
 */
 
@@ -500,25 +507,37 @@
     ---------------------------------
 */
 /*  
-    GENERALES
-
-        - git add .                  ---►      Agregar todos los cambios. El punto "." indica "la carpeta actual donde estan todos los archivos"     
+    GENERALES     
         
-        - git status                 ---►      Ver Estado del archivo. Por lo general, ver si falta un "git add" o "git commit"
+        - git status                   ---►      Ver Estado del archivo. Por lo general, ver si falta un "git add" o "git commit"
 
-        - git log                    ---►      Ver historial de "commit". Con la tecla "q" se puede salir de "git log"
+        - git add .                    ---►      Agregar todos los cambios. El punto "." indica "la carpeta actual donde estan todos los archivos"
 
-            "git log --stat"         ---►      Ver el historial y los cambios especificos del "commit". Se observa cuantos "Bytes" se cambiaron.  
-            
-        - git branch                 ---►      Ver rama actual    
+        - git commit                   ---►       
 
-        - git diff                   ---►      Comprueba los cambios realizados antes del commit. 
+            - git commit -am " "       ---►       Seria un " git add" + un "git commit"  al mismo tiempo.  
+ 
+            - git commit --amend       ---►      Cambiar el comentario del ultimo commit.
+
+        - git log                      ---►      Ver historial de "commit". Con la tecla "q" se puede salir de "git log"
+
+            - "git log --stat"         ---►      Ver el historial y los cambios especificos del "commit". Se observa cuantos "Bytes" se cambiaron.  
+           
+            - git log --online         ---►      Visualizar un resumen de "commits" en forma de lista. 
+
+        - git branch                   ---►      Ver rama actual    
+
+        - git diff                     ---►      Comprueba los cambios realizados antes del commit. 
                                                Luego de un "git fetch" es recomendable hacer un "diff"
 
-            git diff HASH 1 HASH 2   ---►     Comparar el contenido de las distintas versiones del "commit".  HASH 1 (commit actual) y HASH 2 (commit inicial)
+            git diff HASH 1 HASH 2     ---►     Comparar el contenido de las distintas versiones del "commit".  HASH 1 (commit actual) y HASH 2 (commit inicial)
                                               HASH" ---►   Es ese numero super largo que apunta a un "commit" en específico.      
                                         
-        - git show                   ---►      Muestra los cambios que han existido sobre un archivo.      
+        - git show                     ---►      Muestra los cambios que han existido sobre un archivo.
+        
+        - git restore --stage          ---►      Sacar un del "staging" un archivo para luego volver a modificarlo. Por ejemplo  " git restore --stage index.html "           
+
+        - 
         
 
 
@@ -538,6 +557,8 @@
         
         - git checkout master "index.html"      ---►     Regresa a la versión actual. Siempre y cuando no se haya realizado un "commit" luego del ckeckout  
 
+        -git revert                             ---►     Revertir los ultimos cambios. Por ejemplo, "git revert HEAD". Es decir, revierte el contenido volviendo a un estado 
+                                                         antes de guardar. No elimina el "commit"
 */
 
 

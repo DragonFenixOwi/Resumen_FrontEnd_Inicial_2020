@@ -9,9 +9,9 @@
 
 
 /*
-    ------------------------
+    --------------------------
         VALRORES BOOLEANOS
-    ------------------------
+    --------------------------
 */
 
 
@@ -55,9 +55,9 @@
 
 
 /*
-    -------------------------------------------------
+    ----------------------------------------------------
         TIPOS DE DATOS (VAR - LET - CONST) Y VALORES
-    -------------------------------------------------
+    ----------------------------------------------------
 */
 
 
@@ -100,8 +100,8 @@ var falso  = false;
 
 /* 
     - VALORES TIPO OBJETO
-        1ro. Lista o Array o Arreglo 
-        2do. Objeto 
+        1RO -  Lista o Array o Arreglo 
+        2DO -  Objeto 
 */ 
 
 // ARRAY
@@ -126,8 +126,8 @@ var objeto =
 */
 
 
-// En el Scope Global "var" y "let" son iguales 
-var i1 = 1;
+// VAR Y LET EN EL SCOPE GLOBAL 
+var i1 = 1;                            // En el Scope Global "var" y "let" son iguales     
 let i2 = 1;
 
 
@@ -141,17 +141,19 @@ let i2 = 1;
 
 
 
-// La constante no se puede asignar otra vez. 
-const LETRA =1;                     // Variable inicial declarada.
+// LA CONSTANTE SOLO PUEDE SER ASIGNADA UNA VECES. 
+const LETRA =1;                     // Variable inicial declarada. El nombre "letra" no puede volverse a reescribir.
 LETRA = 2;                          // ERROR - No se puede reasignar
 
-//ESTO NO SE PUEDE HACER ES UN ERROR
+
+
+
+//ESTO NO SE PUEDE HACER -  ES UN ERROR
 const NUMERO = [1,2,3];             // Variable inicial declarada.
 NUMERO = [12,12,33];                // ERROR - No se puede reasignar
 
-
-// PERO SI se puede insertar "AL FINAL-ultimaposición" un elemento nuevo dentro del array.
-NUMERO.push(4); 
+NUMERO.push(4);                     // Pero se puede insertar "Al final del Arry - en la ultima posición"
+                                    // Se puede añadir un elemento nuevo dentro del array.
 
 
 
@@ -274,6 +276,25 @@ numero--;               //12        Aqui siemper le restamos 1
 
 
 
+/*
+    ------------------------------------------
+        ESTRUCTURA BÁSICA DE UNA FUNCIÓN 
+    ------------------------------------------
+*/
+
+
+function hola (/*PARÁMETROS*/ persona )             // Función "hola". El parámetro "persona"  ---► persona = pepe 
+    {                                               //        ▲
+                                                    //        |
+        //AQUÍ                                      //        |
+        //     LAS SENTENCIAS                       //        |   El argumento "Pepe" se envía a la función "hola". 
+                                                    //        |         Para utilizarlo en una sentencia.
+    }                                               //        |     
+                                                    //        |                                    
+hola (/*ARGUMENTOS*/'Pepe');                        // Llamada de la función "hola" 
+
+
+
 
 
 
@@ -284,10 +305,10 @@ numero--;               //12        Aqui siemper le restamos 1
 */
 
 
-// FUNCIONES DECLARATIVAS (Son las más utilizadas)
-function nuevaFuncion ()
-        {
-            // Se crea de manera simple la Función.
+// FUNCIONES DECLARATIVAS 
+function nuevaFuncion ()                // Se crea de manera simple la Función.
+        {                               //      (Son las más utilizadas)
+            
             return "Hola";
         }
 
@@ -295,9 +316,8 @@ function nuevaFuncion ()
 
 
 //FUNCIONES EXPRESIVAS 
-var nuevaFuncion = function  ()
+var nuevaFuncion = function ()          // Se asigna una "Función" dentro de una "variable" 
         {
-            // Se asigna una "Función" dentro de una "variable" 
             return "Hola";
         }
 
@@ -311,43 +331,87 @@ nuevaFuncion();           /* Si no se declara y ejecuta la llamada. La funciones
 
 
 
+/*
+    ---------------------------------------------------
+        FUNCIÓN CON PARAMETROS Y ARGUMENTOS BÁSICOS
+    ---------------------------------------------------
+*/
+
+// 1ER CASO - SOBRAN ARGUMENTOS 
+
+    //FUNCIÓN PARA SUMAR 
+    function suma_1(valor1,valor2)                  // Parámetros "valor1 = 5 , valor2 = 4"
+        {
+            return valor1 + valor2;                 // Retorna una suma que se guardara en la variable "resultado_1"
+        }
+
+    // LLAMADA DE LA FUNCIÓN 
+    var resultado_1 = suma_1 (5,4,22,87);           // Los argumentos sobrantes (el 22 y 87). No generan error y no se tienen en cuenta
+
+    //VISUALIZAR CON ALERT EL RESULTADO FINAL
+    alert(resultado_1);                             // Resultado_1 =  9    ---►   (5 + 4)
+
+
+
+//2DO -CASO - FALTAN ARGUMENTOS 
+
+    //FUNCIÓN PARA SUMAR 
+    function suma_2 (valor1,valor2)                  // Parámetros "valor1 = 5 , valor2 = 4"
+        {
+            if (valor2 == undefined)                 // Condicional que corrige el error de no enviar todos los argumentos.
+                {
+                    valor2 = 0;                      // Se asigna un valor al argumento "valor2"
+                }
+
+            return valor1 + valor2;                  // Retorna una suma que se guardara en la variable "resultado_1"                       
+        }
+
+    // LLAMADA DE LA FUNCIÓN 
+    var resultado_2 = suma_2(5);                     // Como Falta argumentos (por ejemplo falta "valor2"). Este toma el valor "undefined" 
+
+    //VISUALIZAR CON ALERT EL RESULTADO FINAL
+    alert(resultado_2);                              // Resultado_2 = 5    ---►   (5+0) 
+
+
+
+
+
+
+
 
 /*
-    ------------------------------------------
-        ESTRUCTURA BÁSICA DE UNA FUNCIÓN 
-    ------------------------------------------
+    --------------------------------------------
+        FUNCIONES QUE ACTUAN COMO ARGUMENTOS
+    --------------------------------------------
 */
 
 
-function hola (/*PARAMETROS*/ persona )
-    {
 
+
+
+//FUNCIÓN DE ESCRITURA  
+function escribir_final (total)                              // El parámetro "total"      ---►     total = logica (10,20)  
+    {
+        if (total)                                           // El parámetro "total" actuaria como "true". Es una medida de validación.
+            {                                                // "solo si" me envias algo (un argumento), ejecuta la sentencia "document.write". 
+                document.write(`La suma es ${total}`);       // Imprime en el navegador "La suma es 210"
+            }
+        
     }
 
-hola (/*ARGUMENTOS*/'Pepe');       // llmada de la función "hola" 
 
-
-
-
-
-
-
-/*
-    ------------------------------------------------
-        FUNCIÓN CON PARAMETROS Y ARGUMENTOS BÁSICO
-    ------------------------------------------------
-*/
-
-
-//FUNCION PARA SUMAR
-function suma(valor1,valor2)
+//FUNCIÓN LÓGICA
+function logica (a,b)                                           
     {
-        console.log(valor1+valor2);
-    }
+        return a + b;
+    }                                   
+                                        
 
-var suma1 = suma(45,456);
-var suma2 = suma(345,12);
-var suma3 = suma(789,89);
+debugger
+//LLAMAR A LA FUNCIÓN "ESCRITURA"
+suma(logica(10,200));                   // Llamada a la función  "escribir_final". El Argumento es la función "logica"
+
+
 
 
 
@@ -392,19 +456,18 @@ Boolean();          // Función que me devuelve  Verdadero o Falso.
 //SCOPE --> puede definirse como el alcance que una variable tendrá en tu código.
 
 
-//SCOPE GLOBAL (Tiene acceso en cada parte del código). Se declaran como  VARIABLES GLOBALES.
-var ciudad = 'Palma';
-var cp =07010;
+//SCOPE GLOBAL 
+var ciudad = 'Palma';                       // Tiene acceso en cada parte del código 
+var cp =07010;                              // Se declaran como  VARIABLES GLOBALES.
 
 
 
-//SCOPE LOCAL (Tiene acceso solo dentro del Bloque de la Función "entorno"). 
-function entorno(valor1,valor2)
-    {
-        // Tanto los parámetros "valor1" y "valor2", como la variable "cp". Son "VARIABLES LOCALES"
-        var cp = 07010;       
-        console.log(cp + " " + ciudad);  // Del LOCAL se puede trabajar con variables del GLOBAL-. Pero no viceversa.
-    }
+//SCOPE LOCAL 
+function entorno(valor1,valor2)             // Tiene acceso solo dentro del Bloque de la Función "entorno" 
+    {                                       // Tanto los parámetros "valor1" y "valor2", como la variable "cp". Son "VARIABLES LOCALES.       
+        var cp = 07010;                     
+        console.log(cp + " " + ciudad);     // Dentro del SCOPE LOCAL se puede trabajar tanto con las VARIABLES LOCALES (cp) como 
+    }                                       // con las VARIABLES GLOBALES (ciudad). Pero no viceversa
 
 
 
@@ -428,24 +491,24 @@ function entorno(valor1,valor2)
 /*
     - Los casos de HOISTING. Ocurren por una "mala practica". Y es un problema. 
     - Las Buenas Practicas se realizan cuando las "variables globales y las funciones" se declaran en la parte
-    superior de la linea de código.
+      superior de la linea de código.
 
 */
 
 
 // EJEMPLO DE HOISTING. 
-console.log(pueblo);          // El navegador asigna "undefined" a pueblo. Y eso es lo que se ve.
+console.log(pueblo);                // El navegador asigna "undefined" a pueblo. Y eso es lo que se ve.
 
 var pueblo = 'Algaida';
-console.log(pueblo);          // Pero despues, al asignarle "Algaida". Ya se ve ese valor de string. 
+console.log(pueblo);                // Pero despues, al asignarle "Algaida". Ya se ve ese valor de string. 
 
 
 
 /*
     - ¿Pero que hace realmente nuestro navegador cuando se encuentra con esto?
-        - "console.log()"  --> Cuando encuentra una variable que no la han declarado.
-            - A esa variable, le asigna el "undefined"
- */
+        - "console.log()"  --> Cuando encuentra una variable que no la han declarado. A esa variable, le asigna el "undefined".
+*/
+
 
 // ASIGNACIÓN DEL NAVEGADOR 
 var pueblo = "undefined"; 
@@ -675,8 +738,8 @@ function personaEsmayoEdad(persona)
 
 
 
-// COERCIÓN IMPLICITA  - las que JavaScript genera por si solo.
-var implicita = 10 + "10";
+// COERCIÓN IMPLICITA   
+var implicita = 10 + "10";              // Son las que JavaScript genera por si solo.
 
 /*
     - El resultado de la concatenación de  10(número) + "10"(string). Se sabe que es "1010" 
@@ -690,8 +753,8 @@ var implicita = 10 + "10";
 
 
 
-//COERCIÓN EXPLICITA - son las que nosotros las obligamos. Porque necesitamos que trabajen de esa manera
-var explicito = 10 + Number("10");
+//COERCIÓN EXPLICITA 
+var explicito = 10 + Number("10");      // Son las que nosotros las obligamos. Porque necesitamos que trabajen de esa manera
 // 20
 
 /*

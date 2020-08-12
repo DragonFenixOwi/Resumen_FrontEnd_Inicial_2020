@@ -19,28 +19,32 @@
     ---------------------------------
 */
 
-document.write(nombre.toUpperCase() + "<br>");
-document.write("<br><br>");
 
+
+//VISUALIZACIÓN DEL RESULTADO FINAL
+
+// NAVEGADOR  
 document.write(` la letra que corresponde al DNI de número
-        "${valor_dni}" es : "${Letra_DNI[valor]}" <br> <br>
-        Entonces el DNI es: "${valor_dni} }"`);
+               "${valor_dni}" es : "${Letra_DNI[valor]}" <br> <br>              
+                 Entonces el DNI es: "${valor_dni} }"`);                  // Salto de línea con    ---►     <br>
 
 // Visualización del resultado final en consola
 console.log(` la letra que corresponde al DNI de número
-        "${valor_dni}" es : "${Letra_DNI[valor]}" \n \n
-        Entonces el DNI es: "${valor_dni}}"`);
+            "${valor_dni}" es : "${Letra_DNI[valor]}" \n \n
+             Entonces el DNI es: "${valor_dni}}"`);                       // Salto de línea con    ---►     \n 
 
 
-/* CARACTER ESPECIALES - \n \t   */
-'primera linea \n segunda linea \n'
+//  CARACTER ESPECIALES     
+'primera linea \n segunda linea \n'                                       //  salto de línea    ---►         \n
+                                                                          //  tabulación        ---►         \t
 
-/* CARACTER DE ESCAPE - Escapar de doble comillas*/
-var parrafo = "Libro de \"Autor\" de 1988";
+// CARACTER DE ESCAPE 
+var parrafo = "Libro de \"Autor\" de 1988";                               // Escapar de doble comillas
 console.log(parrafo);
 
-//otro 
-document.write( parrafo + "</br>"); 
+//OTROS CASOS 
+document.write( parrafo + "<br>"); 
+document.write(nombre.toUpperCase() + "<br>");
 
 
     
@@ -755,8 +759,8 @@ do
 
 
 
-//FUNCION EXPRESIVA BÁSICA (se asigna una función a una constante "const") - CON PARÁMETRO (persona)
-const MAYOR_EDAD = function (persona)
+//FUNCION EXPRESIVA BÁSICA 
+const MAYOR_EDAD = function (persona)                            // Se asigna una función a una constante "const". Con PARÁMETRO (persona)
         {
             return persona.edad === MAYORIA_EDAD_ESPANYA;
         }
@@ -772,26 +776,26 @@ const MAYOR_EDAD = function (persona)
 
 
 
-// FASE 1  ( Se cambia "function"  por la flecha  "=>" )
-const MAYOR_EDAD = (persona) =>
+// FASE 1  
+const MAYOR_EDAD = (persona) =>                                               //  Se cambia    "function"   por la flecha    "=>" 
         {
             return persona.edad === MAYORIA_EDAD_ESPANYA;
         }
 
 
-// FASE 2   (se elimina el parentesis () )
-const MAYOR_EDAD = persona => 
+// FASE 2   
+const MAYOR_EDAD = persona =>                                                 // Se eliminar el parentesis ().  
         {
           return persona.edad === MAYORIA_EDAD_ESPANYA;
         }
 
 
-// FASE 3  (se elimina las llaves {} y el return)
-const MAYOR_EDAD = persona => persona.edad === MAYORIA_EDAD_ESPANYA;
+// FASE 3  
+const MAYOR_EDAD = persona => persona.edad === MAYORIA_EDAD_ESPANYA;          // Se elimina las llaves {} y el return
 
 
 
-// FASE 4 (Entre {} indicamos el atributo )
-const MAYOR_EDAD = ({ persona }) => edad === MAYORIA_EDAD_ESPANYA;
+// FASE 4 
+const MAYOR_EDAD = ({ persona }) => edad === MAYORIA_EDAD_ESPANYA;            //  Entre {} indicamos el atributo 
 
 

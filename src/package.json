@@ -1,0 +1,16 @@
+{
+  "name": "asincronismo_owi",
+  "version": "1.0.0",
+  "description": "veremos el asincronismo y sus variantes ",
+  "main": "src/callback/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "callback_owi": "node callback/index.js"
+  },
+  "keywords": [
+    "callback",
+    "promesa"
+  ],
+  "author": "owi",
+  "license": "MIT"
+}

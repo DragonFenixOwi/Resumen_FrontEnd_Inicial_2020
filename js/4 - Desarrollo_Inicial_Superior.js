@@ -403,7 +403,6 @@ ana.saludarDev();               // Si Borramos "Dev" y dejamor "saludar" - Ocurr
 */
 
 
-//
 
 
 /*
@@ -441,21 +440,54 @@ console.log(3);                               // Se ejecuta. Se imprime en conso
 
     
 /*
-    ---------------------------------------------
-                    CALLBACK'S
+    ----------------------------------------------
+                PROMESAS VS CALLBACK'S 
     ----------------------------------------------
 */
 
 
 /*
-    CALLBACK'S
-        - Son esas tareas  que se delegan al navegador. Funciona de manera Asincronica. 
-        - Es una función 
-            - que se pasa a otra función como argumento. 
-        - Y es un modo de asegurar que cierto codigo no se ejecuta antes de terminar el anterior
-            - es una llamada atras.
+        - ¿Para que me sirven las promesas?
+    - La punto correcto seria ¿Como conectarnos con algo externo?
+    - Si quiero trabajar con una conexion pero no se si funcioan esa conexion
+        - Para eso necesito las promesas y los callback´s 
+        - Para saber si la conexion funciona
+    -  Te prometemos pero no lo cumplismo 
+    
+    - todos estos sirven para conectarnos para datos externos. Para JSON externos
 
-        - Cualquier función puede ser un callback
+*/
+
+
+/*
+    ----------------------------------------------------
+                CALLBACK'S - VIEJO
+    ----------------------------------------------------
+*/
+
+
+/*
+    CALLBACK'S
+
+        - Son esas tareas  que se delegan al navegador. Funciona de manera Asincronica. 
+         
+        - Un CallBack  es una "Función" (función 1)  y actua como un "Argumento" en la llamada de otra "Función" (Función 2)
+        
+            - Esta otra "Función" (Función 2) la recibe como un parámetro.
+            
+            - Se puede ver un ejemplo visual en la carpeta "Registro complementario / Recopilación de Imagenes"
+            
+        - El CallBack es un modo de asegurar que cierto código no se ejecuta antes de terminar el anterior
+            
+            - Es una llamada atras. Y Cualquier función puede ser un callback
+
+        -  Se debe olvidar  un rato la expectativa de que todo lo que sucedera en la línea 1 finalizará antes de ejecutar la línea 2
+        
+            -  Se debe olvidar un poquito la programación lineal de que la ejecución se realizara de forma inmediata de arriba hacia abajo.
+        
+        - 
+
+        - 
 */
 
     
@@ -497,37 +529,174 @@ calcular(40,20,sumar)                                                   // Argum
 
 /*
     ---------------------------------------------
-                    API
+                PROMESA - ACTUAL
     ----------------------------------------------
 */
-/*
-    ------------------------------
-                API
-    ------------------------------
-*/
+
 
 /*
-    API    
-        - Se podria considerar un mecanismo para que se conecten dos aplicaciones o dos codigos, dos softwares.
-            - y que esas aplicaciones intercambien datos. 
-    - API (Free, registro, pago)
-    - API de Star- Wars 
-        - https://swapi.dev/ 
-        - Diferentes Datos 
-            - people/1 - pertenece a "luke skywalker"
-            - people/10 - pertence a "obin-wan kenobi"
-            - people/5  - pertenece a "leia organa"
-        - Estos datos (people/ id)  nos deja acceder atraves de una API. 
-        - Por eso necesitamos ahora mismo JQuery que es el que hara "request"(el que va a rescatar estos datos)
-            -  Con JQuery rescatamos esa información y nos los trae a nuestro codigo que redactamos ahora.
+    - Las PROMESAS  hacen  lo mismo que los CALLBACK'S
+        
+        - Pero de manera estructuralmente mejor.  
 
+    - Con las PROMESAS en el ECMAScript 6 llega la solución a los CALLBACK'S HELL
+
+        - Es la solución a esa manipualción exagerada de los callbacks's.
+        
+        - Y tambien se omite esa complejidad de tener que entender todo el código. (por ejemplo, cualquier función puede actuar como callback)
+        
+    
+    SIGNIFICADO DE PROMESA
+
+        - Imagina que eres un niño. Y tu mamá te promete que te comprará un nuevo teléfono la próxima semana.
+
+            - No sabes a ciencias ciertas, si tu madre te lo comprará. Puede que realmente te compre el teléfono.
+            
+            - O puede que,  por ejemplo, que te portes mal y no te lo compre. 
+        
+        - Eso es una PROMESA. Una promesa de que vamos a hacerlo
+
+    ESTADOS 
+
+        - Tienen 3 estados 
+
+            - Pending    (pendiente)       ---►       Primer estado. Si la promesa se resuelve, pasa al estado Fullfiled
+    
+            - Fullfiled  (cumplida)        ---►       Es cuando llega la información
+
+            - Rejected   (rechazada)       ---►       Es cuando ocurre un error en la acción asincrona 
     
 */
 
 
+/*
+    ---------------------------------------
+            SINTAXIS DE UNA PROMESA 
+    ---------------------------------------
+*/
 
 
 
+    // 1ER CASO - SIN ARROW FUNCTION
+
+        // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
+
+            const PROMESA_OWI  = function ()                                            // funcion sin parametros.  
+                {
+                    return new Promise ( function (resolve,reject)                      // "function"      ---►     Es una función ejecutor 
+                                            {                                           // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
+                                                if (true)                               // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                       
+                                                    {                                                         
+                                                        resolve("Éxito");               // Si resuelve exitosamente (true). Llama a la función "resolve" 
+                                                    }                                                          
+                                                else
+                                                    {
+                                                        reject("Fracaso");              // Si algun error sucede (false). LLama a la función "reject"
+                                                    }    
+                                            }
+                                        );
+                }  
+
+        // EJECUTAR UNA PROMESA - LLAMADA
+                        
+            PROMESA_OWI.then (  function (valor)                                        // Cuando todo funciona bien 
+                                    {
+                                        console.log(response);                          // Se imprime lo que devuelve "return"
+                                    }
+                             );                                 
+                            
+            PROMESA_OWI.catch ( function (err)                                          // cuando hay errores
+                                    {
+                                        cconsole.error(err);                           // Se imprime lo que devuelve "return"     
+                                    }
+                              ); 
+
+
+                        
+
+
+    // 2DO CASO - CON ARROW FUNCTION (mas común)
+    
+        // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
+
+            const PROMESA_OWI  = () =>                                                  // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
+                {
+                    return new Promise ( function (resolve,reject)                      // "function"      ---►     Es una función ejecutor 
+                                            {                                           // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
+                                                if (true)                               // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                  
+                                                    {                                                          
+                                                        resolve("Éxito");               // Si resuelve exitosamente (true). Llama a la función "resolve" 
+                                                    }                                                          
+                                                else
+                                                    {
+                                                        reject("Fracaso");               // Si algun error sucede (false). LLama a la función "reject"
+                                                    }    
+                                    }
+                                );
+                }  
+
+        // EJECUTAR UNA PROMESA - LLAMADA
+
+            PROMESA_OWI.then ( (valor) => console.log(response) );                       // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
+                                                                                         // FASE 3 DE ARROW FUNCTION - Se elimina las llaves 
+                                                            
+                            
+            PROMESA_OWI.catch ( (err) => console.error(err) );                           // FASE 1 DE ARROW FUNCTION 
+                                                                                         // FASE 3 DE ARROW FUNCTION
+                                                                                 
+                                    
+                            
+
+const QUE_PASARA = () => 
+    {
+        return new PROMISE((resolve, reject)=>
+            {
+                if (true)
+                    {
+                        resolve('Bien echo!!!!');
+                    }
+                else
+                    {
+                        reject("Mal hecho!!!!");
+                    }
+            });
+    };
+
+
+
+QUE_PASARA()
+    .then((response) => console.log(response));
+    //.catch((err) => console.error(err));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
 
 
 /*
@@ -570,15 +739,18 @@ calcular(40,20,sumar)                                                   // Argum
 
 
 /*
-    VERICAR SI LA INSTALACIÓN  FUE EXITOSA
+    INSTALAR NODE.js                 ---►       Ya sea en Linux, Mac o Windows. 
+
+    VERICAR SI LA INSTALACIÓN  FUE EXITOSA 
 
         - node -v                    ---►      Vizualizar la versión de node.js 
 
-        - node                    ---►     Se accede a node desde la terminal. Node tiene su propio lenguaje. 
+        - node                       ---►     Se accede al modo Escritura. "Node" tiene su propio lenguaje, en el que se comunica
+                                              y ejecuta acciones. Por ejemplo un "console.log()"
     
-        - console.log("Hola")     ---►     Se imprime en la terminal el string "Hola"
+            - console.log("Hola")    ---►     Se imprime en la terminal el string "Hola"
 
-        - 2 veces "control + C"   ---►     Para salir del modo "node"
+        - 2 veces "control + C"      ---►     Para salir del modo escritura "node" y volver a la terminal git_Bash
 
 
 */
@@ -593,65 +765,74 @@ calcular(40,20,sumar)                                                   // Argum
 */
 
 
+
 /*
 
-    - pwd                        ---►      Directorio Actual 
-    
-    - mkdir                      ---►      Crear carpeta.  Por ejemplo  "mkdir 'nombre de la carpeta' "
-        
-    - git init                   ---►      Iniciar el ".git"  
+    - pwd                        ---►      Directorio Actual. 
 
-    - npm init               ---►      Iniciar el gestor de paquetes (buscamos el package.json)
+    - cd "ruta"                  ---►      Ir a la ruta de acceso carpeta donde se alojara el JSON.
+                                           Por ejemplo "Documents/JavaScript/Resumen_FrontEnd_Inicial_2020 "
+    
+    - mkdir                      ---►      Crear carpeta.  Por ejemplo  "mkdir  src" (nombre de la carpeta)    
+    
+    - cd  src                    ---►      Se accede a la carpeta donde se alojara o guardara el JSON.
+
+    - npm init                   ---►      Iniciar el gestor de paquetes (buscamos el package.json)
         
         - Lista de preguntas :                                (estas pregutnas quedan guardadas dentro de un Archivo JSON como resumen que funciona)
 
 
-                -package name:                  (Asincronismo)    - Por defecto por "mkdir 'Asincronismo' "
+                -package name:                  (src)                              - Por defecto. 
+                                                asincronismo_owi   "Enter"         - Cambiamos por un nombre que tenga mas relación.
 
-                - versión                       (1.0.0)           - Por defecto
+                - versión                       (1.0.0)            "Enter"         - Por defecto
 
-                - descripción :                 veremos el asincronismo y sus variantes
+                - descripción :                 veremos el asincronismo y sus variantes   "Enter"
 
-                - entry point :                 (index.js)        -  por defecto. 
-                                                src/index.js      -  Modificamos el punto de entrada (Se debe crear. Aqui solo se indica la ruta) 
+                - entry point :                 (index.js)                         -  por defecto. JavaScript creado (src/callback/index.js) para practica de este ejemplo 
+                                                src/index.js       "Enter"         -  Modificamos el punto de entrada (Se debe crear. Aqui solo se indica la ruta) 
                     
-                - test comand:                  "Enter"            - no vamos a utilziar testin
+                - test comand:                  "Enter"                            - no vamos a utilziar testin
 
                 - git repository:               "Enter"
                 
-                - keywords:                     callback,promesa   - Palabras claves 
+                - keywords:                     callback, promesa  "Enter"          - Palabras claves 
 
-                - author :                      Owi
+                - author :                      Owi                "Enter"     
                 
-                - license :                     (ISC)               - Por defecto   
-                                                 MIT                - Se cambia la licencia
-                - Enter                                    
+                - license :                     (ISC)                               - Por defecto   
+                                                 MIT               "Enter"          - Se cambia la licencia
+
+                - "Enter"                                    
             
         
 
         - Si todo esta correcto. Se Plantea el JSON 
 
-                {
-                    "name": "asincronismo",
-                    "version" : "1.0.0",
-                    "description": "Veremos el asincronismo en sus variantes",
-                    "main": "src/index.js",
-                    "scripts": 
+                                            DATOS CON ESTRUCTURA DE TIPO "OBJETO"
+
+                {                       
+                    "name": "asincronismo_owi",                                                              // Primitivo    
+                    "version" : "1.0.0",                                                        // Primitivo
+                    "description": "veremos el asincronismo en sus variantes",                  // Primitivo
+                    "main": "src/callback/index.js",                                                     // Primitivo
+                    "scripts":                          
                         {
-                            "test" : "echo \""Error: no test Specified\" && exit 1"  
+                            "test" : "echo \""Error: no test Specified\" && exit 1"             // Script
                         },
                     "keywords": 
                         [
-                            "callback",
-                            "promesa"
+                            "callback",                                                         // Array
+                            "promesa"                                       
                         ],
-                    "author": "Owi",
-                    "license": "MIT",    
+                    "author": "Owi",                                                            // Primitivo   
+                    "license": "MIT",                                                           // Primitivo 
                 }
 
         
         - Is this OK?                   (yes)               - Por defecto "yes". Si todo esta correcto. Se teclea "Enter" y listo
 
+        - "Enter" 
 */
     
 
@@ -665,33 +846,132 @@ calcular(40,20,sumar)                                                   // Argum
 */
 
 /*
+    PARA LA EJECUCIÓN
 
-    - npm run                ---►   Nombre del "scripts" de JSON 
+        - Se debe crear una carpeta con el nombre de "callback" ya sea por terminal o con el entorno "windows"
 
+        - Y tambien crear un archivo JavaScript con el nombre "index.js". Para este ejemplo el contenido de este archivo sera un callback
 
-    -callback:API
-        - Estamos dentro de la carpeta callback pero queremos el codigo api 
-        - node src/callback
+    PARA HACER USO DEL NPM 
 
-    - Estructurar una API sin JQuery
-        -
+        - Primero se debe modificar el paquete JSON. Definir "el nombre" y la "ruta de acceso" 
 
+        - Luego ejecutar "npm run"
+        
+*/            
 
-    -npm install xmlhttprequest -- save
-        - instalamos en una carpeta na libreria
-        - "install" pedimos instalar
-        - "-- save" significa en su producto desarrollador+
-        - 
+/*
     
+    MODIFICAR EL PAQUETE JSON 
+        
+        - Se debe ir al archivo JSON creado, que suele llamarse "package.json". 
+                
+            - Para este caso el JSON esta alojado en "Documents/JavaScript/Resumen_FrontEnd_Inicial_2020/src"
 
-    - no no sirver instalar miles de millones de librerias
+            - O en el explorador de Visual Studio Code en la carpeta "src"
+
+        - Se busca el apartado "script" en el "package.json" en la estructura de tipo OBJETO.
+
+            - Dentro se puede ver      ---►       "test" : "echo \""Error: no test Specified\" && exit 1"  
+
+                - Se debe cambiar 
+                    
+                    - "test"           ---►        por un nombre de llamada 
+                        
+                    - y "echo\...."    ---►        por la ruta donde esta alojado el archivo JavaScript.
+
+
+                
+        1RO - DAR UN NOMBRE PARA LA LLAMADA  
+                
+            - Se escribe un nombre de referencia para la llamada (para este caso "callback_owi").
+                
+            - Que junto con "npm run" ejecutará el archivo de JavasScript (index.js). Por ejemplo "npm run callback_owi" 
+            
+        2DO - ESPECIFICAR LA RUTA 
+
+            - Se escribe   "node"    +    "ruta donde se aloja el archivo de JavaScritp" 
+                
+                - "node callback/index.js"
+
+        RESULTADO FINAL
+
+                - "callback_owi": "node callback/index.js"
+
+            
+    EJECUTAR - NPM
+
+        - npm run "Nombre de la llamada"          ---►      "npm run callback_owi" Ejecuta el programa "index.js" 
+
+
+*/
 
 
 
-    - Sin "npm" no vas a poder ingresar una libreria desde el exterior
 
-    - Los callbacks se volvian un infierno.
-    - callback es lo mas antiguo para aplicar antiguamente
-    - luego de los "callback" vinieron "las promesas"
-    - "Las promesas" aparecieron para 
+
+/*
+    IMPORTANTE - CONFLICTO ENTRE RUTAS
+
+        - Es importante aclarar que existe dos tipos de rutas de acceso que se tiene que tener presente
+
+                - El del "package.json"                ---►      Documents/JavaScript/Resumen_FrontEnd_Inicial_2020/src
+                       
+                    > asincronismo_owi @ 1.0.0         ---►      Se vizualiza en terminal externa de git_bash junto con la ruta de acceso    
+
+                - Y el "index.js"                      ---►      callback/index.js  (que se encuentra dentro de "src")
+
+                    > node callback/index.js           ---►      Se vizualiza en terminal externa de git_bash 
+
+        - Y es importante porque el punto de referencia inicial para describir la ruta del "index.js" es la ruta de la carpeta en el que se aloja el "package.json"
+                
+                - "package.json"  se aloja en "src"
+
+                - Pero tambien en "src" se encuentra "callback/index.js"
+
+        - Escribir "src/callback/index.js" crearia un conflicto (un error) debido a que "src" aloja a los dos 
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+/*
+    ---------------------------------------------
+                    API
+    ----------------------------------------------
+*/
+/*
+    ------------------------------
+                API
+    ------------------------------
+*/
+
+/*
+    API    
+        - Se podria considerar un mecanismo para que se conecten dos aplicaciones o dos codigos, dos softwares.
+            - y que esas aplicaciones intercambien datos. 
+    - API (Free, registro, pago)
+    - API de Star- Wars 
+        - https://swapi.dev/ 
+        - Diferentes Datos 
+            - people/1 - pertenece a "luke skywalker"
+            - people/10 - pertence a "obin-wan kenobi"
+            - people/5  - pertenece a "leia organa"
+        - Estos datos (people/ id)  nos deja acceder atraves de una API. 
+        - Por eso necesitamos ahora mismo JQuery que es el que hara "request"(el que va a rescatar estos datos)
+            -  Con JQuery rescatamos esa información y nos los trae a nuestro codigo que redactamos ahora.
+
+    
 */
