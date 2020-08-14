@@ -29,39 +29,39 @@
 
    ### Comandos de Atajos de Teclado y Git 
 
-   1. **Atajos mas Comunes** del "index.html" en Visual Studio Code
+   1.  **Atajos mas Comunes** del "index.html" en Visual Studio Code
 
-   2. **Extensiones (Plugins)** mas Comunes en Visual Studio Code
+   2.  **Extensiones (Plugins)** mas Comunes en Visual Studio Code
 
-   3. **Atajo de teclado** Básico para Visual Studio Code
+   3.  **Atajo de teclado** Básico para Visual Studio Code
                 
-   4. **Integrar Git_Bash** a la Terminal de VSCode
+   4.  **Integrar Git_Bash** a la Terminal de VSCode
             
-   5. Iniciando el mundo de Git
+   5.  Iniciando el mundo de Git
 
-   6. Comando Generales de Terminal. 
+   6.  Comando Generales de Terminal. 
 
 
 
    ###  Desarrollo Inicial Básico
 
-   1. **Valores Booleanos**
+   1.  **Valores Booleanos**
 
-   2. **Operadores**   
+   2.  **Operadores**   
 
-   3. **Variables**, **Constante** y  **Valores**. 
+   3.  **Variables**, **Constante** y  **Valores**. 
 
-   4. **Funciones**
+   4.  **Funciones**
     
-   5. **Scope**
+   5.  **Scope**
  
-   6. **Hoisting**
+   6.  **Hoisting**
 
-   7. **Buenas Prácticas**
+   7.  **Buenas Prácticas**
 
-   8. **Debil Tipado**
+   8.  **Debil Tipado**
   
-   9. **Coerción** 
+   9.  **Coerción** 
 
 
 
@@ -100,23 +100,23 @@
 
    ###  Desarrollo Inicial Superior.
 
-   1. **Programación Orientada a Objetos** (**POO**)
+   1.  **Programación Orientada a Objetos** (**POO**)
 
 
-   2. **Estructura de una Clase**
+   2.  **Estructura de una Clase**
     
-   3. **Asincronismo**
+   3.  **Asincronismo**
     
 
    ##  [Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
 
-   1. **CSS_Descripción**
+   1.  **CSS_Descripción**
 
-   2. **Estilos.**
+   2.  **Estilos.**
 
-   3. **Main_Axis-Column**
+   3.  **Main_Axis-Column**
 
-   4. **Main_Axis_Row** 
+   4.  **Main_Axis_Row** 
     
 
 
