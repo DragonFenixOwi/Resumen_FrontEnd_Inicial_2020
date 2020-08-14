@@ -73,6 +73,7 @@
     
     - CODE RUNNER
         - Para ejecutar y verificar una pequeña porción de código. 
+        
     
         - PRETTIER - CODE FORMATTER
         - Ordena o Formatea el código de forma automática. 
@@ -168,8 +169,8 @@
         - Ejecutamos solo una pequeña porción del codigo seleccionado
         
     - EJECUTAR PEQUEÑA PORCIÓN DE CÓDIGO
-        - 
-        - CODE RUN
+         - CODE RUN
+         - Atajo Windows  "Control + Alt + N"
 
     - GO LIVE
         - "shift + º" 

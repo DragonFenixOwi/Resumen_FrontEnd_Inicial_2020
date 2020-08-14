@@ -768,11 +768,19 @@ const MAYOR_EDAD = function (persona)                            // Se asigna un
 
 
 
-// Son 4 formas de recortar el código. Pero "NO" todas las funciones encajan con el Arrow Function
+/*
+    ARROW FUNCTION
+
+        -  Son 4 formas de recortar el código. Pero "NO" todas las funciones encajan con el Arrow Function
+        
+        - Son Funciones anónimas.  
+        
+        - Se utilizan dentro de constantes.
+*/
 
 
 
-// MODIFICARLO HACIA ARRRO FUNCTION  - 4 FASES
+// MODIFICARLO HACIA ARROW FUNCTION  - 4 FASES
 
 
 

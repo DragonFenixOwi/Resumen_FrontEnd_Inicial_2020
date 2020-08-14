@@ -1,13 +1,15 @@
 # Resumen_FrontEnd_Inicial_2020
-- Plantilla con Descripción básica para proyectos de FrontEnd 
+- Plantilla con Descripción básica para proyectos de FrontEnd
 
 
 
+ 
 # Indice corto 
 
-   ## [I - Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
+   ## [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
 
-   ###  Recopilación de Imagenes
+   ###  - Recopilación de Imagenes
+
    - **CallBack** (Suma, Date)
 
    - **FlexBox** - Responsive - FirexFox Developer
@@ -20,12 +22,12 @@
    
    - **Debugger**
 
-   ###   PDF
+    ###  -  PDF
 
-   ## [II - Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+   ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
-   ###  Comandos de Atajos de Teclado y Git 
+   ### Comandos de Atajos de Teclado y Git 
 
    1. **Atajos mas Comunes** del "index.html" en Visual Studio Code
 
@@ -106,7 +108,7 @@
    3. **Asincronismo**
     
 
-   ##  [III - Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+   ##  [Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
 
    1. **CSS_Descripción**
 

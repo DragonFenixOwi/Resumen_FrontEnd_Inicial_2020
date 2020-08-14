@@ -24,8 +24,11 @@
 
 /* 
     - Se trae un "Objeto de la vida real" y se describe en código 
+
         - El  "Objeto de la vida real" se representa de manera "abstracta".
+
     - No podemos tocar el objeto de la vida real pero si podemos "Definirla" mediante sus propiedades
+
         - Todo objeto tiene propiedades(alto, color, bajo, duro, etc.)
 */
 
@@ -64,7 +67,9 @@ var coche =
         {
             /* 
                 - A cualquier "fuNción" que estan dentro de un OBJETO se le conose como "Método"
+
                 - "this" - es una variable hace referencia al padre. El padre es coche. 
+
                 - "this" - es la representacion de ese objeto.
             */
             console.log(`${this.marca}: ${this.modelo} \\${this.anyo} `);
@@ -106,7 +111,9 @@ coche.anyo;
 
 /* 
     - Existe un "Antes" y un "Despues" del ECMAScript de 2015
+
         - A la Estructura de una clase (se le llama PROTOTIPO en JavaScript)
+
         - Cuando creamos un prototipo. La primera letra siempre en MAYÚSCULAS.
 */
 
@@ -181,8 +188,11 @@ Persona.prototype.saludar = function ()                     //Constructor.protot
 
 /*
     - La "Instancia" es como crear un nuevo "Objeto"   
+
     - Por ejemplo
+
         - Se le asigna el Constructor "Persona" a la variable  "diego"
+
         - diego --> (nombre = Diego, apellidos = Torres, edad = 38, nacionalidad = Española)
 */
 
@@ -223,18 +233,22 @@ diego.saludar();
 
 /*
     SINTAXIS
+
         - CLASS                                     -->  Padre que hereda 
             - CONSTRUCTOR                           -->  Constructor del Padre.
             - MÉTODOS                               -->  Se define la Acción.
         
+
         - HERENCIA                                  -->  Sintaxis   class ______ extends  _____  
             - CONSTRUCTOR                           -->  Nativo de la clase "Herencia"
             - SUPER CONSTRUCTOR                     -->  Se invoca al Constructor del Padre
             - MÉTODO
 
+
         - INSTANCIAS DEL CONSTRUCTOR PADRE          --> Se crea un objeto nuevo "new Persona_Owi"
         - INSTANCIAS DEL CONSTRUCTOR HERENCA        --> Se crea un objeto nuevo "new Desarrollador" 
         
+
         - LLAMADA DEL MÉTODO                        --> Se ejecuta la Acción
 */
 
@@ -243,7 +257,9 @@ diego.saludar();
 
 /*
     - Se consigue tener un MÉTODO y un CONSTRUCTOR dentro de una estructura "CLASS"
+
     - El gran impacto en esta actualización fue La HERENCIA (que es Modular) en las "CLASES"
+
         - Ahorrando muchisisisimo código. 
 */
 
@@ -291,19 +307,27 @@ class Persona_Owi
 
 /* 
     ¿Para que es una herencia?
+
         - Para "Heredar" todo lo que tiene otra "Clase".
+
             - Por ejemplo, quiero  el CONSTRUCTOR y  el MÉTODO "saludar" de la clase "Persona_Owi". 
 
     - HERENCIA(class) llamada "Desarrollador" 
+
         - ¿como hago que herede algo de la clase "Persona_Owi"?
+
             - Con un "extendes".  
+
             - "Extiendo la información de "Persona_Owi"
     
     - Entonces la clase "Desarrollador", tiene como padre de esa herencia "Persona_Owi"
+
         - Es decir, la "Herencia Prototipal" viene de "Persona_Owi"
         
     - Una parte es la del Heredado y otra es la propia. 
+
         - Por lo que, no se puede hacer un CONSTRUCTOR en una clase que hereda otra clase  
+
        - Se debe hacer un SUPER CONSTRUCTOR 
 
 */
@@ -344,7 +368,9 @@ var ana   = new Desarrollador ("Ana","Torres",28,undefined,"Python");      //Cua
 /*
     HERENCIA DE ATRIBUTOS
         - diego    --> Pertenece a la clase "Persona_Owi" con (nombre,apellidos,...)
+
         - maria    --> Pertenece a la clase "Persona_Owi" con (nombre,apellidos,...)
+
         - ana      --> Pertenece a la clase "Desarrollador" con (nombre,apellidos,..., lenguaje)
 */
 
@@ -382,21 +408,99 @@ ana.saludarDev();               // Si Borramos "Dev" y dejamor "saludar" - Ocurr
 
 
 /*
-    JavaScript sólo puede hacer una cosa a la vez.
-        
-        - Pero es capaz de delegar la ejecución de ciertas funciones a otros procesos. 
-        
-        - Este modelo de concurrencia se llama "EventLoop".
+   RESUMIENDO TODO  
 
-    - ¿que ocurre si le envia varias tareas a la vez? 
+        - JAVASCRIPT             ---►       - Es un sistema Asincrónico. Otros lenguajes pueden hacer mas de una cosa a la vez. JavaScrit "no".
+                                            
+                                            - Para entenderlo mejor se toma el siguiente ejemplo:
+                                                
+                                                - Si estoy trabajando con una conexión. 
+                                                        
+                                                        - Necesito que esa conexión funcione. Y al funcionar ir por un camino para recuperar esa 
+                                                          información en una zona de la base de datos o en una API. 
+                                                          
+                                                        - Y cuando  no funcione esa conexión me avise.  
+                                                
+                                                - Y es este proceso de conexión  donde entran los callback's y promesas.   
+
+
+        - CALLBACK'S             ---►       - ANTIGUO. Son funciones. Es un modo de asegurar que cierto código o acción  no se ejecuta antes de terminar el anterior.
+                                            
+                                                - Es decir, los callbacks, nos ayudan en asegurar el orden en las peticiones a servidores.  
+
+
+        - PROMESAS               ---►       ACTUAL. Hacen  lo mismo que los CALLBACK'S. Pero de manera estructuralmente mejor.
+
+
+        - JQUERY                 ---►       Libreria Externa de JavaScript. Permiten agregar interactividad (aporta el dinamismo) a un sitio web. 
+
+
+        - VANILLA JAVASCRIPT     ---►       Todo lo contrario a JQuery. Es JavaScript puro.  
+
+
+        - JSON                   ---►       Lenguaje de intercambio de datos. No crean aplicaciones. Crean estructuras para poder
+                                            intercambiar datos entre "diferentes lenguajes". 
         
-        - Delega esas tareas al navegador y las asocia a "funciones".
+                                            
+        - NODE.js                ---►       Freamework. Es un entorno JavaScript de lado del servidor. Podemos estar en BackEnd con Node. 
+                                            Sin necesidad de aprender un lenguaje de programción basado en backend como por ejemplo  PHP        
         
-        - Al terminar la tarea actual. Esta tarea asociada a una función debera ser ejecutada. 
+
+        - API                    ---►       - Es el mecanismo más útil para conectar dos softwares (dos aplicaciones o dos codigos) entre sí. 
+                                              para el intercambio de datos en formato estÁndar como JSON.
         
-        - Estas funciones son conocidos como "CALLBACK"
+                                              
+    CASOS REALIZADOS
+
+            - Utilizar la libreria externa JQuery (como pull request) para traer información de una API de Star Wars.
+
+                - Utilizando las funciones CALLBACK'S para la conexión.
+
+            - Utilizar NODE.js para crear un JSON y poder ejecutar archivos JavaScript.
+
+
+
+    PROFUNDIZANDO CON EL ASINCRONISMO 
+
+
+        - TODO LO QUE SE EXPLICA es para conectarnos a BASE DE DATOS, A JSON EXTERNOS, INFORMACIÓN EXTERNA.   
+
+            - Siempre vamos  a tener requerimientos de una base de datos. Aunque tengamos que construirlas nosotros.
+
+                - Por ejemplo "un login". Registro a una página. Esto ya es una conexion a base de datos
+                
+                - Y es una conexión a datos "PERSISTENTE". Por ejemplo, 
+                    
+                        - Los discos duros (son persistentes). 
+                        
+                        - Mientras que la Memoria RAM (es una memoria volátil), se pierde datos al apagar la computadora. 
+
+            - Siempre vamos a Tener que acceder a esa base de datos para guardar el usuario y contraseña. 
+            
+                - Luego hay que acceder a esa base de datos para leerlos. 
+                
+                - Y a este proceso de (acceder) se le llama "Asincronismo". Se necesita  del "Asincronismo" para accerder. 
+
+        - JavaScript sólo puede hacer una cosa a la vez.
+            
+                - Pero es capaz de delegar la ejecución de ciertas funciones a otros procesos. 
+            
+                - Este modelo de concurrencia se llama "EventLoop".
+
+        - ¿que ocurre si le envia varias tareas a la vez? 
+            
+                - Delega esas tareas al navegador y las asocia a "funciones".
+            
+                - Al terminar la tarea actual. Esta tarea asociada a una función debera ser ejecutada. 
+            
+                - Estas funciones son conocidos como "CALLBACK".
+                
 
     */
+
+
+
+
 
 
 
@@ -444,7 +548,15 @@ console.log(3);                                     // Se ejecuta. Se imprime en
 
 
 
-/****************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+/**************************************************************************************************************************************************************/
 
 
 
@@ -486,7 +598,7 @@ console.log(3);                                     // Se ejecuta. Se imprime en
 
 
 
-/****************************************************************************************************************************************/
+/****************************************************************************************************************************************************/
 
     
 /*
@@ -541,9 +653,13 @@ console.log(3);                                     // Se ejecuta. Se imprime en
             
             - Es una llamada atras. Y Cualquier función puede ser un callback
 
+        - Los callback's al final, estaria hablando de como (antes) procedia JavaScript cuando tenia que conectarse a base de datos. 
+
         -  Se debe olvidar  un rato la expectativa de que todo lo que sucedera en la línea 1 finalizará antes de ejecutar la línea 2
         
             -  Se debe olvidar un poquito la programación lineal de que la ejecución se realizara de forma inmediata de arriba hacia abajo.
+        
+         
 
 */
 
@@ -569,7 +685,7 @@ function calcular(numero1, numero2,callback)                            // Param
                                                                         //        |
                                                                         //        |
 // 1RO - LLAMADA DE LA FUNCIÓN                                          
-calcular(40,20,sumar)                                                   // Argumento 1   ---►  40                            (Envia)
+calcular(40,20,sumar);                                                   // Argumento 1   ---►  40                            (Envia)
                                                                         // Argumento 2   ---►  20                            (Envia)
                                                                         // Argumento 3   ---►  Función "sumar"               (Envia)
 
@@ -652,29 +768,28 @@ calcular(40,20,sumar)                                                   // Argum
 
     // EJECUTAR UNA PROMESA - LLAMADA
                         
-    PROMESA_OWI.then (  function (valor)                                     // Cuando todo funciona bien 
+    PROMESA_OWI().then (  function (response)                                     // Cuando todo funciona bien 
                             {
                                 console.log(response);                       // Se imprime lo que devuelve "return"
                             }
                      );                                 
                             
-    PROMESA_OWI.catch ( function (err)                                       // cuando hay errores
+    PROMESA_OWI().catch ( function (err)                                       // cuando hay errores
                             {
                                 cconsole.error(err);                         // Se imprime lo que devuelve "return"     
                             }
                       ); 
+                      
+                    
 
 
-                        
-
-
-// 2DO CASO - CON ARROW FUNCTION (mas común)
+// 2DO CASO - CON ARROW FUNCTION (MAS COMÚN)
     
     // SE ASIGNA UNA FUNCIÓN A LA CONSTANTE (PROMESA_OWI) 
 
-    const PROMESA_OWI  = () =>                                                // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
-        {
-            return new Promise ( function (resolve,reject)                    // "function"      ---►     Es una función ejecutor 
+    const PROMESA_OWI = () =>                                                 // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
+        {   
+            return new Promise ( (resolve, reject) =>                          // "function"      ---►     Es una función ejecutor 
                                     {                                         // "Parámetros"    ---►     Se recibe Funciones  "resolve (resolver)   y    reject (rechazar)" 
                                         if (true)                             // El ejecutor inicia un trabajo asíncrono. Una vez completado se llama  a la función "resolve" o "reject"                                                                  
                                             {                                                          
@@ -684,21 +799,53 @@ calcular(40,20,sumar)                                                   // Argum
                                             {
                                                 reject("Fracaso");            // Si algun error sucede (false). LLama a la función "reject"
                                             }    
-                            }
-                        );
-        }  
+                                    }
+                                );
+        };  
 
-    // EJECUTAR UNA PROMESA - LLAMADA
 
-    PROMESA_OWI.then ( (valor) => console.log(response) );                    // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
+    // EJECUTAR UNA PROMESA 
+
+    // CASO 1 - LLAMADA 
+        PROMESA_OWI().then( (response) => console.log(response));             // FASE 1 DE ARROW FUNCTION - Se cambia "function" por la flecha "=>"
                                                                               // FASE 3 DE ARROW FUNCTION - Se elimina las llaves 
-                                                            
-                            
-    PROMESA_OWI.catch ( (err) => console.error(err) );                        // FASE 1 DE ARROW FUNCTION 
+                                                                
+                                
+        PROMESA_OWI().catch ((err) => console.error(err));                    // FASE 1 DE ARROW FUNCTION 
                                                                               // FASE 3 DE ARROW FUNCTION
-                                                                                 
-                                    
-            
+ 
+
+    // CASO 2 - LLAMADA                                                                               
+        PROMESA_OWI()
+            .then((response) => console.log(response))                        // si todo esta bien      
+            .catch((err) => console.error(err));                              // manejo del error
+                           
+        
+                                                                                
+
+const QUE_PASARA = () => 
+    {
+        return new Promise((resolve, reject) => 
+            {
+                if (true) 
+                    {
+                        resolve("Bien echo!");
+                    } 
+                else 
+                    {
+                        reject("Mal!");
+                    }
+            });
+};
+
+// ejecutar
+// al ejecutar una promesa hay unos elementos encadenados que son .then y .catch
+
+                                                                                
+
+
+
+
 
 /*
     ---------------------------------------
@@ -720,6 +867,256 @@ Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                /
             console.error(err);                                                // ".then" y ".cat" deben estar ajustadas a promise (cerca)
         });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+/* 
+    ------------------------------------------------------
+            JSON  (JavaScript - Object - Notation)
+    ------------------------------------------------------
+*/
+
+
+
+
+/*
+
+            ***  ESTRUCTURAS DE COMUNICACIÓN ENTRE DIFERENTES LENGUAJES  ***
+                                                                          
+   
+
+                                                          ___________________________      
+                                                          |                         |      
+                                                          |                         |      
+                                                          |      LENGUAJES DE       |---------------- ► 1RO  XML    -   Primero vino XML
+      Surge por que los servidores necesitan  ◄ ----------|  INTERCAMBIO DE DATOS   |                   2DO  JSON   -   Luego surge  JSON, por necesidad de intercambio de datos.
+      comunicarse. Un claro ejemplo las API'S             |                         |                   3RO  YAML   -   Y por ultimo, aparece YAML 
+                                                          |_________________________|                     
+                                                                       |  
+                                                                       |
+                                                                       |
+                                                                       | Lenguajes que sirven para crear estructuras de comunicación. "No crean aplicaciones". Crean estructuras 
+                                                                       | para poderse leer entre diferentes lenguajes. Es decir, ellos intercambian datos entre "diferentes lenguajes" 
+                                                                       |
+                                                                       |                                                     
+                            ___________________________________________|______________________________________                       
+                            |                                          |                                     |                                            
+                            |                                          |                                     |                               ___________________            
+                            ▼                                          ▼                                     ▼                OTROS          |                 |                      
+                           XML                                        JSON                                  YAML        ---------------- ►   |     SO XML      |              
+            ____________________________________         ____________________________          ____________________________                  |                 |    
+            |                                  |         |                          |          |                          |                  |     OGDL        |
+            |  <Servers>                       |         | {                        |          |                          |                  |                 |    
+            |     <Server>                     |         |   Servers:[              |          |                          |                  |     PLIST       |                 
+            |       <name> Server 1</name>     |         |     {                    |          |  Servers:                |                  |_________________|   
+            |       <owner> Owi </owner>       |         |        name : Server 1   |          |      name : Server 1     |                  
+            |       <Created> 12345 </Created> |         |        owner : Owi       |          |      owner : Owi         |                     
+            |       <Status>active</Status>    |         |        created: 123456   |          |      created: 123456     |              
+            |    </Server>                     |         |        status : active   |          |      status : active     |              
+            |  </Servers>                      |         |      }                   |          |                          |         
+            |                                  |         |    ]                     |          |                          |                      
+            |                                  |         |  }                       |          |                          |            
+            |__________________________________|         |__________________________|          |__________________________|         
+                       |                                   |                                                |
+                       |                                   |                                                |      
+                       |___________________________________|                                                |
+                                        |                                                                   ▼ 
+                                        |                                                                 Python  
+                                        |   Todos los Lenguajes siguientes pueden leer 
+                                        |         o entienden a JSON y  XML                  
+                                        |
+                                        |
+                                        ▼    
+                                    
+                        - Objetive-C            -Cobol
+                                     
+                        - Python                - C#
+                                     
+                        - Java                  - JavaScript          
+                                     
+                        - C++                   - C
+                                     
+                        - Visual Basic          - Ruby
+                                     
+                        - ASP                   - Delphi
+                                
+*/
+
+
+
+
+/*
+    - DIFERENCIA ENTRE JSON Y XML 
+
+
+                LOS DOS DICEN LO MISMO           ESTRUCTURA           PESO - TAMAÑO         CANTIDAD DE LÍNEAS
+
+                       ARCHIVO 1                    XML                  10 Kb                 400 Líneas  
+        
+                       ARCHIVO 2                    JSON                 2 kb                   80 Líneas
+
+
+    
+  
+    - Teniendo presente que el Archivo 1 y Archivo 2 pasan lo mismo datos. Hacen lo mismo. Se concluye que :
+
+        - Con JSON  pesa menos, tiene un tamaño mas reducido.
+
+        - Tabmien se tiene menos líneas ( y por ende : menos errores, mejor lectura del código)
+
+                               
+    - Tambien existen diferencias entre los que pueden transmitir y lo que no pueden. 
+    
+        - JSON es el que puede transmitir mas tipos de datos ( arrays, datos boleanos,etc. ). Punto a favor
+*/
+
+
+
+
+
+
+/*
+    - JSON                     ---►        JavaScript - Object - Notation
+
+    - Inicio de Persistencia   ---►        - A JSON tambien se le suele llamar como  "Base de datos minimalistas - Base de datos pequeñita".
+                                        
+                                            - Por ejemplo, en JSON se puede guardar los datos de las personas que trabajan en una empresa. Y 
+                                              esto se guarda en un archivo. Y por eso lo de minimalista.
+                                        
+                                            - La persistencia empieza con los archivos.  Para entender mejor Los discos duros (son persistentes)
+                                              Mientras que la Memoria RAM (no es perssitente) ya que al apagar la computadora se elimina todo el 
+                                              contenido del archivo  que tenia guardado en su espacio.
+                                            
+                                            - Por eso ya es un inicio de la base de datos. Porque es algo persistente. Porque es algo que se guarda 
+                                              en un archivo. Y eso se llama persistencia. 
+
+                                            - Esta estructura minimalista que es JSON ya seria como la primera base de datos que podemos acceder.
+
+                                                    - Ya sea estando en local (XAMPP) o lejos (API)
+                                            
+                                            -  " jsoneditoronline.org "  ( te ayuda a crear un Json)                                            
+                                        
+    - XML                      ---►         No ha muerto                            
+
+    - AJAX                     ---►         Es un asincronismo muy antiguo. Es una implementación que se ha dejado de lado. Ajax es un problema de JQuery 
+    
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************************************************************************************************/
+
+
+/* 
+    -----------------------
+            JQUEREY  
+    ----------------------
+*/
+
+
+/*
+    - JQuery                     ---►       - Es una libreria. Es JavaScript. 
+
+                                            - JQuery  bien empleado no es malo. Pero por lo general se emplea mal.
+
+
+    
+    - Vanilla JavaScript         ---►       - Es todo lo contrario de JQuery. 
+
+                                            - Cuando se habla de Vanilla JavaScript  es que se ha hecho 
+
+                                                    - "JavaScript limpio" , "JavaScript nativo", 
+                                                
+                                                    - "JavaScript sin ningun tipo de libreria externa como JQuerey o otras".
+
+                                                    - Producto creado totalmente desde cero.  
+    
+                                            - Cualquier libreria externa (JQuery es la mas conocida y la mas utilizada). Que se tebga
+                                              tenga que integrar dentro del lenguaje. Se considera que no estas haciendo "Vanilla JavaScript"
+
+
+
+
+    - MUNDO LABORAL              ---►       - Hay gente que hagan cosas y creen que hacen JavaScript. Y dicen yo domino JavaScript y No, tu dominas JQuery
+                                            
+                                            - JQuery hizo mucho daño. Intento ayudar pero, termino perjudicando
+
+                                            - Al buscar trabajo, te pondran a prueba un ejercicio sin JQuery para ver  si podes hacerlo. 
+                                              Para ver si sos de las personas que solo saben JQuery. 
+                                            
+
+                                            
+    DIFERENCIA ENTRE JQUERY Y VANILLA JAVASCRIPT
+
+
+                CREACIÓN DE UN BOTON           ESTRUCTURA           PESO - TAMAÑO          CANTIDAD DE LÍNEAS
+
+                       LIBRERIA 1                JQuery                1000 Kb                 4  Líneas  
+        
+                       LIBRERIA 2                Vanilla                 1  kb                 5 Líneas                                          
+    
+    
+    
+    
+    - Supongamos que no sabes JavaScript. Y solo sabemos JQuery. Y queremos crear un "BOTON"
+
+            - Cuando traemos una libreria con JQuery. Traemos al padre, madre, primos, amigos, novio, amante, y mas 
+               solo para hacer un boton. 
+                                                      
+            - Se Necesita traer miles instrucciones que no me sirven. Pero como todos estan conectados e implicados en el proceso de JQuery.
+              ocurre esto.
+
+    - Se concluye
+                
+            - La soluciona JQuery a lo que me soluciona Vanill. Es similar. Pero la diferencia entre el peso o tamaño es enorme 
+
+            - Cuanto mas sabes de JavaScript. Menos utilizas JQuery.        
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /****************************************************************************************************************************************/
 
 
@@ -734,13 +1131,13 @@ Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                /
 /*
     # NODE.JS
 
-        - Es un entorno JavaScript de lado de servidor. Podemos estar en BackEnd con Node.
+        - Es un entorno JavaScript de lado del servidor. Podemos estar en BackEnd con Node.
 
         - Es un framework. Esta orientado a eventos asincronicos. 
 
         - Necesito  conectar con bases de datos, PHP (por ejemplo). Pero tengo que aprender PHP. 
             
-            - Si ya se Javascript, simplemente trabajo con Node.js y ya podré conectar a base de datos.
+            - Si ya sé Javascript, simplemente trabajo con Node.js y ya podré conectar a base de datos.
             
 */
 
@@ -748,10 +1145,9 @@ Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                /
 
 
 /*
-    -------------------------------------------------------------------
-       TERMINAL EXTERNA  GIT_BASH :  NODE.JS  - ASINCRONISMO -  JSON 
-    -------------------------------------------------------------------
-*/
+    -------------------------------------------------------------
+            TERMINAL EXTERNA  GIT_BASH :  NODE.JS  - JSON 
+    --------------------------------------------------------------
 
 
 
@@ -969,6 +1365,17 @@ Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                /
 
 
 */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
