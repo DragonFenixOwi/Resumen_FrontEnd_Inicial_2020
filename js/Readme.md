@@ -7,38 +7,68 @@
 2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
 
 3. **Atajo de teclado Básico para Visual Studio Code**
-    - Formateo de Errores.   -         
-    - Terminal de salida            
-    - Go Live.
-    
+
+   - Formateo de Errores.          - Recargar Windows        
+
+   - Terminal de salida             - Paleta de comandos 
+   
+   - Go Live.                       - Ejecutar Consola 
+   
+   - Ejecutar Terminal de Salida    - Ejecutar pequeña porción de código
+
+    - Alternar Pestañas             - Iniciar Visual Studio Code
+
 4. **Integrar Git_Bash a la Terminal de VSCode**
-    - Configurar ruta de acceso de git_bash en el archivo  setting.json
-    - Configurar Usuario y email con "git config"
+
+   - Configurar ruta de acceso de git_bash en el archivo  setting.json
+
+   - Configurar Usuario y email con "git config"
 
 5. **Iniciando el mundo de Git**
-    - Proceso de Ejecución Básica en Segundo Plano
+
+   - Proceso de Ejecución Básica en Segundo Plano
+
         - Basado en 
+
             - Directorio de trabajo local 
+
             - Area de Prepación - Staging Area
+
             - Repositorio local
+
             - Repositorio remoto 
+
         - Envío y Recepción de datos.
+
             - git -->  init, add, commit, clone url y push 
+
         - Actualización de datos
+
             - git -->  fetch, merge  y pull 
-    - Términos comunes 
-    - Atajos de terminal git_bash 
-    - Comando iniciales git.
-    - Caso Especial - Comando aislado
-    - Comandos Generales
+
+   - Términos comunes 
+
+   - Atajos de terminal git_bash 
+
+   - Comando iniciales git.
+
+   - Caso Especial - Comando aislado
+
+   - Comandos Generales
     
 6. **Comando Generales de Terminal**. 
-    - Generales
-    - Crear carpeta o archivo
-    - Escribir en un archivo
-    - Ver contenido de un archivo
-    - Comandos un poco destructivos 
-    - Llaves SSH 
+
+   - Generales
+
+   - Crear carpeta o archivo
+
+   - Escribir en un archivo
+
+   - Ver contenido de un archivo
+
+   - Comandos un poco destructivos 
+    
+   - Llaves SSH 
 
 
 

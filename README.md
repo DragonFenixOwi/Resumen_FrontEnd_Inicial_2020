@@ -22,7 +22,7 @@
    
    - **Debugger**
 
-    ###  -  PDF
+   ###  -  PDF
 
    ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
@@ -78,13 +78,13 @@
 
    5. **Métodos Strings**
 
-   6. Módulo Math
+   6. **Módulo Math**
 
    7. ***Condicionales.***
 
-   8. Bucles
+   8. **Bucles**
 
-   9. Arrow Function
+   9. **Arrow Function**
 
 
    ###  Desarrollo Inicial Avanzado.
@@ -120,7 +120,7 @@
     
 
 
-   ## Descripción Ruta de Aprendizaje del frontend
+   ## [Descripción Ruta de Aprendizaje del frontend](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario/PDF%20-%20Ayuda)
 
 1.  **Git**
 
