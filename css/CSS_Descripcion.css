@@ -9,31 +9,36 @@
 
 
 /* 
-    -------------------------------------------
+    -----------------------------------
         PÁGINAS  DE DESARROLLADORES
-    -------------------------------------------
+    -----------------------------------
 */
 
 /*
     - COLORABLE
+    
         - https://colorable.jxnblk.com/00aca3/2d2b31
     
+
     - Lo principal al elegir colores es el  CONTRASTE.
         - Si la fastidias en contraste, nuestra página no va valer nada.
         - Sobre todo porque se maneja en Smartphones. 
         - Y a los smartphones se van a la calle y les pega el sol. 
         - Y como no tengan buen contraste. Ni podrian ver.
     
+
     - Evitar tener un fondo #FFFFFF O Blanco - Blanco. 
         - Por que golpea visualmente. Da un pantallaso. 
         - Siempre hay que jugar  bajando el brillo (Lightness)
         - Ir un poco a grises a lado del blanco.  
 
 
+
     - CODEPEN FLEXBOX
         - Brutal. Para entender y dominar FlexBox
         - https://codepen.io/enxaneta/full/adLPwv 
     
+
     - PAGINAS CON PREMIOS SEMANALES
         - Proyectos muy buenos que concursan.
         - https://www.awwwards.com/ 
@@ -42,45 +47,12 @@
 
 
 
-/* 
-    -----------------
-        REPONSIVE
-    -----------------
-*/
 
 
-/*
-    RESPONSIVE 
-
-        - FLEXBOX
-            - display : flex; 
-
-        - FONT-SIZE ( 1 rem = 16 px )
-
-            - No se suele trabajar con "pixeles". Se suele utilizar la unidad "rem"
-
-            - rem   ---►    Ofrece cierta escalabilidad para respetar las configuraciones de cada usuario.  
-
-            - Y todo esto porque la tipografía también tiene que tener ese punto RESPONSIVE.
 
 
-    ACLARACIÓN ENTRE "REM" Y "EM"        
-    
-        - "rem" es casi igual a el "em"
-                
-        - El "em" es la medida en ancho de una letra. Se invento en tipografia hace mucho tiempo
 
-        - La diferencia entre "em" y "rem" es que 
-
-            - "em"    ---►    Obdece al padre  directo de esa etiqueta.  
-            
-            - "rem"   ---►    Mientras que el rem Pasa hacerle caso al padre (no obedece al padre)
-                              Siempre obedece a lo que le pongas al HTML. 
-
-        
-*/
-
-
+/****************************************************************************************************************************************************/
 
 /* 
     -------------------------------------------
@@ -102,9 +74,7 @@
 
 
 
-
-
-
+/****************************************************************************************************************************************************/
 
 
 /* 
@@ -123,8 +93,8 @@
         -  Y ese borrado total, lo haces cada vez que entras en cualquier tipo de navevador. 
     
     - Estrctura
-    - PRIMERA LÍNEA DE LLAMADA : RESET.CSS
-    - SEGUNDA LÍNEA DE LLAMADA : ESTILO.CSS
+        - PRIMERA LÍNEA DE LLAMADA : RESET.CSS
+        - SEGUNDA LÍNEA DE LLAMADA : ESTILO.CSS
 
     - Esto es como limpiar la pizarra. Limpias la pizarra y nuestro código se vera bien. 
         - No limpies la pizarra y estaras manejando tu código, mas el código que habia metido 
@@ -141,16 +111,17 @@
 
 
 
+/****************************************************************************************************************************************************/
 
 
 /* 
-    --------------------------------------------------
-        COMENTARIOS DE LA TAREA - 4 NOCIONES BÁSICAS
-    --------------------------------------------------
+    ----------------
+        HISTORIA
+    ----------------
 */
 
+
 /*
-    1ra Noción
     - Utilizar "Tablas" para construir una página web. Es ir a la programación de hace 29 años atras.
         - Si no mal recuerdo en el 1991 salieron las tablas. 
 
@@ -166,7 +137,7 @@
     -Luego en 1998 o por ahi salieron los "POSITION" en CSS.
         - Los "POSITION" es una de las  PEORES cosas que podemos hacer actualmente en CSS.
         - Porque no les importan las "reglas  y por eso desestructuran las condiciones en el que se basan 
-        esa estructura en HTML.
+          esa estructura en HTML.
 
     - ¿Se puede utilizar POSITION?
         - Si. Pero lo utilizaras en un 1% en proyecto. Si fuera el caso.
@@ -176,144 +147,333 @@
         - Alinear
         - Estructurar 
         - Y manejar los elementos de HTML, a traves de CSS 
-    - Y ese concepto básico se llama "FLEXBOX".
-*/
 
 
-/*
-    - FLEXBOX 
-        - Es uno de los pilares ahora mismo para la maquetación de las páginas web
-        - Luego estan los "GRID-LAYOUT" 
-
-    - ¿FLEXBOX no tiene nada que ver con el Framework BOOTSTRAP verdad?
-        - NO 
-
-    - BOOTSTRAP 
-        - Se metio muy bien en la industria. Fue creado por twitter.
-        - Pero hasta el 2019, no metio FLEXBOX, en su estructura. 
-        - BOOTSTRAP no tiene ni idea a dia de hoy (en su estructura) que es un  GRID-LAYOUTS
-        - tiene muchas carencias. 
-    
-    - ¿Para que se monta Framework?
-        - Un framework se monta para que tu vayas "mas rápido" pero estando a la ultima. No 
-        para que tu vayas "mas rápido" estando hace 4 años atras.
-
-    - Un framework como BOOTSTRAP y otros framework estan para facitilitarte la vida. 
-
-    - Pero realmente lo que uno tiene que aprender es (hablando de CSS)
-        - Tiene que aprender el CSS Básico. Teniendo en cuenta que tienes que elegir 
-            - FLEXBOX
-            - o GRID-LAYOUT.
-        - Personalmente aprenderia primero "FLEXBOX" Y luego "GRD-LAYOUTS"
-    - Y teniendo estos dos conceptos. Mas todo los de CSS estandar
-        - SABES HACER DE TODO. No neceistas ni BOOTSTRAP, o otros Frameworks.
-        - Te podrias montar un BOOTSTRAP para que nos entendamos. 
+    - Y ese concepto básico se llama        ---►         "FLEXBOX".
 */
 
 
 
 
+
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    -----------------
+        FRAMEWORK
+    -----------------
+*/
+
 /*
+    BOOTSTRAP 
+
+            - ¿FLEXBOX no tiene nada que ver con el Framework BOOTSTRAP verdad?
+                - NO 
+
+            - BOOTSTRAP 
+                - Se metio muy bien en la industria. Fue creado por twitter.
+                - Pero hasta el 2019, no metio FLEXBOX, en su estructura. 
+                - BOOTSTRAP no tiene ni idea a dia de hoy (en su estructura) que es un  GRID-LAYOUTS
+                - tiene muchas carencias. 
+            
+
+            - ¿Para que se monta Framework?
+                - Un framework se monta para que tu vayas "mas rápido" pero estando a la ultima. No 
+                para que tu vayas "mas rápido" estando hace 4 años atras.
+
+
+            - Un framework como BOOTSTRAP y otros framework estan para facitilitarte la vida. 
+
+
+            - Pero realmente lo que uno tiene que aprender es (hablando de CSS)
+                - Tiene que aprender el CSS Básico. Teniendo en cuenta que tienes que elegir 
+                    - FLEXBOX
+                    - o GRID-LAYOUT.
+                - Personalmente aprenderia primero "FLEXBOX" Y luego "GRD-LAYOUTS"
+
+
+            - Y teniendo estos dos conceptos. Mas todo los de CSS estandar
+                - SABES HACER DE TODO. No neceistas ni BOOTSTRAP, o otros Frameworks.
+                - Te podrias montar un BOOTSTRAP para que nos entendamos. 
+
+
+            - Entonces 
+                ¿un Framework que son ? 
+                ¿un conjunto de comandos, de reglas que esta integrado dentro del propio lenguaje CSS ?
+                    - "Exacto". 
+            
+            - Una cosa es. En el trabajo somos 10 y 8 manejan BOOTSTRAP. ¿que hacen  los otros 2?
+                - Pues se ponen con BOOTSTRAP
+            
+            - Pero las empresas que afrontand proyectos con una perspectiva a largo plazo. 
+                - Se inventan su propio Framework. 
+
+    BULMA 
+
+            - Si quieren un ejemplo. Miren la de APPLE.
+                - APPLE.COM o APPLE.ES
+                - ¿Creen que Apple utiliza BOOTSTRAP  u otro Framework ?
+                    - No. Estas empresas se crean su propio Framework. Su propio CSS.
+                    - Para evitar errores. Y para hablar al mismo nivel.
+            
+            - Para proyectos indivuales. BOOTSTRAP no sirve para nada. 
+                - El Framework que elegiria seria "BULMA".
+
+                - ¿ Por qué BULMA? 
+                - Es un Framework tambien para CSS's. Pero es totalmente CSS.
+                - No tiene nada de JavaScript. No tiene nada de otro lenguaje por ahi en medio. 
+                - Es muy sencillo de aprender.
+                - Te ayuda a quitar trabajo. 
+            
+                
+            -Trabajas con BULMA. Cuando eres un amo del CSS
+                - "Tengo que aprender CSS. Me voy a Bulma" --------- "NO" 
+                - Te vas a BULMA cuando quieres hacer un proyecto y no tienes ganas de montar tú CSS.
+                - Cosas de este estilo.
+
+
+            - O si te reunes con un grupo de 4 o 5 . 
+                - Vamos a hacer un proyecto. Vamos a elegir como proyecto BULMA
+                - ¿Por qué? 
+                    - Porque no tengo una documentación, que os diga a todos que poner en las "clases"
+                    y BULMA  ya los hace.
+*/
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ------------------------------------
+        ELECCIÓN DE TIPO MAQUETACIÓN
+    ------------------------------------
+*/
+
+/*
+
     - Hay gente que le encanta FLEXBOX. lo Hace todo con FLEXBOX. No hay ningun problema
+
     - Hay gente que le encanta GRID-LAYOUT. Y lo hace todo con este. Tampoco hay ningun problema.
+
     - Y hay gente como yo que intenta elegir el camino mas correcto a la hora de tratar 
     un elemento, o tratar otro. 
         - Hay elementos que se trata mejor con FLEXBOX Y
         - Elementos que se trata mejor con GRID-LAYOUT
+
     - Y tambien hay Gustos. 
-*/
 
-
-/*
     - ¿En CSS FLEXBOX y GRID-LAYOUT son independientes esas dos ?
         - A ver, dentro de CSS es como si te preguntaran
             - ¿utilizas margin?
             - ¿utilizas los FLEXBOX?
             - ¿utilizas los GRID-LAYOUT?
         - Es lo mismo. 
+
     - Lo que pasa es que los  FLEXBOX y GRID-LAYOUT son conceptos que por si solos, son grandes.
+
     - No podemos comparar las opciones que tienen un margin, con las opciones que tienen un FLEXBOX
 */
 
 
-/*
-    - Entonces 
-        ¿un Framework que son ? 
-        ¿un conjunto de comandos, de reglas que esta integrado dentro del propio lenguaje CSS ?
-            - "Exacto". 
-    
-    - Una cosa es. En el trabajo somos 10 y 8 manejan BOOTSTRAP. ¿que hacen  los otros 2?
-        - Pues se ponen con BOOTSTRAP
-    
-    - Pero las empresas que afrontand proyectos con una perspectiva a largo plazo. 
-        - Se inventan su propio Framework. 
-    
-    - Si quieren un ejemplo. Miren la de APPLE.
-        - APPLE.COM o APPLE.ES
-        - ¿Creen que Apple utiliza BOOTSTRAP  u otro Framework ?
-            - No. Estas empresas se crean su propio Framework. Su propio CSS.
-            - Para evitar errores. Y para hablar al mismo nivel.
-    
-    - Para proyectos indivuales. BOOTSTRAP no sirve para nada. 
-        - El Framework que elegiria seria "BULMA".
-    
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ---------------------------------
+        REPONSIVE - FLEXBOX - REM
+    ---------------------------------
 */
 
+
 /*
-    - ¿ Por qué BULMA? 
-        - Es un Framework tambien para CSS's. Pero es totalmente CSS.
-        - No tiene nada de JavaScript. No tiene nada de otro lenguaje por ahi en medio. 
-        - Es muy sencillo de aprender.
-        - Te ayuda a quitar trabajo. 
     
-    -Trabajas con BULMA. Cuando eres un amo del CSS
-        - "Tengo que aprender CSS. Me voy a Bulma" --------- "NO" 
-        - Te vas a BULMA cuando quieres hacer un proyecto y no tienes ganas de montar tú CSS.
-        - Cosas de este estilo.
-    - O si te reunes con un grupo de 4 o 5 . 
-        - Vamos a hacer un proyecto. Vamos a elegir como proyecto BULMA
-        - ¿Por qué? 
-            - Porque no tengo una documentación, que os diga a todos que poner en las "clases"
-            y BULMA  ya los hace.
+    - FLEXBOX 
+    
+        - Es uno de los pilares ahora mismo para la maquetación de las páginas web
+        - Luego estan los "GRID-LAYOUT" 
+
+
+    - RESPONSIVE 
+
+        - FLEXBOX
+            - display : flex; 
+
+        - FONT-SIZE ( 1 rem = 16 px )
+
+            - No se suele trabajar con "pixeles". Se suele utilizar la unidad "rem"
+
+            - rem   ---►    Ofrece cierta escalabilidad para respetar las configuraciones de cada usuario.  
+
+            - Y todo esto porque la tipografía también tiene que tener ese punto RESPONSIVE.
+
+
+    - ACLARACIÓN ENTRE "REM" Y "EM"        
+    
+        - "rem" es casi igual a el "em"
+                
+        - El "em" es la medida en ancho de una letra. Se invento en tipografia hace mucho tiempo
+
+        - La diferencia entre "em" y "rem" es que 
+
+            - "em"    ---►    Obdece al padre  directo de esa etiqueta.  
+            
+            - "rem"   ---►    Mientras que el rem Pasa hacerle caso al padre (no obedece al padre)
+                              Siempre obedece a lo que le pongas al HTML. 
+
+
+
+    - Lo mas importante para FLEXBOX es el contenido.
+
+        - Si hacen un with a una estructura (un texto por ejemplo o imagen).  Y tipeo un " width : 50px; ". 
+          Va a eliminar todo el contenido 
+
+        - Con FlEXBOX no se utiliza "width", se utiliza "flex-basis"
+
+        - Cuando le das una orden de "flex-basis" y le pides que sea de "50px". El te dice que no, no te voy a 
+          hacer caso. Porque si hago "50px" me cargo el contenido. 
         
 */
 
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ------------------------------
+        PROCESO DE MAQUETACIÓN 
+    ------------------------------
+*/
+
+
+
+/*
+    DISEÑO UX/UI   Y   MAQUETACIÓN CSS
+
+        - ¿ En el mundo de la Web es importante el sitio exacto (en un diseño UX/UI) donde este una caja de FLEXBOX dentro de un main?
+            - No 
+            - Lo importante es que el "concepto de web" se vea bien (derecha, izquierda, arriba, centro, etc.) 
+            - No estamos trabajando en diseño grafico. No se equivoqueis
+            - Estamos trabajando en web. La web es Responsive. La web es elastica. La web es proporciones. 
+            - No son milimetros. No son pixeles.
+
+            - Repito. Lo que es importante  
+
+                - CONCEPTO WEB          ---►        En un dispositivo o en 35 navegadores diferentes. Una caja  o una imagen 
+                                                    o un texto. Quede a la derecha, o a la izquierda, etc.  
+
+                - PROPORCIONES          ---►        Y tambien, son importantes las proporciones. Que las imagenes sean proporcionales. 
+                                                    Que una imagen no sea mas grande que el otro. Y siempre argumentar porque ese 
+                                                    tamaño sea asi. 
+ 
+
+        -  ¿Como se trabaja? ¿Primero se hace el diseño de la web y luego el diseño del  móvil? 
+
+            - No. Primero se hace el diseño del móvil. Porque en el diseño del móvil es donde mas te lo curras.
+
+            - Ya que en el móvil tenes menos espacio para organizar el contenido. 
+
+            - Primero siempre el diseño móvil y luego el diseño web. 
+
+    MARGIN 
+
+        - El margin es para que el contenido(imagen, texto, etc.) no toque los bordes de la página. 
+        
+            - Margin Rigido          ---►        Se lo pones en pixeles
+            
+            - Margin flotante        ---►        Se lo pones en REM.
+
+
+    TEXTO 
+    
+        - El texto no puede ser menor que 16. El tamaño base para las letras en los navegadores es    ---►   16       
+    
+
+    RESPONSIVE MÓVIL
+
+        - Se suele utilizar "@media"  (arroba media) 
+
+        - Para adaptar la imagen de móvil en el código. Se hace por HTML.
+
+            - Antes se hacia por CSS. Pero ahora se hace por HTML. 
+
+        
+        - Las personas que trabajamos en 2020. 
+
+            - Trabajamos con FlexBox que ya son responsive. 
+        
+            - Trabajamos con Grid que ya son responsive.
+        
+            - Y cuando necesitamos una ayuda extra, nos vamos a "arrobamedia" - "Media Query". 
+
+                - Pero no es el "Flujo" de nuestro trabajo.
+
+        - El presente es esto "Flexbox" y "Grid". Estos dos ya establecen las bases de Responsive.  
+
+            - Los media query y tal, vinieron para ayudar cuando no habia Flexbox. 
+                                          
+
+
+
+
+*/
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    -----------------------------------------
+        DESCRIPCIÓN DE TALLADA DEL CÓDIGO  
+    -----------------------------------------
+*/
 
 
 
 body
     {
-        /*Lo primero que hay que decirle a body. Es que es un FLEXBOX*/
-        display : flex;
+       
+        display : flex;                             /*Lo primero que hay que decirle a body. Es que es un FLEXBOX*/
 
-        /* 
-            - Todas las etiquetas de HTML tienen un "display"
-                - display : block
-                - display : line
-                - entre otros. 
-            - Ahora, acabo de cambiar la disposición del "body" a un "display : flex" 
-                - Y esto, lo convierte en un FLEXBOX.
-            - Ahora, cuando conviertes a "body" en un FLEXBOX.
-                - Es que recien ahora, puedes dar ordenes a sus hijs.
-        */
+                                                    /* 
+                                                        - Todas las etiquetas de HTML tienen un "display"
+                                                            - display : block
+                                                            - display : line
+                                                            - entre otros. 
+                                                        - Ahora, acabo de cambiar la disposición del "body" a un "display : flex" 
+                                                            - Y esto, lo convierte en un FLEXBOX.
+                                                        - Ahora, cuando conviertes a "body" en un FLEXBOX.
+                                                            - Es que recien ahora, puedes dar ordenes a sus hijos.
+                                                    */
 
 
-        /* ORDEN EN HORIZONTAL - RESPONSIVE*/
-        justify-content: center;
-
-        /* ORDEN EN VERTICAL - RESPONSIVE*/ 
-		align-items: center;
-		
-        /*
-			- Las personas que trabajamos en 2020. 
-				- Trabajamos con FlexBox que ya son responsive. 
-				- Trabajamos con Grid que ya son responsive.
-				- Y cuando necesitamos una ayuda extra, nos vamos a "arrobamedia" - "Media Query"
-				- Pero no es el "Flujo" de nuestro trabajo.
-			- El presente es esto "Flexbox" y "Grid". Estos dos ya establecen las bases de Responsive.  
-				- Los media query y tal, vinieron para ayudar cuando no habia Flexbox. 
-		*/
         
+        justify-content: center;                    /* ORDEN EN HORIZONTAL - RESPONSIVE*/
+
+        
+		align-items: center;                        /* ORDEN EN VERTICAL - RESPONSIVE*/ 
+		
+
         /* Viewport  height  - Vh */
         height : 100vh ;
 

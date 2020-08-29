@@ -2,11 +2,29 @@
 
  1. **CSS_Descripción**
 
-    - Navegadores.
+    - Página de Desarrolladores 
 
-    - Reset
+         - Colorable - Codeopen 
+    
+    - Navegadores para desarrolladores.
 
-    - Descripción de Nociones Básicas CSS (Position, FlexBox, Grid-Layout, Framework Bulma y Bootstrap)
+    - Reset 
+
+    - Historia 
+
+    - Responsive - Flexbox
+
+    - Framework
+
+         - Bootstrap - Bulma
+      
+   - Elección de tipo de Maquetación 
+
+   - Proceso de Maquetación  
+
+    - Descripción detallada del Código
+         
+      - 
 
  2. **Estilos.**
 
