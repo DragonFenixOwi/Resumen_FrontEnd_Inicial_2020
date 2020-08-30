@@ -54,21 +54,34 @@
   </head>
   <body>
     <header>
+
       <!--
         *
         * Bloque HEADER
         *
       -->
           <figure id="logo">
-            <!--
-             *
-             * Bloque LOGO
-             *
-            -->
-                <img src="" alt="">
-          </figure>
-      
 
+                <!--
+                *
+                * Bloque LOGO
+                *
+                -->
+
+                <!-- AVATAR EN CABECERA --> 
+                <img src="_assets/img/png/Tony_Stark_2.png" alt="Avatar">
+                
+          </figure>
+            
+
+          <!-- DESCRIPCIÓN DEL AVATAR  --> 
+           <figcaption> 
+
+                  <h2>Tony Stark</h2>
+                
+                  <h4> Yo soy Iron Man </h4>
+
+           </figcaption> 
 
 
 
@@ -151,45 +164,83 @@
             <!-- Bloque SECTION--> 
 
                   <div id = "cabecera_etiqueta"> texto 1 Cabecera </div>
-                    <div class ="boton_etiqueta"> texto 2 Boton  </div>
-                    <div auto ="auto_etiqueta"> texto 3 Etiqueta </div>
+                  <div class ="boton_etiqueta"> texto 2 Boton  </div>
+                  <div auto ="auto_etiqueta"> texto 3 Etiqueta </div>
                     
 
-                    <div id = "cabecera_etiqueta_Numero_2"> 
-                        <p class="parrafo_de_cabecera_numero_2">
-                              Este parrafo sera modificado atraves del DOM en Desarrollo_Inicial_Avanzado en la parte de PRACTICA - MODIFICAR PARRAFO
-                        </p>  
-                        
-                    </div>
-                  </section>
+                      <div id = "cabecera_etiqueta_Numero_2"> 
+                          <p class="parrafo_de_cabecera_numero_2">
+                                Este parrafo sera modificado atraves del DOM en Desarrollo_Inicial_Avanzado en la parte de PRACTICA - MODIFICAR PARRAFO
+                          </p>  
+                          
+                      </div>
+   
+                  
+                  
+          </section>
       
 
 
-          <article id = "articulo">                   <!-- "Desarrollo_Inicial_Avanzado.js"   --> 
+          <article id = "articulo_owi">                   <!-- "Desarrollo_Inicial_Avanzado.js"   --> 
             
-            <!--Bloque ARTICLE -->
+                <!--Bloque ARTICLE -->
 
-                    <!-- EVENTOS -->                                     <!-- Desarrollo_Inicial_Avanzado.js--> 
-                    <button class="boton"> Boton_presionar </button>
-
-
+                        <!-- EVENTOS -->                                     <!-- Desarrollo_Inicial_Avanzado.js--> 
+                        <button class="boton"> Boton_presionar </button>
 
 
-            <!-- FORMULARIO BÁSICO - INGRESO DE DATOS -->                <!-- Desarrollo_Inicial_Avanzado.js--> 
 
-                    <!--   TECLADO ABREVIADO     input:number#suma_1*2   -->
 
-                          <input type="number" name="sum_1" id="sum_1">          <!-- Se encuentra en Desarrollo_Inicial_Avanzado.js  -->
-                          <input type="number" name="sum_2" id="sum_2">          <!-- Este "name" es distinto. Es una zona para almacenar la información -->
-                                
-                    <!--   TECLADO ABREVIADO     button#submit{SUMA}   -->
-                          <button id="submit">SUMA</button>            
+                <!-- FORMULARIO BÁSICO - INGRESO DE DATOS -->                <!-- Desarrollo_Inicial_Avanzado.js--> 
 
-                    <!--   TECLADO ABREVIADO     h3#total_final   -->
-                          <h3> 
-                              TOTAL DE LA SUMA : <strong id="total_final">  </strong>
-                          </h3>
+                        <!--   TECLADO ABREVIADO     input:number#suma_1*2   -->
 
+                              <input type="number" name="sum_1" id="sum_1">          <!-- Se encuentra en Desarrollo_Inicial_Avanzado.js  -->
+                              <input type="number" name="sum_2" id="sum_2">          <!-- Este "name" es distinto. Es una zona para almacenar la información -->
+                                    
+                        <!--   TECLADO ABREVIADO     button#submit{SUMA}   -->
+                              <button id="submit">SUMA</button>            
+
+                        <!--   TECLADO ABREVIADO     h3#total_final   -->
+                              <h3> 
+                                  TOTAL DE LA SUMA : <strong id="total_final">  </strong>
+                              </h3>
+
+
+
+                <!-- DIFERENCIAR ENTRE  WIDTH  Y   HEIHGT EN CSS   -->  
+                <div id = "Modificar_Contenido">
+
+                    <!-- ETIQUETAS PARA EJEMPLO DE  WIDTH   --> 
+                    <div class="degradado_1">  
+
+                        <div class="parrafo_1">
+
+                            <p>
+                                Por alguna razón, las personas prestan más atención al precio que al valor.
+                                El precio es lo que se paga, pero el valor es lo que se obtiene a cambio
+                                Warren Buffett
+                            </p>
+
+                        </div>
+
+                    </div>          
+
+                    <!-- ETIQUETAS PARA EJEMPLO DE   HEIGHT  --> 
+                    <div id="degradado_2">       
+
+                        <div class="parrafo_2">
+
+                            <p>
+                                Por alguna razón, las personas prestan más atención al precio que al valor.
+                                El precio es lo que se paga, pero el valor es lo que se obtiene a cambio
+                                Warren Buffett
+                            </p>
+                            
+                        </div>
+
+                </div>                              
+                                        
           </article>
       
     </main>
@@ -197,7 +248,7 @@
     <footer>
       <!--Bloque FOOTER --> 
 
-      <!-- ATRIBUTOS JAVASCRIPT-->                                      <<!-- Desarrollo_Inicial_Avanzado.js--> 
+      <!-- ATRIBUTOS JAVASCRIPT-->                                      <!-- Desarrollo_Inicial_Avanzado.js--> 
 
             <!-- ENLACES - LINKS URL  -->
             <a href="http:/wwww.google.es" id="enlace_de_google"> Google_DOM </a>
@@ -217,7 +268,7 @@
             <!--   TECLADO ABREVIADO     ul#lista>li{hola$}*3   -->    
 
             <ul id = "lista">
-              <li>hola1</li>
+              <li>hola1</li>  
               <li>hola2</li>
               <li>hola3</li>
             </ul>

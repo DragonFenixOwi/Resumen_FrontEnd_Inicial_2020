@@ -7,24 +7,210 @@
 */
 
 
-
-
-body
+html                                            /*   HIJOS    ---►    "head"(se llama a estilos.css)    y  "body" (principal)    */
     {
-        /*Lo primero que hay que decirle a body. Es que es un FLEXBOX*/
-        display : flex;
 
-        /* ORDEN EN HORIZONTAL - RESPONSIVE*/
+        background-color: #dfdfd2;            /*  Definir el color de  de toda la pagina  */
+    }
+
+
+body                                           /*   HIJOS       ---►    "header" ,  "main" y "footer"    */
+    {
+
+
+        display : flex;                       /*  Lo primero que hay que decirle a body. Es que es un FLEXBOX*/  
+        
+        flex-direction: column;               /*  Main Axis que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        justify-content: center;              /*  ORDEN EN HORIZONTAL - RESPONSIVE*/
+
+        justify-content: space-between;       /*  Distribuye el espacio entre las hijos (header, main y footer) de manera uniforme. 
+                                                   Sin Espacios al inicio ni al final. */ 
+
+        
+        height : 100vh ;                      /*  Viewport  height  - Vh */
+    }
+
+
+
+/* 
+    -----------------------
+        HEADER - FOOTER 
+    -----------------------
+*/
+
+
+header,footer                                 /* HIJOS DEL HEADER    ---►    "NAV",  "figcaption"   y  "figure"  */
+    {
+        color :  #01968e ;                  /*  Color de los "TEXTOS" del Header y footer*/
+
+        background-color: #1e1f1f;          /* Indicamos el color de "FONDO" tanto de todo el Header, como del Footer*/
+        
+        display: flex;                        /* El "header" y el "footer" se convierten en un FLEXBOX */     
+                
+        padding: 20px;                        /* Se establece el espacio de relleno para todo los lados del contenido de header (20px --> arriba, abajo, y en los costados)*/
+              
+        justify-content: space-around;        /* Distribuye el espacio entre las hijos  (NAV, figcaption y figure). Con un pequeño padding 
+                                                 que permite que exista un espacio tanto al iniciar como al final */ 
+
+                                                
+    }
+
+header h2                                     /*   El "h2" que tienes dentro del "header" quiero que tenga un font-size de 40px*/
+    {
+        font-size: 60px;                      /*  Tamaño del texto "Tony Stark" */                    
+    }
+
+header h4                                     /*   El "h4" que tienes dentro del "header" quiero que tenga un font-size de 20px*/
+    {
+        font-size: 20px;                      /*   Tamaño del texto "Yo soy Iron Man" */                  
+    }
+
+
+NAV             
+    {
+        display : flex;                       /*   HIJOS DEL HEADER    ---►    Los "a href"  que serian los "links"  */
+
+        flex-direction: column;               /*   Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+        
+    }    
+
+a
+    {
+        font-size: 20px;                      /* Tamaño del texto "Yo soy Iron Man" */  
+
+        color : #eb4e05d0;                  /* Color del texto de los "a href"  que serian los "links"  */
+    }
+
+
+/* 
+    ------------
+        MAIN 
+    ------------
+*/
+
+
+main                                             /* HIJOS DEL MAIN    ---►    "Section"   y   "article"  */
+    {
+        color :  #550e7e ;                    /*  Color de los textos del  Section y article. Afecta a los contenidos ("div", "imput", "h3" y "button") */
+
+        font-size: 20px;                        /* Se define el Tamaño del texto. Afecta a los contenidos ("div", "imput", "h3" y "button") del Section y article */  
+
+        background-color: #d3e0e0;            /* Indicamos el color de fondo tanto de Section, como de article */
+        
+        display: flex;                          /* El "main" se convierte en un FLEXBOX */     
+         
+        flex-direction: column;                 /*  Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        padding: 50px;                         /* Se establece el espacio de relleno para todo los lados del contenido de main (50px --> arriba, abajo, y en los costados) */
+              
+
+    }
+
+
+
+
+
+
+    
+
+ /* 
+    ---------------
+        ARTICLE
+    ---------------
+*/
+
+
+#articulo_owi                                 /* HIJOS DEL ARTICLE (CON id = articulo_owi )  ---►   - " button = boton ", " imput  = number" , "H3"  */
+    {                                         /*                                                    -  " button = submit" y " div id = Modificar_Contenido"  */
+
+
+        display: flex;                        /* El article con "id = articulo_owi"  se convierte en un FLEXBOX */     
+         
+        flex-direction: column;               /*   Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        padding: 50px;                        /* Se establece el espacio de relleno para todo los lados del contenido de main (50px --> arriba, abajo, y en los costados) */
+        
+        align-items: center;                  /* Se alinea en el centro  todos los elementos (boton, number, lso imputs, el h3 y el div modificar_contenido) dentro del bloque
+                                                 que en este caso es el padre articulo_owi. Agrupa los elementos alrededor del centro.  */
+
+    }
+
+    
+#Modificar_Contenido                          /* HIJOS DEL DIV (CON id = Modificar_Contenido  )  ---►   - " div class = degradado_1""  */
+    {                                         /*                                                       - " div   id  = degradado_2"  */
+
+        width: 1800px;                       /*  Se modifica el tamaño de la caja  o bloque que conteniene a los dos degradados. Para que exista una separación entre ambos. */
+    
+        display: flex;                       /* El div con "id = Modificar_Contenido "  se convierte en un FLEXBOX */   
+        
+        flex-direction: row ;                /* Se modifica el "Main Axis :Column " para ver a los "degredados" uno a lado del otros en horizonatl.   */
+        
+        justify-content: space-between;      /* Distribuye el espacio entre las hijos ( degradado_1 y degradado_2) de manera uniforme. 
+                                                Sin Espacios al inicio ni al final.*/   
+
+
+
+    }
+
+.degradado_1
+    {
+        display: flex;
         justify-content: center;
+        align-content: center;
+        padding: 20px;
+        
+        border-radius: 20px;
 
-        /* ORDEN EN VERTICAL - RESPONSIVE*/ 
-		align-items: center;
+        width: 750px;
+        height: 150px;
+        background: transparent linear-gradient(180deg, #38426F 0%, #71BAEF 100%) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
 
-        /* Viewport  height  - Vh */
-        height : 100vh ;
+#degradado_2
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
 
-        /* Color de fondo */
-        background-color: #ccc9c9;
+        border-radius: 20px;
+        width: 750px;
+        height: 150px;
+        background: transparent linear-gradient(180deg, #38426F 0%, #71BAEF 100%) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+.parrafo_1
+    {
+        display: flex;
+        justify-content: center;
+        top: 70px;
+        left: 183px;
+        width: 615px;
+        height: 293px;
+        text-align: left;
+        font-size: 22px;
+        font-family: Helvetica Neue;
+        font: Regular;
+        /* font: Regular 20px/24px Helvetica Neue; */
+        letter-spacing: 0px;
+        color: #3b2c29;
+        opacity: 1;
+    }
 
-        flex-direction: column;
+.parrafo_2
+    {
+        top: 382px;
+        left: 582px;
+        width: 615px;
+        height: 293px;
+        text-align: left;
+        font-size: 22px;
+        font-family: Helvetica Neue;
+        font: Regular;
+        /* font: Regular 20px/24px Helvetica Neue; */
+        letter-spacing: 0px;
+        color: #070707;
+        opacity: 1;
     }
