@@ -110,7 +110,7 @@
     
     - **1RA** -  Líneas de Acción DOM - Dinamismo HTML Y CSS
     
-    - **2DA** - Aplicación    
+    - **2DA** - Aplicación   (me falta)
 
  
 

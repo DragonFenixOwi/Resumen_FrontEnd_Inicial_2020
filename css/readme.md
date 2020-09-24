@@ -1,74 +1,74 @@
 # Carpeta "css" de CSS
 
-  ## **CSS_Descripción**
+  ## CSS_Descripción
 
-   **1.**  Página de Desarrolladores 
+**1.**  **Página de Desarrolladores** 
 
-         - Colorable 
+   - Colorable 
          
-         - Codepen - Flexbox PlayGround
+   - Codepen - Flexbox PlayGround
 
-         - Rueda de Colores de Adobe 
+   - Rueda de Colores de Adobe 
 
-         - StatCounter
+   - StatCounter
          
-         - Editor.md
+   - Editor.md
 
-         - Stateofjs
+   - Stateofjs
 
-         - Awwards
+   - Awwards
 
-   **2.** Descripción detallada del Código "estilos.css"
+**2.** **Descripción detallada del Código "estilos.css"**
 
-      - Navegadores para desarrolladores.
+   - Navegadores para desarrolladores.
 
-      - Reset 
+   - Reset 
 
-      - Historia 
+   - Historia 
 
-      - Responsive - Flexbox
+   - Responsive - Flexbox
 
-      - Framework
+   - Framework
 
-         - Bootstrap - Bulma
+   - Bootstrap - Bulma
       
-   **3.** Elección de tipo de Maquetación 
+**3.** **Elección de tipo de Maquetación** 
 
-   **4.** Proceso de Maquetación  
+**4.** **Proceso de Maquetación**  
 
-         - Diseño UX/UI  y Maquetación CSS
+   - Diseño UX/UI  y Maquetación CSS
 
-         - Margin 
+   - Margin 
 
-         - Texto
+   - Texto
 
-         - Responsive Móvil 
+   - Responsive Móvil 
 
-         - Contraste
+   - Contraste
 
-   **5.** Responsive- Flexbox - REM
+**5.** **Responsive- Flexbox - REM**
 
-         - Responsive
+   - Responsive
             
-            - Flexbox
+      - Flexbox
 
-            - Font-size ( 1 rem = 16 px ) 
+      - Font-size ( 1 rem = 16 px ) 
          
-         - Aclaración entre "REM" y "EM" 
+   - Aclaración entre "REM" y "EM" 
 
-         - Lo mas importante para FLEXBOX es el contenido.    
+   - Lo mas importante para FLEXBOX es el contenido.    
    
 
-## **Estilos.**
+## Estilos.
 
-   **1.** FlexBox - Padre "body"
+   - FlexBox - Padre "body"
 
-   **2.** Descripción corta de las líneas de código utitilizadas
+   - Descripción corta de las líneas de código utitilizadas
 
-## **Main_Axis-Column** 
+## Main_Axis-Column 
 
-   **1.** **flex-direction: column**
+   - **flex-direction: column**
 
-##  **Main_Axis_Row**
+##  Main_Axis_Row
 
-   **1.** **flex-direction: row**
+   - **flex-direction: row**
