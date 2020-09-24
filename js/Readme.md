@@ -1,6 +1,6 @@
-# Carpeta "js" de JavaScript
+## Carpeta "js" de JavaScript
 
-##  Comandos de Atajos de Teclado y Git 
+### Comandos de Atajos de Teclado y Git 
 
 1.  **Plantilla EMMET Básica** Atajos mas Comunes de montaje rápido de etiquetas del "index.html" en Visual Studio Code
 
