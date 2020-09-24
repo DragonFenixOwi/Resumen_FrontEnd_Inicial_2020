@@ -2,7 +2,7 @@
 
 ##  Comandos de Atajos de Teclado y Git 
 
-1. **Atajos mas Comunes del "index.html" en Visual Studio Code**
+1.  **Plantilla EMMET Básica** Atajos mas Comunes de montaje rápido de etiquetas del "index.html" en Visual Studio Code
 
 2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
 
@@ -233,3 +233,50 @@
             - Primeros pasos - Verificar si la Instalación fue Exitosa.
             - Iniciar NODE.js  guardando datos en un archivo JSON
             -  Ejecutar NODE.js
+
+
+### Actualización ECMAScript.
+1.  **Resumen General**
+    - Descripción Resumida del contenido. 
+    
+2.  **Parámetros y Concatenación**
+    - Parámetros - Params 
+    - Concatenación - Template Literals ( ` ` ) , ( ${} )
+    - Multilinea    - "Enter" === "\n" 
+
+4.  **Desestructuración**   
+
+5. **Spread Operador**                 
+                                                 
+6. **var, let y const**                
+                                                      
+7. **Arrow function**                
+
+8. **Promesas**                    
+            
+9. **Clases**                        
+        
+        
+10. ¿ Qué salio en **ECMAScript7** ?
+    
+    - INCLUDE - Validar la existencia de un valor dentro de un arreglo. 
+
+    - Simplificar las Operaciones con Potencias 
+
+11. ¿ Qué salio en **ECMAScript8** ?
+
+    - Convertir OBJETO a ARRAY 
+            
+        - Object.entries
+
+        - Object.keys
+
+        - Object.values
+
+    - PADS     
+
+    - Trailing Commas
+    
+12. ¿ Qué salio en **ECMAScript 9** ?
+
+    - Operador de Reposo

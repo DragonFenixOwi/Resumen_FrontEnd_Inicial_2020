@@ -24,12 +24,26 @@
 
    ###  -  PDF
 
+
+
+   
+   ##  [Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+
+   1.  **CSS_Descripción** (Importantes: Páginas de Desarrolladores y descripción detallada "estilos.css")
+   
+   2.  **Estilos.css** (descripción corta de las líneas de código utitilizadas)
+
+   3.  **Main_Axis-Column**
+
+   4.  **Main_Axis_Row** 
+    
+
    ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
    ### Comandos de Atajos de Teclado y Git 
 
-   1.  **Atajos mas Comunes** del "index.html" en Visual Studio Code
+   1.  **Plantilla EMMET Básica** Atajos mas Comunes de montaje rápido de etiquetas del "index.html" en Visual Studio Code
 
    2.  **Extensiones (Plugins)** mas Comunes en Visual Studio Code
 
@@ -108,16 +122,33 @@
    3.  **Asincronismo**
     
 
-   ##  [Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+### Actualización ECMAScript.
+1.  **Resumen General**
 
-   1.  **CSS_Descripción**
-
-   2.  **Estilos.**
-
-   3.  **Main_Axis-Column**
-
-   4.  **Main_Axis_Row** 
     
+2.  **Parámetros y Concatenación**
+
+4.  **Desestructuración**   
+
+5. **Spread Operador**                 
+                                                 
+6. **var, let y const**                
+                                                      
+7. **Arrow function**                
+
+8. **Promesas**                    
+            
+9. **Clases**                        
+        
+10. ¿ Qué salio en **ECMAScript7** ?
+    
+
+11. ¿ Qué salio en **ECMAScript8** ?
+
+    
+12. ¿ Qué salio en **ECMAScript 9** ?
+
+
 
 
    ## [Descripción Ruta de Aprendizaje del frontend](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario/PDF%20-%20Ayuda)

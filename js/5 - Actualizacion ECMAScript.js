@@ -7,7 +7,12 @@
 */
 
 
-// - CODE RUNNER     ---►      Facilita la tarea de probar un trozito de codigo
+
+/*
+    -----------------------   
+        RESUMEN GENERAL     
+    -----------------------
+*/
 
 
 
@@ -28,14 +33,14 @@
         3 - Spread Operador                 ---►     Operdor nuevo. LLegua para ayudar a los arrays.
                                                      Porque eran un poco pesados
 
-        5 - var, let y const                ---►     Incorporación de que "var" pasa a ultimo lugar,
+        4 - var, let y const                ---►     Incorporación de que "var" pasa a ultimo lugar,
                                                      "let" se utiliza mas en local y tambien "const". 
 
-        6 - Arrow function                  ---►     Son Funciones anónimas.  Se utilizan dentro de "constantes"
+        5 - Arrow function                  ---►     Son Funciones anónimas.  Se utilizan dentro de "constantes"
 
-        7 - Promesas                        ---►     Solución a los CallBack's Hell.
+        6 - Promesas                        ---►     Solución a los CallBack's Hell.
             
-        8 - Clases                          ---►     Fue un bombaso. 
+        7 - Clases                          ---►     Fue un bombaso. 
         
 
     - ¿ Qué salio en ECMAScript7 ?
@@ -88,9 +93,9 @@
 
 
 /*
-    ---------------------------
-        PARÁMETROS - PARAMS  
-    ---------------------------
+    ---------------------------------
+        1.1 - PARÁMETROS - PARAMS  
+    ---------------------------------
 */
 
 
@@ -119,9 +124,9 @@ parametros_ES6("Pep",23);
 
 
 /*
-    -------------------------
-        CONCATENACIONES
-    -------------------------
+    -----------------------------
+        1.2 - CONCATENACIONES
+    -----------------------------
 */
 
 
@@ -147,9 +152,9 @@ console.log(frase_ES6);
 
 
 /*
-    ---------------------------------------
-        MULTILIENAS vs TEMPLATE LITERAL
-    ---------------------------------------
+    ---------------------------------------------
+        1.3 - MULTILIENAS vs TEMPLATE LITERAL
+    ---------------------------------------------
 */
 
 
@@ -168,7 +173,7 @@ console.log(frase_Nueva);
 
 
 
-  
+
 /*
     ---------------------------
        2 - DESESTRUCTURACIÓN
@@ -201,6 +206,11 @@ console.log(`Despues de ES6 -> ${nombre} ${edad}`);        // "nombre" y "edad" 
 
 
  
+
+
+/****************************************************************************************************************************************************/
+
+  
 /*
     ---------------------------
         3 - SPREAD OPERATOR
@@ -231,9 +241,9 @@ console.log("Despues de ES6 --->", partido_ES6);                           // Vi
 
 
 /*
-    -------------------------
-        VAR - LET - CONST
-    -------------------------
+    -----------------------------
+        4 - VAR - LET - CONST
+    -----------------------------
 */
 
 
@@ -241,9 +251,9 @@ console.log("Despues de ES6 --->", partido_ES6);                           // Vi
 
 
 /*
-    -------------------------
-        ARROW FUNCTIONS
-    -------------------------
+    ---------------------------
+        5 - ARROW FUNCTIONS
+    ---------------------------
 */
 
 /*
@@ -280,16 +290,16 @@ let grupo_ES6 = personas.map((item) => console.log(`Despues de ES6 ---> ${item.n
 
 
 /*
-    ---------------
-        PROMESAS
-    ---------------
+    --------------------
+        6 - PROMESAS
+    --------------------
 */
 
 
 /*
-    ---------------
-        CLASES
-    ---------------
+    -------------------
+        7 - CLASES
+    -------------------
 */
 
 

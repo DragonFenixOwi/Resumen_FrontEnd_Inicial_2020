@@ -10,15 +10,16 @@
 
 
 
+
 /* 
-    -----------------------------------------------------------------------
-        INDEX.HTML - ATAJOS DE TECLADO MAS COMUNES - VISUAL STUDIO CODE
-    -----------------------------------------------------------------------
+    ---------------------------------------------------------
+        INDEX.HTML - PLANTILLA EMMET - VISUAL STUDIO CODE
+    ---------------------------------------------------------
 */
  
 
 /*
-    ATAJOS QUE SE PUEDEN VISUALIZAR EN INDEX.HTML
+    ATAJOS DE TECLADO MAS COMUNES INDEX.HTML
 
         - LISTA DE LINKS "a Href"
             <!--   TECLADO ABREVIADO     a[href="#"]{links}*5   -->
@@ -73,9 +74,10 @@
     
     - CODE RUNNER
         - Para ejecutar y verificar una pequeña porción de código. 
-        
+        - Facilita la tarea de probar un trozito de código
+
     
-        - PRETTIER - CODE FORMATTER
+    - PRETTIER - CODE FORMATTER
         - Ordena o Formatea el código de forma automática. 
 
     - ESLINT
@@ -110,7 +112,7 @@
     - GITLENS 
         - Ayuda a ver el historial y evolución del código. Quien, como y que cambio en el código.
         - En rojo lo que se quito. En verde lo que se cambio.
-    
+
     - SVG
         - Extensión que te ayuda a crear gráficos. 
 
