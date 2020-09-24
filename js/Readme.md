@@ -1,6 +1,6 @@
-## Carpeta "js" de JavaScript
+# Carpeta "js" de JavaScript
 
-### Comandos de Atajos de Teclado y Git 
+## Comandos de Atajos de Teclado y Git 
 
 1.  **Plantilla EMMET Básica** Atajos mas Comunes de montaje rápido de etiquetas del "index.html" en Visual Studio Code
 
@@ -73,7 +73,7 @@
 
 
 
-### Desarrollo Inicial Básico
+## Desarrollo Inicial Básico
 
  1. **Valores Booleanos**
     - Valores considerados Falsos y Valores considerados Verdaderos para el tipo Booleano.
@@ -114,7 +114,7 @@
 
 
 
-### Desarrollo Inicial Intermedio
+## Desarrollo Inicial Intermedio
 
  1. Visualización de datos  
     - **document.write**()
@@ -166,7 +166,7 @@
 
 
 
-### Desarrollo Inicial Avanzado.
+## Desarrollo Inicial Avanzado.
  1. lineas de acción de JavaScript (Dinamismo y Aplicación)
     - 1RA Líneas de Acción DOM - Dinamismo HTML Y CSS
         - Código y Esquema para entener "Código para una Página Sencilla" 
@@ -200,7 +200,7 @@
  
 
 
-### Desarrollo Inicial Superior.
+## Desarrollo Inicial Superior.
 1. **Programación Orientada a Objetos** (**POO**)
     - Objetos { }
     - Metódo de los Objetos. 
@@ -235,7 +235,7 @@
             -  Ejecutar NODE.js
 
 
-### Actualización ECMAScript.
+## Actualización ECMAScript.
 1.  **Resumen General**
     - Descripción Resumida del contenido. 
     
