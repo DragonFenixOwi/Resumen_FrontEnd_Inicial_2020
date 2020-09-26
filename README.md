@@ -108,10 +108,8 @@
    ###  Desarrollo Inicial Avanzado.
 
    1. **lineas de acción de JavaScript (Dinamismo y Aplicación)**
-    
-    - **1RA** -  Líneas de Acción DOM - Dinamismo HTML Y CSS
-    
-    - **2DA** - Aplicación   (me falta)
+        - **1RA** -  Líneas de Acción DOM - Dinamismo HTML Y CSS
+        - **2DA** - Aplicación (me falta)
 
  
 
