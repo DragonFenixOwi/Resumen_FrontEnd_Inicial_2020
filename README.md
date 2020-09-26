@@ -118,23 +118,22 @@
 
    ###  Desarrollo Inicial Superior.
 
-   1.  **Programación Orientada a Objetos** (**POO**)
+1.  **Programación Orientada a Objetos** (**POO**)
 
-   2.  **Estructura de una Clase**
+2.  **Estructura de una Clase**
 
-- Antes del **ECMAScript** de 2015
-
-- Despues del **ECMAScript** de 2015
+    - Antes del **ECMAScript** de 2015
+    - Despues del **ECMAScript** de 2015
     
-   3.  **Asincronismo**
+3.  **Asincronismo**
 
-- Promesas vs Callback's
+    - Promesas vs Callback's
 
-- Sintaxis promesas (con y sin arrow function)
+    - Sintaxis promesas (con y sin arrow function)
 
-- XML - JSON - YAML 
+    - Esquema de XML - JSON - YAML 
 
-- Iniciar y ejecutar Node.js
+    - Iniciar y ejecutar Node.js
 
     
 
