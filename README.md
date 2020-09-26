@@ -41,11 +41,8 @@
 
 
 
-<<<<<<< HEAD
-   ## [Carpeta "js" de JavaScript](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
-=======
-   ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
->>>>>>> 83ca2425b89997ee9c5ad5680197edc235b1e560
+
+## [Carpeta "js" de JavaScript](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
    ### Comandos de Atajos de Teclado y Git 
@@ -110,7 +107,7 @@
 
    ###  Desarrollo Inicial Avanzado.
 
- 1. **lineas de acción de JavaScript (Dinamismo y Aplicación)**
+   1. **lineas de acción de JavaScript (Dinamismo y Aplicación)**
     
     - **1RA** -  Líneas de Acción DOM - Dinamismo HTML Y CSS
     
@@ -125,19 +122,19 @@
 
    2.  **Estructura de una Clase**
 
-    - Antes del **ECMAScript** de 2015
+- Antes del **ECMAScript** de 2015
 
-    - Despues del **ECMAScript** de 2015
+- Despues del **ECMAScript** de 2015
     
    3.  **Asincronismo**
 
-    - Promesas vs Callback's
+- Promesas vs Callback's
 
-    - Sintaxis promesas (con y sin arrow function)
+- Sintaxis promesas (con y sin arrow function)
 
-    - XML - JSON - YAML 
+- XML - JSON - YAML 
 
-    - Iniciar y ejecutar Node.js
+- Iniciar y ejecutar Node.js
 
     
 
