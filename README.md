@@ -41,7 +41,11 @@
 
 
 
+<<<<<<< HEAD
    ## [Carpeta "js" de JavaScript](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+=======
+   ## [Carpeta JS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+>>>>>>> 83ca2425b89997ee9c5ad5680197edc235b1e560
 
 
    ### Comandos de Atajos de Teclado y Git 
