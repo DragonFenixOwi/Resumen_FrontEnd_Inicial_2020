@@ -694,8 +694,7 @@ calcular(40,20,sumar);                                                   // Argu
 
 
 
-
-                            
+                                                                        
 /*
     ---------------------------------------------
                 PROMESA (ACTUAL)
@@ -983,7 +982,6 @@ Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                /
     
         - JSON es el que puede transmitir mas tipos de datos ( arrays, datos boleanos,etc. ). Punto a favor
 */
-
 
 
 
@@ -1365,16 +1363,6 @@ Promise.all(PROMESA_1(), PROMESA_2(), PROMESA_3(), PROMESA_N())                /
 
 
 */
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,17 +6,27 @@
 
 2. **Extensiones (Plugins) mas Comunes en Visual Studio Code**
 
+    - Live Server (Go Live)
+
+    - Code Runner (Ejecutar porción de código)         
+
+    - Prettier  (Formateo de código) 
+
+    - Entre otros. 
+
 3. **Atajo de teclado Básico para Visual Studio Code**
 
-   - Formateo de Errores.          - Recargar Windows        
+   - Recargar Windows        
 
-   - Terminal de salida             - Paleta de comandos 
+   - Paleta de comandos 
    
-   - Go Live.                       - Ejecutar Consola 
+   - Ejecutar Consola 
    
-   - Ejecutar Terminal de Salida    - Ejecutar pequeña porción de código
+   - Ejecutar Terminal de Salida    
+   
+   - Ejecutar pequeña porción de código
 
-    - Alternar Pestañas             - Iniciar Visual Studio Code
+   - Entre otros 
 
 4. **Integrar Git_Bash a la Terminal de VSCode**
 
@@ -167,6 +177,7 @@
 
 
 ## Desarrollo Inicial Avanzado.
+
  1. lineas de acción de JavaScript (Dinamismo y Aplicación)
     - 1RA Líneas de Acción DOM - Dinamismo HTML Y CSS
         - Código y Esquema para entener "Código para una Página Sencilla" 
@@ -225,14 +236,66 @@
         - Llamada del Método
 
  3. **Asincronismo**
+
+    - Resumen de todo 
+
+        -  JavaScript 
+        - CallBack's
+        - Promesas 
+        - JQuery
+        - Vanilla JavaScript 
+        - JSON
+        - NODE.js
+        - API
+        - Casos realizados 
+        - Profundizando con el Asincronismo 
+
     - Comportamiento de JavaScript en la **línea de tiempo** de Ejecución
-    - CallBack's
-    - API
+
+    - API - Descripción breve mas detallada. 
+
+    - Promesas vs CallBack's
+
+    - CallBack's (Antiguo)
+
+    - Promesas (Actual)
+
+    - Sintaxis de una Promesa
+
+        - 1er caso - Sin Arrow Function
+
+        - 2do caso - Con Arrow Function 
+    
+    - Multiples Promesas 
+
+    - JSON  (JavaScript - Object - Notation)
+
+        - Esquema de Estructuras de Comunicación entre estructuras de Comunicación entre diferentes lenguajes 
+
+            - XML
+            - JSON            
+            - YAML 
+            - Otros (SO XML, OGDL, PLIST)
+
+        - Diferencias entre JSON y XML 
+
+        - Descripción de JSON
+
+    - JQuery  
+        
+        - Descripción de JQuery, Vanilla JavaScript y Mundo Laboral
+
+        - Diferencia entre Vanilla JavaScript y Mundo Laboral
+
     - NODE.js - Asincronismo - Crear un Json
+
         - Terminal Externa git_bash y NODE.js
+
             - Primeros pasos - Verificar si la Instalación fue Exitosa.
             - Iniciar NODE.js  guardando datos en un archivo JSON
             -  Ejecutar NODE.js
+
+        - Importante "Conflictos entre rutas" 
 
 
 ## Actualización ECMAScript.
