@@ -7,6 +7,7 @@
 # Indice corto 
 
    ## [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
+   
 
    ###  - Recopilación de Imagenes
 

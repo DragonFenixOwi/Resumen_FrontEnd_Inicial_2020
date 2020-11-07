@@ -1,6 +1,22 @@
 # Carpeta "css" de CSS
 
-  ## CSS_Descripción
+  ## Descripción_Codigo (Explicación extensa de código)
+
+**2.** **Descripción detallada del Código "estilos.css"**
+
+   - Navegadores para desarrolladores.
+
+   - Reset 
+
+   - Historia 
+
+   - Responsive - Flexbox
+
+   - Framework
+
+   - Bootstrap - Bulma
+
+  ## Descripción_texto
 
 **1.**  **Página de Desarrolladores** 
 
@@ -18,23 +34,10 @@
 
    - Awwards
 
-**2.** **Descripción detallada del Código "estilos.css"**
-
-   - Navegadores para desarrolladores.
-
-   - Reset 
-
-   - Historia 
-
-   - Responsive - Flexbox
-
-   - Framework
-
-   - Bootstrap - Bulma
       
-**3.** **Elección de tipo de Maquetación** 
+**2.** **Elección de tipo de Maquetación** 
 
-**4.** **Proceso de Maquetación**  
+**3.** **Proceso de Maquetación**  
 
    - Diseño UX/UI  y Maquetación CSS
 
@@ -46,7 +49,7 @@
 
    - Contraste
 
-**5.** **Responsive- Flexbox - REM**
+**4.** **Responsive- Flexbox - REM**
 
    - Responsive
             
@@ -59,7 +62,7 @@
    - Lo mas importante para FLEXBOX es el contenido.    
    
 
-## Estilos.
+## Estilos (Principal).
 
    - FlexBox - Padre "body"
 

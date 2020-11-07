@@ -1,0 +1,349 @@
+/* 
+    -------------------------------------
+        Autor: Osvaldo Aquino
+        Nickname: owi
+        RESUMEN DESCRIPTIVO BÁSICO CSS
+    -------------------------------------
+*/
+
+
+
+/* 
+    ------------------------------------------------------
+        DESCRIPCIÓN DETALLADA DEL CÓDIGO  "ESTILOS.CSS"
+    ------------------------------------------------------
+*/
+
+
+
+html                                        /*   HIJOS    ---►    "head"(se llama a estilos.css)    y  "body" (principal)    */
+    {
+        background-color: #ebe7e2;        /* 
+                                                  COLOR DE FONDO 
+
+                                                    - MODIFICAR COLOR:  - Se debe selecciónar completo la representación en digitos  
+                                                                          del color (#ebe7e2)
+
+                                                                        - Posicionar el cursor del mouse sobre los dígitos selecciónados.
+                                                                      
+                                                                        - y esperar a que se habra una mini-ventana para elegir el color 
+                                                                          con precisión
+
+                                                    - VISUALIZAR TIPO:  - Con un click en la representación de digitos (rgb, hexadecimal, etc.) 
+                                                                          en la parte superior. Se puede cambiar el modo de vizualización del 
+                                                                          representación del color. Por ejemplo de Hexagecimal a rgb. 
+                                            */
+
+    }
+
+
+
+body                                        /*   HIJOS       ---►    "header" ,  "main" y "footer"    */
+    {
+       
+        display : flex;                     /*
+                                                FLEXBOX
+                                                        
+                                                    - Todas las etiquetas de HTML tienen un "display"
+                                                        - display : block
+                                                        - display : line  ,  entre otros. 
+
+                                                    - Ahora, se acaba de cambiar la disposición del "body" a un "display : flex" 
+                                                        - Y esto, lo convierte en un FLEXBOX.
+
+                                                    - Recien ahora, puedes dar ordenes a sus hijos.
+                                                        - "body" ahora, es el que controlara a los hijos (header main y footer)
+                                                        
+                                                    - Si le digo al padre "body" que su "hijo "header" este en el centro de la  
+                                                      página.
+                                                        - Como el Padre(body) es el que ordena al hijo (header). 
+                                                        - Y la zona en la que trabaja el "body" es toda la pagina
+                                                        - El header si se mueve al centro de la pagina.
+                                                        
+                                                    - Pero si yo ordeno al header(el hijo) eso. No va a ocurrir esto.
+                                                        - No se va a poder mover al centro. 
+                                                        - Porque header solo tiene un trozo superior de espacio que controla
+                                                        -  Tiene un 24 px que controla. (vizualizar en el firefox developer)
+                                                                                                                 
+
+                                            */
+
+      
+                                                    
+        flex-direction: column;               /*Main Axis que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        justify-content: center;              /* ORDEN EN HORIZONTAL - RESPONSIVE*/
+
+        justify-content: space-between;       /* 
+                                                 "space-between"
+
+                                                    - Distribuye el espacio entre las hijos (header, main y footer) de manera uniforme.
+                                                      Sin Espacios al inicio ni al final. 
+                                                    
+                                                    - Distribuye el espacio hasta rellenar toda la pagina. Desde el el principio 
+                                                      hasta el final. Con distancias iguales entre todos   
+                                              */ 
+
+        height : 100vh ;                      /* Viewport  height  - Vh */
+
+
+    }
+
+
+
+/* 
+    -----------------------
+        HEADER - FOOTER 
+    -----------------------
+*/
+
+
+header,footer                                  /* HIJOS DEL HEADER    ---►    "NAV",  "figcaption"   y  "figure"  */
+    {
+
+        color :  #01968e ;                  /*  Color de los "TEXTOS" del Header y footer*/
+
+        background-color: #0e9c79a4;        /* Indicamos el color de "FONDO" tanto de todo el Header, como del Footer*/
+        
+        display: flex;                        /* El "header" y el "footer" se convierten en un FLEXBOX */      
+        
+        
+                                              /* 
+                                                " flex-direction: column;  
+
+                                                    - No es necesario cambiar el "Main Axis" que viene por defecto. 
+                                                    
+                                                    - En la cabecera, header o digamos en la barra de menu- Se quiere que todo 
+                                                      el contenido este uno a lado de otro en una sola fila  
+                                                  
+                                               */      
+        
+        padding: 20px;                        /* 
+                                                    - Se establece el espacio de relleno para todo los lados del contenido de header 
+                                                    
+                                                    -  20px       ---►     arriba.
+                                                    -  20px       ---►     abajo.
+                                                    -  20px       ---►     a la izquierda.
+                                                    -  20px       ---►     a la derecha. 
+                                                    
+                                                    - De esta forma el contenido no toca los bordes de la caja del flexbox  al que 
+                                                      pertenencen el header y footer.
+
+                                                */
+
+
+        justify-content: space-around;        /* 
+                                                    "space-around"
+
+                                                    - Distribuye el espacio entre las hijos  (NAV, figcaption y figure) 
+
+                                                    - Distribuye hasta rellenar toda la pagina. Pero no hasta los bordes de la página 
+                                                      como "space-between". Deja un pequeño margen de espacio.
+                                                    
+                                                    - Existe un pequeño padding y por eso, no empieza desde el borde inicial de la página.   
+                                              */ 
+    }
+
+
+
+header h2                                     /* El "h2" que tienes dentro del "header" quiero que tenga un font-size de 40px*/
+    {
+        font-size: 60px;                      /* Tamaño del texto "Tony Stark" */                    
+    }
+
+header h4                                     /* El "h4" que tienes dentro del "header" quiero que tenga un font-size de 20px*/
+    {
+        font-size: 20px;                      /* Tamaño del texto "Yo soy Iron Man" */                  
+    }
+
+
+
+
+
+NAV             
+    {
+        display : flex;                       /* HIJOS DEL HEADER    ---►    Los "a href"  que serian los "links"  */
+
+        flex-direction: column;               /* Se modifica el "Main Axis"  que viene por defecto (por defecto las cajas estan en filas)*/
+        
+    }    
+
+a
+    {
+        font-size: 20px;                      /* Tamaño del texto "Yo soy Iron Man" */  
+
+        color : #eb4e05d0;                  /* Color del texto de los "a href"  que serian los "links"  */
+    }
+
+
+
+
+
+/* 
+    ------------
+        MAIN 
+    ------------
+*/
+
+
+    main                                        /* HIJOS DEL MAIN    ---►    "Section"   y   "article"  */
+    {
+        color :  #550e7e ;                    /*  Color de los textos del  Section y article. Afecta a los contenidos ("div", "imput", "h3" y "button") */
+
+        font-size: 80px;                        /* Se define el Tamaño del texto. Afecta a los contenidos ("div", "imput", "h3" y "button") del Section y article */  
+
+        background-color: #d3e0e0;            /* Indicamos el color de fondo tanto de Section, como de article */
+        
+        display: flex;                          /* El "main" se convierte en un FLEXBOX */     
+         
+        flex-direction: column;                 /*  Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        padding: 50px;                        /* 
+                                                    - Se establece el espacio de relleno para todo los lados del contenido de header 
+                                                    
+                                                    -  50px       ---►     arriba.
+                                                    -  50px       ---►     abajo.
+                                                    -  50px       ---►     a la izquierda.
+                                                    -  50px       ---►     a la derecha. 
+                                                    
+                                                    - De esta forma el contenido no toca los bordes de la caja del flexbox  al que 
+                                                      pertenencen el header y footer.
+
+                                                */
+
+    }
+
+
+
+
+    
+
+ /* 
+    ---------------
+        ARTICLE
+    ---------------
+*/
+
+
+#articulo_owi                             /* HIJOS DEL ARTICLE (CON id = articulo_owi)    ---►     - " button = boton "  */
+    {                                     /*                                                       - " imput  = number ", 
+                                                                                                    - " button = submit"
+                                                                                                    - " h3 
+                                                                                                    - " div id = Modificar_Contenido"   
+                                          */
+
+    display: flex;                        /* El article con "id = articulo_owi"  se convierte en un FLEXBOX */     
+     
+    flex-direction: column;               /* Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+    
+    padding: 50px;                        /* Se establece el espacio de relleno para todo los lados del contenido de main (50px --> arriba, abajo, y en los costados) */
+        
+    align-items: center;                  /* Se alinea en el centro  todos los elementos (boton, number, lso imputs, el h3 y el div modificar_contenido) dentro del bloque
+                                             que en este caso es el padre articulo_owi. Agrupa los elementos alrededor del centro.  */
+
+}
+
+
+
+#Modificar_Contenido                          /* HIJOS DEL DIV (CON id = Modificar_Contenido)  ---►   - " div class = degradado_1""  */
+    {                                         /*                                                      - " div   id  = degradado_2"  */    
+                                              /*   
+                                                    DIV
+
+                                                      - id     ---►     Se indica con "#"  (numeral)
+                                                      
+                                                      - class  ---►      Se indica con "."  (punto) 
+                                              */
+                                
+    width: 1800px;                            /*  
+                                                - Se modifica el tamaño de la caja  o bloque que conteniene a los dos degradados. Para que exista una separación entre ambos.
+                                               
+                                                    - Inicialmente los dos cuadrados con bordes curvilineos (los dos degradados) estan pegados.
+                                                    
+                                                    - Aunque apliquemos "display:flex" y luego "space-between" no se separan. Porque la caja o bloque 
+                                                      que contiene los dos (por defecto) tiene el tamaño o espacio justo solo para los dos.
+
+                                                    - Por eso se debe ampliar el espacio que existe en este bloque, padre o caja con id = Modificar_Contenido
+                                                    
+                                                    - Para luego poder separar los dos degradado.
+
+                                               */
+                                              
+    display: flex;                            /* El div con "id = Modificar_Contenido "  se convierte en un FLEXBOX */   
+    
+    flex-direction: row ;                     /* Se modifica el "Main Axis :Column " para ver a los "degredados" uno a lado del otros en horizontal.   */
+    
+    justify-content: space-between;           /* Distribuye el espacio entre las hijos ( degradado_1 y degradado_2) de manera uniforme. 
+                                                 Espacios al inicio ni al final.*/   
+
+    
+
+
+
+}
+
+.degradado_1
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    
+    border-radius: 20px;
+
+    width: 750px;
+    height: 150px;
+    background: transparent linear-gradient(180deg, #38426F 0%, #71BAEF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#degradado_2
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+
+    border-radius: 20px;
+    width: 750px;
+    height: 150px;
+    background: transparent linear-gradient(180deg, #38426F 0%, #71BAEF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.parrafo_1
+{
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    left: 183px;
+    width: 615px;
+    height: 293px;
+    text-align: left;
+    font-size: 22px;
+    font-family: Helvetica Neue;
+    font: Regular;
+    /* font: Regular 20px/24px Helvetica Neue; */
+    letter-spacing: 0px;
+    color: #3b2c29;
+    opacity: 1;
+}
+
+.parrafo_2
+{
+    top: 382px;
+    left: 582px;
+    width: 615px;
+    height: 293px;
+    text-align: left;
+    font-size: 22px;
+    font-family: Helvetica Neue;
+    font: Regular;
+    /* font: Regular 20px/24px Helvetica Neue; */
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+}
+
+
+
+
