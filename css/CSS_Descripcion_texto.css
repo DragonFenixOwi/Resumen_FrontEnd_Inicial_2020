@@ -1,0 +1,884 @@
+/* 
+    -------------------------------------
+        Autor: Osvaldo Aquino
+        Nickname: owi
+        RESUMEN DESCRIPTIVO BÁSICO CSS
+    -------------------------------------
+*/
+
+
+
+/* 
+    -----------------------------------
+        PÁGINAS  DE DESARROLLADORES
+    -----------------------------------
+*/
+
+/*
+    - COLORABLE
+        - https://colorable.jxnblk.com/00aca3/2d2b31
+    
+
+    - CODEPEN - FLEXBOX PLAYGROUND
+        - Brutal. Para entender y dominar FlexBox
+        - https://codepen.io/enxaneta/full/adLPwv 
+
+
+    - RUEDA DE COLORES ADOBE
+        - https://color.adobe.com/es/create/color-wheel 
+
+
+    - STATCOUNTER
+        - Resolusión de Pantalla nas utilizada en el  mercado
+        - https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide 
+
+
+    - EDITOR.MD 
+        - Ver modificaciones online del código de Readme.md
+        - https://pandao.github.io/editor.md/en.html  
+
+
+    - STATEOFJS
+        - Opiniones sobre lenguajes de Programación
+        - https://2019.stateofjs.com/overview/
+
+    
+    - AWWARDS
+        - Páginas con premios Semanales
+        - Proyectos muy buenos que concursan.
+        - https://www.awwwards.com/  
+
+     - Ejemplos de como funcionan los sitios de Responsive Desing
+        - Ejemplos de patrones
+        - https://mediaqueri.es 
+        - gracias a la mediaqueri es que podemos hacer responsive desing 
+    
+    - paletton.com
+        -  
+
+*/
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ------------------------------------------------------
+        DESCRIPCIÓN DETALLADA DEL CÓDIGO  "ESTILOS.CSS"
+    ------------------------------------------------------
+*/
+
+
+
+html                                        /*   HIJOS    ---►    "head"(se llama a estilos.css)    y  "body" (principal)    */
+    {
+        background-color: #ebe7e2;        /* 
+                                                  COLOR DE FONDO 
+
+                                                    - MODIFICAR COLOR:  - Se debe selecciónar completo la representación en digitos  
+                                                                          del color (#ebe7e2)
+
+                                                                        - Posicionar el cursor del mouse sobre los dígitos selecciónados.
+                                                                      
+                                                                        - y esperar a que se habra una mini-ventana para elegir el color 
+                                                                          con precisión
+
+                                                    - VISUALIZAR TIPO:  - Con un click en la representación de digitos (rgb, hexadecimal, etc.) 
+                                                                          en la parte superior. Se puede cambiar el modo de vizualización del 
+                                                                          representación del color. Por ejemplo de Hexagecimal a rgb. 
+                                            */
+
+    }
+
+
+
+body                                        /*   HIJOS       ---►    "header" ,  "main" y "footer"    */
+    {
+       
+        display : flex;                     /*
+                                                FLEXBOX
+                                                        
+                                                    - Todas las etiquetas de HTML tienen un "display"
+                                                        - display : block
+                                                        - display : line  ,  entre otros. 
+
+                                                    - Ahora, se acaba de cambiar la disposición del "body" a un "display : flex" 
+                                                        - Y esto, lo convierte en un FLEXBOX.
+
+                                                    - Recien ahora, puedes dar ordenes a sus hijos.
+                                                        - "body" ahora, es el que controlara a los hijos (header main y footer)
+                                                        
+                                                    - Si le digo al padre "body" que su "hijo "header" este en el centro de la  
+                                                      página.
+                                                        - Como el Padre(body) es el que ordena al hijo (header). 
+                                                        - Y la zona en la que trabaja el "body" es toda la pagina
+                                                        - El header si se mueve al centro de la pagina.
+                                                        
+                                                    - Pero si yo ordeno al header(el hijo) eso. No va a ocurrir esto.
+                                                        - No se va a poder mover al centro. 
+                                                        - Porque header solo tiene un trozo superior de espacio que controla
+                                                        -  Tiene un 24 px que controla. (vizualizar en el firefox developer)
+                                                                                                                 
+
+                                            */
+
+      
+                                                    
+        flex-direction: column;               /*Main Axis que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        justify-content: center;              /* ORDEN EN HORIZONTAL - RESPONSIVE*/
+
+        justify-content: space-between;       /* 
+                                                 "space-between"
+
+                                                    - Distribuye el espacio entre las hijos (header, main y footer) de manera uniforme.
+                                                      Sin Espacios al inicio ni al final. 
+                                                    
+                                                    - Distribuye el espacio hasta rellenar toda la pagina. Desde el el principio 
+                                                      hasta el final. Con distancias iguales entre todos   
+                                              */ 
+
+        height : 100vh ;                      /* Viewport  height  - Vh */
+
+
+    }
+
+
+
+/* 
+    -----------------------
+        HEADER - FOOTER 
+    -----------------------
+*/
+
+
+header,footer                                  /* HIJOS DEL HEADER    ---►    "NAV",  "figcaption"   y  "figure"  */
+    {
+
+        color :  #01968e ;                  /*  Color de los "TEXTOS" del Header y footer*/
+
+        background-color: #0e9c79a4;        /* Indicamos el color de "FONDO" tanto de todo el Header, como del Footer*/
+        
+        display: flex;                        /* El "header" y el "footer" se convierten en un FLEXBOX */      
+        
+        
+                                              /* 
+                                                " flex-direction: column;  
+
+                                                    - No es necesario cambiar el "Main Axis" que viene por defecto. 
+                                                    
+                                                    - En la cabecera, header o digamos en la barra de menu- Se quiere que todo 
+                                                      el contenido este uno a lado de otro en una sola fila  
+                                                  
+                                               */      
+        
+        padding: 20px;                        /* 
+                                                    - Se establece el espacio de relleno para todo los lados del contenido de header 
+                                                    
+                                                    -  20px       ---►     arriba.
+                                                    -  20px       ---►     abajo.
+                                                    -  20px       ---►     a la izquierda.
+                                                    -  20px       ---►     a la derecha. 
+                                                    
+                                                    - De esta forma el contenido no toca los bordes de la caja del flexbox  al que 
+                                                      pertenencen el header y footer.
+
+                                                */
+
+
+        justify-content: space-around;        /* 
+                                                    "space-around"
+
+                                                    - Distribuye el espacio entre las hijos  (NAV, figcaption y figure) 
+
+                                                    - Distribuye hasta rellenar toda la pagina. Pero no hasta los bordes de la página 
+                                                      como "space-between". Deja un pequeño margen de espacio.
+                                                    
+                                                    - Existe un pequeño padding y por eso, no empieza desde el borde inicial de la página.   
+                                              */ 
+    }
+
+
+
+header h2                                     /* El "h2" que tienes dentro del "header" quiero que tenga un font-size de 40px*/
+    {
+        font-size: 60px;                      /* Tamaño del texto "Tony Stark" */                    
+    }
+
+header h4                                     /* El "h4" que tienes dentro del "header" quiero que tenga un font-size de 20px*/
+    {
+        font-size: 20px;                      /* Tamaño del texto "Yo soy Iron Man" */                  
+    }
+
+
+
+
+
+NAV             
+    {
+        display : flex;                       /* HIJOS DEL HEADER    ---►    Los "a href"  que serian los "links"  */
+
+        flex-direction: column;               /* Se modifica el "Main Axis"  que viene por defecto (por defecto las cajas estan en filas)*/
+        
+    }    
+
+a
+    {
+        font-size: 20px;                      /* Tamaño del texto "Yo soy Iron Man" */  
+
+        color : #eb4e05d0;                  /* Color del texto de los "a href"  que serian los "links"  */
+    }
+
+
+
+
+
+/* 
+    ------------
+        MAIN 
+    ------------
+*/
+
+
+    main                                        /* HIJOS DEL MAIN    ---►    "Section"   y   "article"  */
+    {
+        color :  #550e7e ;                    /*  Color de los textos del  Section y article. Afecta a los contenidos ("div", "imput", "h3" y "button") */
+
+        font-size: 80px;                        /* Se define el Tamaño del texto. Afecta a los contenidos ("div", "imput", "h3" y "button") del Section y article */  
+
+        background-color: #d3e0e0;            /* Indicamos el color de fondo tanto de Section, como de article */
+        
+        display: flex;                          /* El "main" se convierte en un FLEXBOX */     
+         
+        flex-direction: column;                 /*  Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+        
+        padding: 50px;                        /* 
+                                                    - Se establece el espacio de relleno para todo los lados del contenido de header 
+                                                    
+                                                    -  50px       ---►     arriba.
+                                                    -  50px       ---►     abajo.
+                                                    -  50px       ---►     a la izquierda.
+                                                    -  50px       ---►     a la derecha. 
+                                                    
+                                                    - De esta forma el contenido no toca los bordes de la caja del flexbox  al que 
+                                                      pertenencen el header y footer.
+
+                                                */
+
+    }
+
+
+
+
+    
+
+ /* 
+    ---------------
+        ARTICLE
+    ---------------
+*/
+
+
+#articulo_owi                             /* HIJOS DEL ARTICLE (CON id = articulo_owi)    ---►     - " button = boton "  */
+    {                                     /*                                                       - " imput  = number ", 
+                                                                                                    - " button = submit"
+                                                                                                    - " h3 
+                                                                                                    - " div id = Modificar_Contenido"   
+                                          */
+
+    display: flex;                        /* El article con "id = articulo_owi"  se convierte en un FLEXBOX */     
+     
+    flex-direction: column;               /* Se modifica el "Main Axis" que viene por defecto (por defecto las cajas estan en filas)*/
+    
+    padding: 50px;                        /* Se establece el espacio de relleno para todo los lados del contenido de main (50px --> arriba, abajo, y en los costados) */
+        
+    align-items: center;                  /* Se alinea en el centro  todos los elementos (boton, number, lso imputs, el h3 y el div modificar_contenido) dentro del bloque
+                                             que en este caso es el padre articulo_owi. Agrupa los elementos alrededor del centro.  */
+
+}
+
+
+
+#Modificar_Contenido                          /* HIJOS DEL DIV (CON id = Modificar_Contenido)  ---►   - " div class = degradado_1""  */
+    {                                         /*                                                      - " div   id  = degradado_2"  */    
+                                              /*   
+                                                    DIV
+
+                                                      - id     ---►     Se indica con "#"  (numeral)
+                                                      
+                                                      - class  ---►      Se indica con "."  (punto) 
+                                              */
+                                
+    width: 1800px;                            /*  
+                                                - Se modifica el tamaño de la caja  o bloque que conteniene a los dos degradados. Para que exista una separación entre ambos.
+                                               
+                                                    - Inicialmente los dos cuadrados con bordes curvilineos (los dos degradados) estan pegados.
+                                                    
+                                                    - Aunque apliquemos "display:flex" y luego "space-between" no se separan. Porque la caja o bloque 
+                                                      que contiene los dos (por defecto) tiene el tamaño o espacio justo solo para los dos.
+
+                                                    - Por eso se debe ampliar el espacio que existe en este bloque, padre o caja con id = Modificar_Contenido
+                                                    
+                                                    - Para luego poder separar los dos degradado.
+
+                                               */
+                                              
+    display: flex;                            /* El div con "id = Modificar_Contenido "  se convierte en un FLEXBOX */   
+    
+    flex-direction: row ;                     /* Se modifica el "Main Axis :Column " para ver a los "degredados" uno a lado del otros en horizontal.   */
+    
+    justify-content: space-between;           /* Distribuye el espacio entre las hijos ( degradado_1 y degradado_2) de manera uniforme. 
+                                                 Espacios al inicio ni al final.*/   
+
+    
+
+
+
+}
+
+.degradado_1
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    
+    border-radius: 20px;
+
+    width: 750px;
+    height: 150px;
+    background: transparent linear-gradient(180deg, #38426F 0%, #71BAEF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#degradado_2
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+
+    border-radius: 20px;
+    width: 750px;
+    height: 150px;
+    background: transparent linear-gradient(180deg, #38426F 0%, #71BAEF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.parrafo_1
+{
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    left: 183px;
+    width: 615px;
+    height: 293px;
+    text-align: left;
+    font-size: 22px;
+    font-family: Helvetica Neue;
+    font: Regular;
+    /* font: Regular 20px/24px Helvetica Neue; */
+    letter-spacing: 0px;
+    color: #3b2c29;
+    opacity: 1;
+}
+
+.parrafo_2
+{
+    top: 382px;
+    left: 582px;
+    width: 615px;
+    height: 293px;
+    text-align: left;
+    font-size: 22px;
+    font-family: Helvetica Neue;
+    font: Regular;
+    /* font: Regular 20px/24px Helvetica Neue; */
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+}
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+/* 
+    -------------------------------------------
+        NAVEGADOR PARA DESARROLLADORES
+    -------------------------------------------
+*/
+
+
+/*
+    - Chrome. 
+        - Es el navegador mas utilizado en España. 
+        - Herramienta de navegación para probar código.
+    
+    - Firefox Developers.
+        - Este navegador tiene herramientas en el "Inspector del navegador" para cuando 
+          utilizamos FLEXBOX o GRID-LAYOUT. 
+    
+*/
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    -----------------------
+        RESET - CSS
+    -----------------------
+*/
+
+/*
+    - Nunca trabajeis sin un RESET.CSS
+
+    - Reset son 
+        - " Ayudas de eliminación "
+        - " Descongestión de código "  
+
+    - Todos los navegadores vienen con sus propios "CSS". Con Reset haces un borrado total
+        -  Y ese borrado total, lo haces cada vez que entras en cualquier tipo de navevador. 
+    
+    - Estrctura
+        - PRIMERA LÍNEA DE LLAMADA : RESET.CSS
+        - SEGUNDA LÍNEA DE LLAMADA : ESTILO.CSS
+
+    - Esto es como limpiar la pizarra. Limpias la pizarra y nuestro código se vera bien. 
+        - No limpies la pizarra y estaras manejando tu código, mas el código que habia metido 
+          el navegador en cuestión.
+
+    - En el reset se tiene 
+
+        - min height : 100vh; es importantisimo. 
+
+        - Tener los botones ya un poco custimizados.
+
+        - opacidades. 
+
+        - los
+            - margin  : cero
+            - padding : cero
+            - Borders : cero  
+*/
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ----------------
+        HISTORIA
+    ----------------
+*/
+
+
+/*
+    - Utilizar "Tablas" para construir una página web. Es ir a la programación de hace 29 años atras.
+        - Si no mal recuerdo en el 1991 salieron las tablas. 
+
+    - En el 96 salieron el CSS. No como lo conocemos, sino la "versión 1"
+        - Y lo primero que salieron son los "margin". Los conceptos de margenes. 
+        - Concepto que  "internet explore" fue a la inversa de toda la industria (por eso el navegador mas odiado)
+    
+    -El concepto de "CAJAS" lo tenia a la inversa. Mientras que lo lógico era tenerlo de otra manera. 
+        - Por eso salio el concepto de la "WC3" World Wide Web. 
+        - Es un conjuto de cosas que delibera lo que si se adapta a "httml".
+        - Hacer margenes todo el rato tampoco es hacer cosas muy actualizadas.
+
+    -Luego en 1998 o por ahi salieron los "POSITION" en CSS.
+        - Los "POSITION" es una de las  PEORES cosas que podemos hacer actualmente en CSS.
+        - Porque no les importan las "reglas  y por eso desestructuran las condiciones en el que se basan 
+          esa estructura en HTML.
+
+    - ¿Se puede utilizar POSITION?
+        - Si. Pero lo utilizaras en un 1% en proyecto. Si fuera el caso.
+        - No es una herramienta por la cual. Te vas a basar toda la estrucutra de tu proyecto. 
+    
+    - Hasta que en el 2016. Salio por primera vez el primer concepto "válido" sobre: 
+        - Alinear
+        - Estructurar 
+        - Y manejar los elementos de HTML, a traves de CSS 
+
+
+    - Y ese concepto básico se llama        ---►         "FLEXBOX".
+*/
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    -----------------
+        FRAMEWORK
+    -----------------
+*/
+
+/*
+    BOOTSTRAP 
+
+            - ¿FLEXBOX no tiene nada que ver con el Framework BOOTSTRAP verdad?
+                - NO 
+
+            - BOOTSTRAP 
+                - Se metio muy bien en la industria. Fue creado por twitter.
+                - Pero hasta el 2019, no metio FLEXBOX, en su estructura. 
+                - BOOTSTRAP no tiene ni idea a dia de hoy (en su estructura) que es un  GRID-LAYOUTS
+                - tiene muchas carencias. 
+            
+
+            - ¿Para que se monta Framework?
+                - Un framework se monta para que tu vayas "mas rápido" pero estando a la ultima. No 
+                para que tu vayas "mas rápido" estando hace 4 años atras.
+
+
+            - Un framework como BOOTSTRAP y otros framework estan para facitilitarte la vida. 
+
+
+            - Pero realmente lo que uno tiene que aprender es (hablando de CSS)
+                - Tiene que aprender el CSS Básico. Teniendo en cuenta que tienes que elegir 
+                    - FLEXBOX
+                    - o GRID-LAYOUT.
+                - Personalmente aprenderia primero "FLEXBOX" Y luego "GRD-LAYOUTS"
+
+
+            - Y teniendo estos dos conceptos. Mas todo los de CSS estandar
+                - SABES HACER DE TODO. No neceistas ni BOOTSTRAP, o otros Frameworks.
+                - Te podrias montar un BOOTSTRAP para que nos entendamos. 
+
+
+            - Entonces 
+                ¿un Framework que son ? 
+                ¿un conjunto de comandos, de reglas que esta integrado dentro del propio lenguaje CSS ?
+                    - "Exacto". 
+            
+            - Una cosa es. En el trabajo somos 10 y 8 manejan BOOTSTRAP. ¿que hacen  los otros 2?
+                - Pues se ponen con BOOTSTRAP
+            
+            - Pero las empresas que afrontand proyectos con una perspectiva a largo plazo. 
+                - Se inventan su propio Framework. 
+
+    BULMA 
+
+            - Si quieren un ejemplo. Miren la de APPLE.
+                - APPLE.COM o APPLE.ES
+                - ¿Creen que Apple utiliza BOOTSTRAP  u otro Framework ?
+                    - No. Estas empresas se crean su propio Framework. Su propio CSS.
+                    - Para evitar errores. Y para hablar al mismo nivel.
+            
+            - Para proyectos indivuales. BOOTSTRAP no sirve para nada. 
+                - El Framework que elegiria seria "BULMA".
+
+                - ¿ Por qué BULMA? 
+                - Es un Framework tambien para CSS's. Pero es totalmente CSS.
+                - No tiene nada de JavaScript. No tiene nada de otro lenguaje por ahi en medio. 
+                - Es muy sencillo de aprender.
+                - Te ayuda a quitar trabajo. 
+            
+                
+            -Trabajas con BULMA. Cuando eres un amo del CSS
+                - "Tengo que aprender CSS. Me voy a Bulma" --------- "NO" 
+                - Te vas a BULMA cuando quieres hacer un proyecto y no tienes ganas de montar tú CSS.
+                - Cosas de este estilo.
+
+
+            - O si te reunes con un grupo de 4 o 5 . 
+                - Vamos a hacer un proyecto. Vamos a elegir como proyecto BULMA
+                - ¿Por qué? 
+                    - Porque no tengo una documentación, que os diga a todos que poner en las "clases"
+                    y BULMA  ya los hace.
+*/
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ------------------------------------
+        ELECCIÓN DE TIPO MAQUETACIÓN
+    ------------------------------------
+*/
+
+/*
+
+    - Hay gente que le encanta FLEXBOX. lo Hace todo con FLEXBOX. No hay ningun problema
+
+    - Hay gente que le encanta GRID-LAYOUT. Y lo hace todo con este. Tampoco hay ningun problema.
+
+    - Y hay gente como yo que intenta elegir el camino mas correcto a la hora de tratar 
+    un elemento, o tratar otro. 
+        - Hay elementos que se trata mejor con FLEXBOX Y
+        - Elementos que se trata mejor con GRID-LAYOUT
+
+    - Y tambien hay Gustos. 
+
+    - ¿En CSS FLEXBOX y GRID-LAYOUT son independientes esas dos ?
+        - A ver, dentro de CSS es como si te preguntaran
+            - ¿utilizas margin?
+            - ¿utilizas los FLEXBOX?
+            - ¿utilizas los GRID-LAYOUT?
+        - Es lo mismo. 
+
+    - Lo que pasa es que los  FLEXBOX y GRID-LAYOUT son conceptos que por si solos, son grandes.
+
+    - No podemos comparar las opciones que tienen un margin, con las opciones que tienen un FLEXBOX
+*/
+
+
+
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ------------------------------
+        PROCESO DE MAQUETACIÓN 
+    ------------------------------
+*/
+
+
+
+/*
+    DISEÑO UX/UI   Y   MAQUETACIÓN CSS
+
+        - ¿ En el mundo de la Web es importante el sitio exacto (en un diseño UX/UI) donde este una caja de FLEXBOX dentro de un main?
+            - No 
+            - Lo importante es que el "concepto de web" se vea bien (derecha, izquierda, arriba, centro, etc.) 
+            - No estamos trabajando en diseño grafico. No se equivoqueis
+            - Estamos trabajando en web. La web es Responsive. La web es elastica. La web es proporciones. 
+            - No son milimetros. No son pixeles.
+
+            - Repito. Lo que es importante  
+
+                - CONCEPTO WEB          ---►        En un dispositivo o en 35 navegadores diferentes. Una caja  o una imagen 
+                                                    o un texto. Quede a la derecha, o a la izquierda, etc.  
+
+                - PROPORCIONES          ---►        Y tambien, son importantes las proporciones. Que las imagenes sean proporcionales. 
+                                                    Que una imagen no sea mas grande que el otro. Y siempre argumentar porque ese 
+                                                    tamaño sea asi. 
+ 
+
+        -  ¿Como se trabaja? ¿Primero se hace el diseño de la web y luego el diseño del  móvil? 
+
+            - No. Primero se hace el diseño del móvil. Porque en el diseño del móvil es donde mas te lo curras.
+
+            - Ya que en el móvil tenes menos espacio para organizar el contenido. 
+
+            - Primero siempre el diseño móvil y luego el diseño web. 
+
+    MARGIN 
+
+        - El margin es para que el contenido(imagen, texto, etc.) no toque los bordes de la página. 
+        
+            - Margin Rigido          ---►        Se lo pones en pixeles
+            
+            - Margin flotante        ---►        Se lo pones en REM.
+
+
+    TEXTO 
+    
+        - El texto no puede ser menor que 16. El tamaño base para las letras en los navegadores es    ---►   16       
+    
+
+    RESPONSIVE MÓVIL
+
+        - Se suele utilizar "@media"  (arroba media) 
+
+        - Para adaptar la imagen de móvil en el código. Se hace por HTML.
+
+            - Antes se hacia por CSS. Pero ahora se hace por HTML. 
+
+        
+        - Las personas que trabajamos en 2020. 
+
+            - Trabajamos con FlexBox que ya son responsive. 
+        
+            - Trabajamos con Grid que ya son responsive.
+        
+            - Y cuando necesitamos una ayuda extra, nos vamos a "arrobamedia" - "Media Query". 
+
+                - Pero no es el "Flujo" de nuestro trabajo.
+
+        - El presente es esto "Flexbox" y "Grid". Estos dos ya establecen las bases de Responsive.  
+
+            - Los media query y tal, vinieron para ayudar cuando no habia Flexbox. 
+                                          
+    CONTRASTE
+
+        - Lo principal al elegir colores es el  CONTRASTE.
+            - Si la fastidias en contraste, nuestra página no va valer nada.
+            - Sobre todo porque se maneja en Smartphones. 
+            - Y a los smartphones se van a la calle y les pega el sol. 
+            - Y como no tengan buen contraste. Ni podrian ver.
+        
+
+        - Evitar tener un fondo #FFFFFF O Blanco - Blanco. 
+            - Por que golpea visualmente. Da un pantallaso. 
+            - Siempre hay que jugar  bajando el brillo (Lightness)
+            - Ir un poco a grises a lado del blanco.  
+
+
+
+
+*/
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ---------------------------------
+        REPONSIVE - FLEXBOX - REM
+    ---------------------------------
+*/
+
+
+/*
+    
+    - FLEXBOX 
+    
+        - Es uno de los pilares ahora mismo para la maquetación de las páginas web
+        - Luego estan los "GRID-LAYOUT"
+
+
+    - RESPONSIVE 
+
+        - FLEXBOX
+            - display : flex; 
+
+            - Con FLEXBOX  Se controla la disposición de los hijos. 
+
+        - FONT-SIZE ( 1 rem = 16 px )
+
+            - No se suele trabajar con "pixeles". Se suele utilizar la unidad "rem"
+
+            - rem   ---►    Ofrece cierta escalabilidad para respetar las configuraciones de cada usuario.  
+
+            - Y todo esto porque la tipografía también tiene que tener ese punto RESPONSIVE.
+
+
+    - ACLARACIÓN ENTRE "REM" Y "EM"        
+    
+        - "rem" es casi igual a el "em"
+                
+        - El "em" es la medida en ancho de una letra. Se invento en tipografia hace mucho tiempo
+
+        - La diferencia entre "em" y "rem" es que 
+
+            - "em"    ---►    Obdece al padre  directo de esa etiqueta.  
+            
+            - "rem"   ---►    Mientras que el rem Pasa hacerle caso al padre (no obedece al padre)
+                              Siempre obedece a lo que le pongas al HTML. 
+
+
+
+    - Lo mas importante para FLEXBOX es el contenido.
+
+        - Si hacen un with a una estructura (un texto por ejemplo o imagen).  Y tipeo un " width : 50px; ". 
+          Va a eliminar todo el contenido 
+
+        - Con FlEXBOX no se utiliza "width", se utiliza "flex-basis"
+
+        - Cuando le das una orden de "flex-basis" y le pides que sea de "50px". El te dice que no, no te voy a 
+          hacer caso. Porque si hago "50px" me cargo el contenido. 
+        
+*/
+
+
+
+/****************************************************************************************************************************************************/
+
+
+/* 
+    ---------------------------------
+        VOCABULARIO 
+    ---------------------------------
+*/
+
+
+/*
+
+    - Editores de texto o Editores de código conocidos
+        - Sublime.txt
+        - Visual Studio Code
+        - Atom
+
+- No todas las pantallas tienen la misma densidad de pixel 
+    - No todas las pantallas tienen el mismo tamaño
+    - 
+
+    - Luke - Patrones comunes dentro de Responsive Desing
+        - como aplicar y modifar los sitios basandonos en CSS
+    
+    - 5 Tecnicas o patrones de Responsive Design
+        1ra Mostly Fluid 
+            - empiez
+        2da  Colocación de columnas (como lo pone google)
+        3ra Layout shifter
+        4ta Tiny tweaks
+        5ta off canvas
+            - Menu con rayitas. Al clickear te salen todas las opciones para 
+            navegación
+            - a ese menu le llaman menu hamburguesas o hambuerger menu, que utiliza
+            el patron off canvas
+
+   
+    
+    -Viewport
+        - solo la parte que visualizas es la que cuenta como viewport
+        - si tu vieras que hacer scroll  
+        - solo la parte que visualizas es esl viewport no todoo el web site 
+        que no se ve
+
+    - Modo de pantalla de Cel (Global smartphone orientation)
+        - Portrait  - Modo vertical  (94%)
+        - Landscape  - Modo horizontal (6%)
+    
+    - 2 tecnicas para abordar Responsive Desing
+        
+        1ra Moble First 
+            - Empezar un website desde la menor resolución soportada
+
+        2da Desktop First
+            - Empezar un website desde la mayor resolución soportada
+
+    - ¿cual es mejor ?
+        - Técnicamente Mobile First
+
+*/ 

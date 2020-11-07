@@ -48,6 +48,14 @@
         - Proyectos muy buenos que concursan.
         - https://www.awwwards.com/  
 
+     - Ejemplos de como funcionan los sitios de Responsive Desing
+        - Ejemplos de patrones
+        - https://mediaqueri.es 
+        - gracias a la mediaqueri es que podemos hacer responsive desing 
+    
+    - paletton.com
+        -  
+
 */
 
 
@@ -814,5 +822,63 @@ a
 
 
 
+/****************************************************************************************************************************************************/
 
 
+/* 
+    ---------------------------------
+        VOCABULARIO 
+    ---------------------------------
+*/
+
+
+/*
+
+    - Editores de texto o Editores de código conocidos
+        - Sublime.txt
+        - Visual Studio Code
+        - Atom
+
+- No todas las pantallas tienen la misma densidad de pixel 
+    - No todas las pantallas tienen el mismo tamaño
+    - 
+
+    - Luke - Patrones comunes dentro de Responsive Desing
+        - como aplicar y modifar los sitios basandonos en CSS
+    
+    - 5 Tecnicas o patrones de Responsive Design
+        1ra Mostly Fluid 
+            - empiez
+        2da  Colocación de columnas (como lo pone google)
+        3ra Layout shifter
+        4ta Tiny tweaks
+        5ta off canvas
+            - Menu con rayitas. Al clickear te salen todas las opciones para 
+            navegación
+            - a ese menu le llaman menu hamburguesas o hambuerger menu, que utiliza
+            el patron off canvas
+
+   
+    
+    -Viewport
+        - solo la parte que visualizas es la que cuenta como viewport
+        - si tu vieras que hacer scroll  
+        - solo la parte que visualizas es esl viewport no todoo el web site 
+        que no se ve
+
+    - Modo de pantalla de Cel (Global smartphone orientation)
+        - Portrait  - Modo vertical  (94%)
+        - Landscape  - Modo horizontal (6%)
+    
+    - 2 tecnicas para abordar Responsive Desing
+        
+        1ra Moble First 
+            - Empezar un website desde la menor resolución soportada
+
+        2da Desktop First
+            - Empezar un website desde la mayor resolución soportada
+
+    - ¿cual es mejor ?
+        - Técnicamente Mobile First
+
+*/ 
