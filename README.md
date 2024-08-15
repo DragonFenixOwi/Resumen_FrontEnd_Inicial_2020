@@ -8,15 +8,18 @@
 
 
    <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></td>
-      </tr></br>
-      
-      <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></td>
       </tr></br>
-   
-   
-      
+
+	```mermaid
+      	graph LR
+      	A[Niveles JavaScript]--> B((Nivel Basico))
+      	A --> C(Nivel Intermiedio)
+         A --> C(Nivel Avanzado)
+         A --> C(Nivel Superior)
+
+	```
+
 
    <div>
    <br><tr>
