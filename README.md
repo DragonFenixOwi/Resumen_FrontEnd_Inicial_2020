@@ -2,33 +2,20 @@
 - Plantilla con Descripción básica para proyectos de FrontEnd
 
 
-## Indice corto 
-
- <div align="center">
+<div align="center">
 <h1 align="center">Indice Corto</h1>
-<img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E">
 
-<img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E">
-
-
-
-<img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E">
-
-<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E">
+  <img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E">
+  
+  <img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E">
+  
+  <img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E">
+  
+  <img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E">
   
 </div>
 
 
-
-<img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E">
-
-<img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E">
-
-
-
-<img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E">
-
-<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E">
 
 
 
