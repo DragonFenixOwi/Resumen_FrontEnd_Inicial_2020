@@ -21,15 +21,8 @@
     </div>
     <br></br>
 
+[![Static Badge](https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E")](https://youtube.com)
 
-<img alt="Static Badge" src="https://img.shields.io/badge/1-People-orange?link=https%3A%2F%2Fwww.youtube.com%2F">
-<img alt="Static Badge" src="https://img.shields.io/badge/1-People-orange?link=https://www.youtube.com/">
-
-<img alt="Static Badge" src="https://img.shields.io/badge/1-People-orange?cacheSeconds=https%3A%2F%2Fwww.youtube.com%2F">
-
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCIjEgHA1vatSR2K4rfcdNRg?style=social)](https://youtube.com/aristidevs?sub_confirmation=1)
-
-[![Static Badge](https://img.shields.io/badge/1-People-orange)](https://youtube.com)
 
 
 
