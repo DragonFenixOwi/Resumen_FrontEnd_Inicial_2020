@@ -7,9 +7,10 @@
 
 <div style="text-align: center;">
  <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E" align="left"></br>
-  
-  <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E" align="left"></br>
 </div>
+
+  <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E" align="left"></br>
+
   <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br>
   
   <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"></br>
