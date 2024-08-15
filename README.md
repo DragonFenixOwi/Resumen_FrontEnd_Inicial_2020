@@ -4,7 +4,7 @@
 
 
 <div>
-  <h1>Indice Corto</h1>
+  <h3>Indice Corto</h3>
     <div align="left"> 
       <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br>
       <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"></br>
