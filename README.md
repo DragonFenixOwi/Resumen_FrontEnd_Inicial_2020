@@ -7,6 +7,7 @@
  
 ## Indice corto 
 
+
 <img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E">
 
 <img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E">
@@ -15,7 +16,7 @@
 
 <img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E">
 
-<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E">(https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E">
 
 
 
