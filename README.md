@@ -7,13 +7,13 @@
   <h2>Indice Corto</h2>
     <div> 
       <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></td>
       </tr></br>
       <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Inicio_con_CSS-%2301968E"></td>
       </tr></br>
       <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/3_-Registro_Complementario-%2301968E"></td>
       </tr></br>
       <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></td>
@@ -23,48 +23,7 @@
 
 
 
-
-
-
-
-   ## [Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
-   
-
-   ###  - Recopilación de Imagenes
-
-   - **CallBack** (Suma, Date)
-
-   - **FlexBox** - Responsive - FirexFox Developer
-
-   - **JSON**
-
-   - **Solución** - No ejecuta console.log en Chrome
-
-   - **UI-UX**.
-   
-   - **Debugger**
-
-   ###  -  PDF
-
-
-
-   
-   ##  [Carpeta CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
-
-   1.  **CSS_Descripción** (Importantes: Páginas de Desarrolladores y descripción detallada "estilos.css")
-   
-   2.  **Estilos.css** (descripción corta de las líneas de código utitilizadas)
-
-   3.  **Main_Axis-Column**
-
-   4.  **Main_Axis_Row** 
-    
-
-
-
-
-
-## [Carpeta "js" de JavaScript](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+## [1 - Niveles JavaScript](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
    ### Comandos de Atajos de Teclado y Git 
@@ -182,6 +141,47 @@
 
     
 12. ¿ Qué salio en **ECMAScript 9** ?
+
+
+
+
+
+   ##  [2 - Iniio con CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+
+   1.  **CSS_Descripción** (Importantes: Páginas de Desarrolladores y descripción detallada "estilos.css")
+   
+   2.  **Estilos.css** (descripción corta de las líneas de código utitilizadas)
+
+   3.  **Main_Axis-Column**
+
+   4.  **Main_Axis_Row** 
+    
+
+
+
+   ## [3 - Registro Complementario](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario)
+   
+
+   ###  - Recopilación de Imagenes
+
+   - **CallBack** (Suma, Date)
+
+   - **FlexBox** - Responsive - FirexFox Developer
+
+   - **JSON**
+
+   - **Solución** - No ejecuta console.log en Chrome
+
+   - **UI-UX**.
+   
+   - **Debugger**
+
+   ###  -  PDF
+
+
+
+   
+
 
 
 
