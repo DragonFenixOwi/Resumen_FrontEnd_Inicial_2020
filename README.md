@@ -28,14 +28,6 @@
 
 
 
-```mermaid
-graph LR
-A[![Static Badge](https://img.shields.io/badge/1-owi-red)]
-A --> C[![Static Badge](https://img.shields.io/badge/1-owi-red)]
-B --> D{Rhombus}
-C --> D
-```
-
 
 
 
