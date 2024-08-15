@@ -4,23 +4,11 @@
 
 <br></br>
 
-## Indice
-
-
+ <div>
+   <h2>Indice</h2>
    <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></td>
       </tr></br>
-
-```mermaid
-graph LR
-	A[Niveles JavaScript]--> B(Nivel Básico)
-	A --> C(Nivel Intermiedio)
-    A --> D(Nivel Avanzado)
-    A --> E(Nivel Superior)
-```
-
-
-   <div>
    <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></td>
       </tr></br>
@@ -42,6 +30,14 @@ graph LR
 
 
 ## [1 - Niveles JavaScript](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
+
+```mermaid
+graph LR
+	A[Niveles JavaScript]--> B(Nivel Básico)
+	A --> C(Nivel Intermiedio)
+    A --> D(Nivel Avanzado)
+    A --> E(Nivel Superior)
+```
 
 
    ### Comandos de Atajos de Teclado y Git 
