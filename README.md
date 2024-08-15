@@ -7,7 +7,7 @@
  <div>
    <h2>Indice</h2>
    <br><tr>
-       <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></a></td>
+       <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></a></td>
       </tr></br>
    <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></a></td>
