@@ -19,6 +19,9 @@
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></td>
       </tr></br>
     </div>
+    <br></br>
+  <br></br>
+  <br></br>
 </div>
 
 
