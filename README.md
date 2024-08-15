@@ -2,7 +2,7 @@
 - Plantilla con Descripción básica para proyectos de FrontEnd
 
 
-<div align="center">
+<div">
 <h1 align="center">Indice Corto</h1>
 
 <div style="text-align: center;">
