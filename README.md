@@ -11,8 +11,7 @@
       <br><img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E"></br>
       <br><img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></br>
       <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"> 2&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"> 2&nbsp;&nbsp;&nbsp;&nbsp;</td>
       </tr>
     </div>
 </div>
