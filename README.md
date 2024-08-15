@@ -6,12 +6,12 @@
 <div>
   <h3>Indice Corto</h3>
     <div> 
-      <p>&emsp;<br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br></p>
       <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"></br>
       <br><img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E"></br>
       <br><img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></br>
       <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"> 2&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"></td>
       </tr>
     </div>
 </div>
