@@ -1,7 +1,7 @@
 # Resumen_FrontEnd_Inicial_2020
 - Plantilla con Descripción básica para proyectos de FrontEnd
 
-
+<img src="https://img.shields.io/badge/Registro_Complementario-green">
 
  
 # Indice corto 
