@@ -10,18 +10,17 @@
        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></a></td>
       </tr></br>
    <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></a></td>
       </tr></br>
       <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/3_-Registro_Complementario-%2301968E"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario" ><img alt="Static Badge" src="https://img.shields.io/badge/3_-Registro_Complementario-%2301968E"></a></td>
       </tr></br>
       <br><tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario/PDF%20-%20Ayuda" ><img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></a></td>
       </tr></br>
     </div>
     <br></br>
 
-[![Static Badge](https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E")](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js)
 
 
 
