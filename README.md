@@ -5,9 +5,9 @@
 <div align="center">
 <h1 align="center">Indice Corto</h1>
 
- <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E" align="right"></br>
+ <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E" align="left"></br>
   
-  <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E" align="right"></br>
+  <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E" align="left"></br>
 
   <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br>
   
