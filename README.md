@@ -22,7 +22,10 @@
     <br></br>
 
 
+<img alt="Static Badge" src="https://img.shields.io/badge/1-People-orange?link=https%3A%2F%2Fwww.youtube.com%2F">
+<img alt="Static Badge" src="https://img.shields.io/badge/1-People-orange?link=https://www.youtube.com/">
 
+<img alt="Static Badge" src="https://img.shields.io/badge/1-People-orange?cacheSeconds=https%3A%2F%2Fwww.youtube.com%2F">
 
 
 
