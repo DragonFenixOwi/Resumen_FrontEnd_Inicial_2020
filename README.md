@@ -2,10 +2,12 @@
 - Plantilla con Descripción básica para proyectos de FrontEnd
 
 
-
-
- 
 ## Indice corto 
+
+ <div align="center">
+<h1 align="center">Indice Corto<</h1>
+</div>
+
 
 
 <img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E">
