@@ -29,7 +29,7 @@
 
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCIjEgHA1vatSR2K4rfcdNRg?style=social)](https://youtube.com/aristidevs?sub_confirmation=1)
 
-![Static Badge](https://img.shields.io/badge/1-People-orange?cacheSeconds=https%3A%2F%2Fwww.youtube.com%2F)
+![Static Badge](https://img.shields.io/badge/1-People-orange)](https://youtube.com)
 
 
 
