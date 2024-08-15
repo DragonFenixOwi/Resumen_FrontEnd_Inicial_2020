@@ -1,4 +1,4 @@
-# Carpeta "js" de JavaScript
+# Niveles JavaScript
 
 ## Comandos de Atajos de Teclado y Git 
 
