@@ -5,6 +5,7 @@
 
 ![Static Badge](https://img.shields.io/badge/1-Registro%20Complementario)
 
+<img alt="Static Badge" src="https://img.shields.io/badge/1-Registro%20Complementario-%2383B81A?logoSize=amg&labelColor=red&cacheSeconds=https%3A%2F%2Fgithub.com%2FDragonFenixOwi%2FResumen_FrontEnd_Inicial_2020%2Ftree%2Fmaster%2FRegistro%2520Complementario">
 
  
 # Indice corto 
