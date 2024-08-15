@@ -2,8 +2,8 @@
 - Plantilla con Descripción básica para proyectos de FrontEnd
 
 
-  <br></br>
-  <br></br>
+<br></br>
+
 
 <div>
   <h2>Indice Corto</h2>
