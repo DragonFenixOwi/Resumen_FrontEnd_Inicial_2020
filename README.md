@@ -11,14 +11,13 @@
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></td>
       </tr></br>
 
-	```mermaid
-      	graph LR
-      	A[Niveles JavaScript]--> B((Nivel Basico))
-      	A --> C(Nivel Intermiedio)
-         A --> C(Nivel Avanzado)
-         A --> C(Nivel Superior)
-
-	```
+```mermaid
+graph LR
+	A[Niveles JavaScript]--> B(Nivel Básico)
+	A --> C(Nivel Intermiedio)
+    A --> D(Nivel Avanzado)
+    A --> E(Nivel Superior)
+```
 
 
    <div>
