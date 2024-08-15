@@ -149,7 +149,7 @@
 
 
 
-   ##  [2 - Iniio con CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
+   ##  [2 - Primeros pasos con CSS](https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/css)
 
    1.  **CSS_Descripción** (Importantes: Páginas de Desarrolladores y descripción detallada "estilos.css")
    
