@@ -5,18 +5,22 @@
 <div align="center">
 <h1 align="center">Indice Corto</h1>
 
-  <p><br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br>
+ <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E" align="right"></br>
+  
+  <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E" align="right"></br>
+
+  <br><img alt="Static Badge" src="https://img.shields.io/badge/1_-Registro_Complementario-%2301968E"></br>
   
   <br><img alt="Static Badge" src="https://img.shields.io/badge/2-Carpeta_CSS-%2301968E"></br>
   
   <br><img alt="Static Badge" src="https://img.shields.io/badge/3-Carpeta_JavaScript-%2301968E"></br>
   
-  <br><img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></br><p>
+  <br><img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></br>
   
 </div>
 
 
-
+<img src="imagen.gif" align="right">
 
 
 
