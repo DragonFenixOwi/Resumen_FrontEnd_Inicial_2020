@@ -10,15 +10,18 @@
     <div> 
       <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></td>
-        ```mermaid
+      </tr></br>
+   </div>
+      ```mermaid
               graph LR
               A[Static Badge]-- Link text --> B((Circle))
               A --> C(Round Rect)
               B --> D{Rhombus}
               C --> D
         ```
-      </tr></br>
-      <br><tr>
+
+   <div>
+   <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></td>
       </tr></br>
       <br><tr>
@@ -29,7 +32,6 @@
       </tr></br>
     </div>
     <br></br>
-</div>
 
 
 
