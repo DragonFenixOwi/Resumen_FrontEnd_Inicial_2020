@@ -28,11 +28,11 @@
 
 ```mermaid
 graph LR
-	A[Niveles JavaScript - Carpeta js]--> B(Comandos de Atajos de Teclado y Git)
-	A --> C(Desarrollo Inicial Básico)
-	A --> D(Desarrollo Inicial Intermedio)
-	A --> E(Desarrollo Inicial Avanzado)
-    	A --> F(Desarrollo Inicial Superior)
+	A[Niveles JavaScript] --> B[Carpeta js]--> C(Comandos de Atajos de Teclado y Git)
+	C --> D(Desarrollo Inicial Intermedio)
+	C --> E(Desarrollo Inicial Avanzado)
+    	C --> F(Desarrollo Inicial Superior)
+	C --> G(Desarrollo Inicial Básico)
 ```
 
 
