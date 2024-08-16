@@ -1,8 +1,7 @@
-   # Resumen_FrontEnd_Inicial_2020
+   # Resumen FrontEnd Inicial 2020
 - Plantilla con Descripción básica para proyectos de FrontEnd
-
-
 <br></br>
+
 
  <div>
    <h2>Indice</h2>
