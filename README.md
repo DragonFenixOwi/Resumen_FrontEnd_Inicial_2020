@@ -6,7 +6,9 @@
  <div>
    <h2>Indice</h2>
    <br><tr>
-       <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></a></td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></a>
+       </td>
       </tr></br>
    <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/2-Primeros_pasos_con_CSS-%2301968E"></a></td>
@@ -28,7 +30,7 @@
 
 ```mermaid
 graph LR
-	A[Niveles JavaScript] --> B[Carpeta js]--> C(Comandos de Atajos de Teclado y Git)
+	A[Niveles JavaScript] --> B[Carpeta js]--> C(Comandos de Atajos de Teclado V.S.C. y Git)
 	B --> D(Desarrollo Inicial Básico)
 	B --> E(Desarrollo Inicial Intermedio)
 	B --> F(Desarrollo Inicial Avanzado)
@@ -37,7 +39,7 @@ graph LR
 ```
 
 
-   ### Comandos de Atajos de Teclado y Git 
+   ### Comandos de Atajos de Teclado V.S.C. y Git 
 
    1.  **Plantilla EMMET Básica** Atajos mas Comunes de montaje rápido de etiquetas del "index.html" en Visual Studio Code
 
