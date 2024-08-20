@@ -9,8 +9,8 @@
        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	    <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/js" ><img alt="Static Badge" src="https://img.shields.io/badge/1-Niveles_JavaScript-%2301968E"></a>
 	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/blob/master/js/1%20-%20Atajos_de_Teclado_y_Git.js" ><img alt="Static Badge" src="https://img.shields.io/badge/1.2%20-%20Comandos%20de%20Atajos%20de%20Teclado%20V.S.C.%20y%20Git-%2300731e"></a>
-	       <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/blob/master/js/2%20-%20Desarrollo_Inicial_Basico.js" ><img alt="Static Badge" src="https://img.shields.io/badge/1.1%20-%20Desarrollo%20Inicial%20B%C3%A1sico-%2300731e"></a>
+	      <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/blob/master/js/1%20-%20Atajos_de_Teclado_y_Git.js" ><img alt="Static Badge" src="https://img.shields.io/badge/1.1%20-%20Comandos%20de%20Atajos%20de%20Teclado%20V.S.C.%20y%20Git-%2300731e"></a>
+	       <a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/blob/master/js/2%20-%20Desarrollo_Inicial_Basico.js" ><img alt="Static Badge" src="https://img.shields.io/badge/1.2%20-%20Desarrollo%20Inicial%20B%C3%A1sico-%2300731e"></a>
        </td>
       </tr></br>
    <br><tr>
