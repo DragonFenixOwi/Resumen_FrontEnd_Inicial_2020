@@ -22,11 +22,9 @@
       <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario/PDF%20-%20Ayuda" ><img alt="Static Badge" src="https://img.shields.io/badge/4-Ruta_de_Aprendizaje_Frontend-%2301968E"></a></td>
       </tr></br>
-
         <br><tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://github.com/DragonFenixOwi/Resumen_FrontEnd_Inicial_2020/tree/master/Registro%20Complementario/PDF%20-%20Ayuda" ><img alt="Static Badge" src="https://img.shields.io/badge/5-Fernando-%2301968E"></a></td>
       </tr></br>
-      
     </div>
     <br></br>
 
